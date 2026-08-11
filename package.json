@@ -1,0 +1,27 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "image-slot.js",
+  "scripts": {
+    "build:analytics": "esbuild analytics.js --bundle --format=iife --outfile=analytics.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khandelwalshubh99/rbalajient.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khandelwalshubh99/rbalajient/issues"
+  },
+  "homepage": "https://github.com/khandelwalshubh99/rbalajient#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
