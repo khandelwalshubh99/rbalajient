@@ -215,5 +215,43 @@ sub('''      <div>
         <div style="font-weight:800;font-size:13px;color:#F5883E;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>''',
     "footer catalogue column")
 
+# --- 7. route the real navigation at the static catalogue --------------------
+# Without this the pages under /products/ are live but unreachable: the nav
+# "Products" control, the hero CTA and all 20 category cards are onClick
+# handlers that open the in-page view instead, leaving the footer as the only
+# way in. Point every one of them at a real URL.
+
+# nav (desktop), mobile nav, footer — three <button onClick="{{ openProducts...
+for _old, _new in [
+    ('<button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;font-family:inherit;cursor:pointer;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</button>',
+     '<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>'),
+    ('<button onClick="{{ openProductsMobile }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:#fff;font-weight:700;font-size:16px">Products</button>',
+     '<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>'),
+    ('<button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</button>',
+     '<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>'),
+]:
+    sub(_old, _new, "Products control")
+
+# hero CTA: "Explore Our Range" pointed at the #portfolio anchor
+sub('<a href="#portfolio" style="background:transparent;color:#fff;padding:16px 30px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,0.3)" style-hover="border-color:#fff">Explore Our Range</a>',
+    '<a href="/products/" style="background:transparent;color:#fff;padding:16px 30px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,0.3)" style-hover="border-color:#fff">Explore Our Range</a>',
+    "hero CTA")
+
+# the 20 portfolio cards: <div onClick> -> <a href> deep-linked to the
+# subcategory heading on its category page
+sub('<div onClick="{{ cat.open }}" style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:26px 22px;background:#FBF8F2;cursor:pointer" style-hover="background:#fff">',
+    '<a href="{{ cat.href }}" style="display:block;text-decoration:none;border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:26px 22px;background:#FBF8F2;cursor:pointer" style-hover="background:#fff">',
+    "portfolio card open tag")
+sub('''            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:14px">View products →</div>
+          </div>''',
+    '''            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:14px">View products →</div>
+          </a>''',
+    "portfolio card close tag")
+
+# give each card a real destination
+sub('name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),',
+    'name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),\n        href: "/products/" + s.catSlug + "/#" + s.slug,',
+    "category href")
+
 out.write_text(src)
 print("wrote", out, len(src), "bytes")

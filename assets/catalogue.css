@@ -124,7 +124,8 @@ h1 {
 }
 
 /* ---------- category: type grid ---------- */
-.sub-block { margin-bottom: 52px; }
+/* clear the sticky header when a #subcategory anchor is jumped to */
+.sub-block { margin-bottom: 52px; scroll-margin-top: 88px; }
 .sub-block > h2 {
   font-family: 'Big Shoulders Display', sans-serif; font-weight: 800;
   font-size: 24px; color: var(--navy); margin: 0 0 18px;

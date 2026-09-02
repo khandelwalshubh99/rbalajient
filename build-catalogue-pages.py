@@ -281,14 +281,14 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
 
 
 def category_page(cat, types_by_sub, url, cats):
-    n_types = sum(len(v) for v in types_by_sub.values())
-    n_items = sum(r for v in types_by_sub.values() for _, _, r in v)
+    n_types = sum(len(v[1]) for v in types_by_sub.values())
+    n_items = sum(r for v in types_by_sub.values() for _, _, r in v[1])
 
     crumb_nav, crumb_ld = crumbs([
         ("Home", "/"), ("Products", "/products/"), (cat["name"], None)])
 
     listed, blocks, pos = [], [], 0
-    for sub, entries in types_by_sub.items():
+    for sub, (sub_slug, entries) in types_by_sub.items():
         cards = []
         for name, u, rows in entries:
             pos += 1
@@ -302,7 +302,7 @@ def category_page(cat, types_by_sub, url, cats):
           <span class="type-name">{e(name)}</span>
           <span class="type-meta">{num(rows)} size{"s" if rows != 1 else ""}</span></a></li>""")
         blocks.append(f"""
-    <section class="sub-block">
+    <section class="sub-block" id="{sub_slug}">
       <h2>{e(sub)}</h2>
       <ul class="type-grid">{"".join(cards)}</ul>
     </section>""")
@@ -398,7 +398,8 @@ def main():
         for sub in cat["subs"]:
             for t in sub["types"]:
                 slot = by_name.setdefault(
-                    t["name"], {"sub": sub["name"], "groups": [], "descs": []})
+                    t["name"], {"sub": sub["name"], "sub_slug": sub["slug"],
+                                "groups": [], "descs": []})
                 slot["groups"].append((t["cols"], t["brands"]))
                 d = (t.get("desc") or "").strip()
                 if d and not JUNK_DESC.match(d):
@@ -407,14 +408,14 @@ def main():
         types_by_sub = {}
         for name, info in by_name.items():
             rows = sum(len(b["rows"]) for _, bs in info["groups"] for b in bs)
-            types_by_sub.setdefault(info["sub"], []).append(
+            types_by_sub.setdefault(info["sub"], [info["sub_slug"], []])[1].append(
                 (name, f'/products/{cat["slug"]}/{slug(name)}/', rows))
         for v in types_by_sub.values():
-            v.sort(key=lambda x: x[0])
+            v[1].sort(key=lambda x: x[0])
 
         for name, info in by_name.items():
             u = f'/products/{cat["slug"]}/{slug(name)}/'
-            sibs = [(n, su) for n, su, _ in types_by_sub[info["sub"]] if n != name][:14]
+            sibs = [(n, su) for n, su, _ in types_by_sub[info["sub"]][1] if n != name][:14]
             lead = soften(info["descs"][0]) if info["descs"] else ""
             write(OUT / cat["slug"] / slug(name) / "index.html",
                   product_page(cat, info["sub"], name, info["groups"], lead,
@@ -424,7 +425,7 @@ def main():
 
         cu = f'/products/{cat["slug"]}/'
         counts[cat["slug"]] = (
-            len(by_name), sum(r for v in types_by_sub.values() for _, _, r in v))
+            len(by_name), sum(r for v in types_by_sub.values() for _, _, r in v[1]))
         write(OUT / cat["slug"] / "index.html",
               category_page(cat, types_by_sub, cu, cats))
         urls.append(cu)
