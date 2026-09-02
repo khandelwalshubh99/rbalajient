@@ -185,5 +185,35 @@ if removed != 4:
 sub('<script src="./catalogue.js"></script>',
     '<script src="./catalogue.js" defer></script>', "catalogue.js defer")
 
+# --- 6. crawlable catalogue links -----------------------------------------
+# The app reaches the catalogue through onClick state changes, so the static
+# pages under /products/ would be orphans: reachable from the sitemap but with
+# no link equity and nothing for a crawler to follow. A real <a> column in the
+# footer gives them a path in, and gives visitors a plain link too.
+import json as _json, re as _re
+_raw = (out.parent / "catalogue.js").read_text()
+_cats = _json.loads(_raw[_raw.index("{"):].rstrip().rstrip(";"))["cats"]
+_links = "".join(
+    f'<a href="/products/{c["slug"]}/" style="color:rgba(255,255,255,0.6);'
+    f'text-decoration:none;font-size:14px" style-hover="color:#fff">'
+    f'{c["name"]}</a>' for c in _cats)
+
+sub("padding:56px 32px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px",
+    "padding:56px 32px 32px;display:grid;grid-template-columns:1.3fr 0.8fr 1fr 1fr;gap:36px",
+    "footer grid")
+
+sub('''      <div>
+        <div style="font-weight:800;font-size:13px;color:#F5883E;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>''',
+    f'''      <div>
+        <div style="font-weight:800;font-size:13px;color:#F5883E;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Catalogue</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a href="/products/" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:14px;font-weight:700" style-hover="color:#fff">All products</a>
+          {_links}
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:800;font-size:13px;color:#F5883E;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>''',
+    "footer catalogue column")
+
 out.write_text(src)
 print("wrote", out, len(src), "bytes")
