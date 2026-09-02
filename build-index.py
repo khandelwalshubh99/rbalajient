@@ -19,6 +19,74 @@ def sub(old, new, label):
     src = src.replace(old, new, 1)
 
 # --- 1. head -------------------------------------------------------------
+SITE  = "https://www.rbalajient.com/"
+TITLE = "Balaji Enterprises — Industrial Tools &amp; MRO Supplier in Indore"
+DESC  = ("Authorised distributor of hand tools, power tools, measuring instruments and "
+         "industrial MRO equipment in Indore, Madhya Pradesh. 12,000+ items across 25 "
+         "leading brands, ready stock since 1996.")
+
+JSONLD = """{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "HardwareStore"],
+      "@id": "https://www.rbalajient.com/#business",
+      "name": "Balaji Enterprises",
+      "description": "Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment serving manufacturers, dealers and businesses across Madhya Pradesh.",
+      "url": "https://www.rbalajient.com/",
+      "logo": "https://www.rbalajient.com/assets/logo.png",
+      "image": "https://www.rbalajient.com/assets/logo.png",
+      "foundingDate": "1996",
+      "priceRange": "$$",
+      "currenciesAccepted": "INR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "118 Siyaganj Main Road",
+        "addressLocality": "Indore",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "452007",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-9302110344",
+      "email": "sales@rbalajient.com",
+      "contactPoint": [
+        {"@type": "ContactPoint", "telephone": "+91-9302110344", "contactType": "sales", "email": "sales@rbalajient.com", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
+        {"@type": "ContactPoint", "telephone": "+91-9691020344", "contactType": "sales", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
+        {"@type": "ContactPoint", "telephone": "+91-7805933336", "contactType": "customer support", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
+        {"@type": "ContactPoint", "telephone": "+91-7805933337", "contactType": "customer support", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
+        {"@type": "ContactPoint", "email": "accounts@rbalajient.com", "contactType": "billing support", "areaServed": "IN"}
+      ],
+      "areaServed": [
+        {"@type": "State", "name": "Madhya Pradesh"},
+        {"@type": "City", "name": "Indore"}
+      ],
+      "knowsAbout": ["Hand Tools", "Power Tools", "Cutting Tools & Abrasives", "Measuring & Layout", "Lubrication & Fluid Handling", "Tool Storage & Workshop", "Lifting & Pulling", "Material Handling", "Industrial MRO Supply"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Balaji Enterprises Product Catalogue",
+        "itemListElement": [
+          {"@type": "OfferCatalog", "name": "Hand Tools"},
+          {"@type": "OfferCatalog", "name": "Power Tools"},
+          {"@type": "OfferCatalog", "name": "Cutting Tools & Abrasives"},
+          {"@type": "OfferCatalog", "name": "Measuring & Layout"},
+          {"@type": "OfferCatalog", "name": "Lubrication & Fluid Handling"},
+          {"@type": "OfferCatalog", "name": "Tool Storage & Workshop"},
+          {"@type": "OfferCatalog", "name": "Lifting & Pulling"},
+          {"@type": "OfferCatalog", "name": "Material Handling"}
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.rbalajient.com/#website",
+      "url": "https://www.rbalajient.com/",
+      "name": "Balaji Enterprises",
+      "publisher": {"@id": "https://www.rbalajient.com/#business"},
+      "inLanguage": "en-IN"
+    }
+  ]
+}"""
+
 sub(
 '''<html>
 <head>
@@ -26,19 +94,29 @@ sub(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
 </head>''',
-'''<html lang="en">
+f'''<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Balaji Enterprises — Tools &amp; Industrial Supply</title>
-<meta name="description" content="Balaji Enterprises supplies hand tools, power tools and industrial MRO equipment to manufacturers, dealers and businesses across Madhya Pradesh. Authorised distributor for 20+ leading brands since 1996.">
+<title>{TITLE}</title>
+<meta name="description" content="{DESC}">
+<link rel="canonical" href="{SITE}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#081B33">
 <link rel="icon" href="assets/logo.png" type="image/png">
-<link rel="canonical" href="https://www.rbalajient.com/">
+<link rel="apple-touch-icon" href="assets/logo.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Balaji Enterprises — Tools &amp; Industrial Supply">
-<meta property="og:description" content="Hand tools, power tools and industrial MRO equipment across Madhya Pradesh. Authorised distributor since 1996.">
-<meta property="og:image" content="https://www.rbalajient.com/assets/logo.png">
-<meta property="og:url" content="https://www.rbalajient.com/">
+<meta property="og:site_name" content="Balaji Enterprises">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="{TITLE}">
+<meta property="og:description" content="{DESC}">
+<meta property="og:image" content="{SITE}assets/logo.png">
+<meta property="og:url" content="{SITE}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{TITLE}">
+<meta name="twitter:description" content="{DESC}">
+<meta name="twitter:image" content="{SITE}assets/logo.png">
+<script type="application/ld+json">{JSONLD}</script>
 <script src="./support.js"></script>
 </head>''', "head block")
 
@@ -78,6 +156,9 @@ src = re.sub(r'\n\s*slot(?:Id|Hint): [^\n]*,(?=\n)', '', src)
 removed = len(re.findall(r'slot(?:Id|Hint):', before)) - len(re.findall(r'slot(?:Id|Hint):', src))
 if removed != 4:
     sys.exit("expected to strip 4 slot props, stripped %d" % removed)
+
+sub('<script src="./catalogue.js"></script>',
+    '<script src="./catalogue.js" defer></script>', "catalogue.js defer")
 
 out.write_text(src)
 print("wrote", out, len(src), "bytes")
