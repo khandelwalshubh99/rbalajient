@@ -7,7 +7,7 @@ live page differs from it in exactly three ways:
   2. the image-slot authoring widget swapped for a neutral placeholder
   3. no dependency on image-slot.js
 """
-import sys, pathlib
+import sys, pathlib, re
 
 src = pathlib.Path(sys.argv[1]).read_text()
 out = pathlib.Path(sys.argv[2])
@@ -69,6 +69,15 @@ sub(
 # --- 4. expose the inverse flag -----------------------------------------
 sub("        hasPhoto: !!photoUrl,",
     "        hasPhoto: !!photoUrl,\n        noPhoto: !photoUrl,", "hasPhoto flag")
+
+# --- 5. strip the now-dead authoring props (nothing reads them once the
+#        image-slot element is gone; they'd otherwise ship a stray
+#        "Drop a <product> photo" string in the page source) ------------------
+before = src
+src = re.sub(r'\n\s*slot(?:Id|Hint): [^\n]*,(?=\n)', '', src)
+removed = len(re.findall(r'slot(?:Id|Hint):', before)) - len(re.findall(r'slot(?:Id|Hint):', src))
+if removed != 4:
+    sys.exit("expected to strip 4 slot props, stripped %d" % removed)
 
 out.write_text(src)
 print("wrote", out, len(src), "bytes")

@@ -677,8 +677,6 @@ class Component extends DCLogic {
       return {
         ...p, brands,
         brandNames: brands.map(b => b.name),
-        slotId: "prod-" + slug(p.name),
-        slotHint: "Drop a " + p.name + " photo",
         expanded: isOpen,
         toggleLabel: isOpen ? "Hide specifications" : "View specifications",
         toggle: () => this.toggleExpanded(key),
@@ -742,8 +740,6 @@ class Component extends DCLogic {
               : "padding:10px 18px;border-bottom:1px solid #F0EBE0;color:#0B1F33;font-weight:600;white-space:nowrap",
           }))),
         })),
-        slotId: "prod-" + t.slug,
-        slotHint: "Drop a " + t.name + " photo",
         hasPhoto: !!photoUrl,
         noPhoto: !photoUrl,
         photoStyle: photoUrl
