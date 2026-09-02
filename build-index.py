@@ -39,9 +39,10 @@ JSONLD = """{
       "foundingDate": "1996",
       "priceRange": "$$",
       "currenciesAccepted": "INR",
+      "alternateName": "\u092c\u093e\u0932\u093e\u091c\u0940 \u090f\u0902\u091f\u0930\u092a\u094d\u0930\u093e\u0907\u091c\u0947\u091c",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "118 Siyaganj Main Road",
+        "streetAddress": "118, Siyaganj Main Road, Siyaganj",
         "addressLocality": "Indore",
         "addressRegion": "Madhya Pradesh",
         "postalCode": "452007",
@@ -55,6 +56,30 @@ JSONLD = """{
         {"@type": "ContactPoint", "telephone": "+91-7805933336", "contactType": "customer support", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
         {"@type": "ContactPoint", "telephone": "+91-7805933337", "contactType": "customer support", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
         {"@type": "ContactPoint", "email": "accounts@rbalajient.com", "contactType": "billing support", "areaServed": "IN"}
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.7168011,
+        "longitude": 75.8644892
+      },
+      "hasMap": "https://maps.google.com/?cid=14834392374782579213",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "19:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/rbalajient/",
+        "https://maps.google.com/?cid=14834392374782579213"
       ],
       "areaServed": [
         {"@type": "State", "name": "Madhya Pradesh"},
