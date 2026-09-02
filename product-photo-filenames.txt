@@ -1,0 +1,374 @@
+PRODUCT PHOTO FILENAME CHECKLIST
+Balaji Enterprises — 8 categories, 12256 catalogue items
+
+Upload photos to:  assets/products/
+Accepted formats:  .jpg or .png (either works — the page tries .jpg first, then .png)
+Name each file exactly as the FILENAME column below.
+You do not need all of them. Anything missing keeps the placeholder.
+Total product types needing a photo: 243
+
+
+========================================================================
+HAND TOOLS
+========================================================================
+
+  Clamps & Vices  (57 items)
+  --------------------------------------------------------------------
+    C-Clamp                                       c-clamp.jpg
+    F-Clamp / Bar Clamp                           f-clamp-bar-clamp.jpg
+    Locking Clamp                                 locking-clamp.jpg
+
+  Files & Rasps  (269 items)
+  --------------------------------------------------------------------
+    File                                          file.jpg
+    Flat File                                     flat-file.jpg
+    Half Round File                               half-round-file.jpg
+    Hand File                                     hand-file.jpg
+    Mill File                                     mill-file.jpg
+    Needle File Set                               needle-file-set.jpg
+    Round File                                    round-file.jpg
+    Saw File                                      saw-file.jpg
+    Square File                                   square-file.jpg
+    Surform Blade                                 surform-blade.jpg
+    Three Square File                             three-square-file.jpg
+    Wood Rasp                                     wood-rasp.jpg
+
+  Hammers & Mallets  (734 items)
+  --------------------------------------------------------------------
+    Axe                                           axe.jpg
+    Ball Pein Hammer                              ball-pein-hammer.jpg
+    Brass Hammer                                  brass-hammer.jpg
+    Claw Hammer                                   claw-hammer.jpg
+    Club Hammer                                   club-hammer.jpg
+    Copper Hammer                                 copper-hammer.jpg
+    Cross Pein Hammer                             cross-pein-hammer.jpg
+    Dead Blow Hammer                              dead-blow-hammer.jpg
+    Engineer Hammer                               engineer-hammer.jpg
+    Hammer                                        hammer.jpg
+    Hammer Spare Head                             hammer-spare-head.jpg
+    Machinist Hammer                              machinist-hammer.jpg
+    Mallet                                        mallet.jpg
+    Rubber / PVC Hammer                           rubber-pvc-hammer.jpg
+    Sledge Hammer                                 sledge-hammer.jpg
+    Soft Face Hammer                              soft-face-hammer.jpg
+    Spare Handle                                  spare-handle.jpg
+
+  Hex & Torx Keys  (629 items)
+  --------------------------------------------------------------------
+    Flag Hex Key                                  flag-hex-key.jpg
+    Hex (Allen) Key                               hex-allen-key.jpg
+    Hex / Torx Key Set                            hex-torx-key-set.jpg
+    Hex Key Screwdriver                           hex-key-screwdriver.jpg
+    T-Handle Hex Key                              t-handle-hex-key.jpg
+    T-Handle Torx Key                             t-handle-torx-key.jpg
+    Torx Key                                      torx-key.jpg
+
+  Other Hand Tools  (57 items)
+  --------------------------------------------------------------------
+    Caulking Gun                                  caulking-gun.jpg
+    Multi-Tool                                    multi-tool.jpg
+    Palm Sander                                   palm-sander.jpg
+    Pipe Bender                                   pipe-bender.jpg
+    Plane                                         plane.jpg
+    Riveter                                       riveter.jpg
+    Screw Extractor                               screw-extractor.jpg
+    Site & Utility Tool                           site-utility-tool.jpg
+    Spoke Shave                                   spoke-shave.jpg
+    Tyre Lever                                    tyre-lever.jpg
+    Wire Brush                                    wire-brush.jpg
+
+  Pliers & Cutters  (483 items)
+  --------------------------------------------------------------------
+    Bent Nose Plier                               bent-nose-plier.jpg
+    Bolt Cutter                                   bolt-cutter.jpg
+    Cable Cutter                                  cable-cutter.jpg
+    Circlip Plier                                 circlip-plier.jpg
+    Combination Plier                             combination-plier.jpg
+    Diagonal Cutting Plier                        diagonal-cutting-plier.jpg
+    Locking Plier                                 locking-plier.jpg
+    Long Nose Plier                               long-nose-plier.jpg
+    Plier                                         plier.jpg
+    Precision Plier                               precision-plier.jpg
+    Scissors                                      scissors.jpg
+    Slip Joint Plier                              slip-joint-plier.jpg
+    Specialty Cutter                              specialty-cutter.jpg
+    Tin Snip                                      tin-snip.jpg
+    Tower Pincer                                  tower-pincer.jpg
+    Utility Knife                                 utility-knife.jpg
+    Water Pump Plier                              water-pump-plier.jpg
+    Wire Rope Cutter                              wire-rope-cutter.jpg
+    Wire Stripper & Crimper                       wire-stripper-crimper.jpg
+
+  Punches & Chisels  (290 items)
+  --------------------------------------------------------------------
+    Centre Punch                                  centre-punch.jpg
+    Cold Chisel                                   cold-chisel.jpg
+    Dot Punch                                     dot-punch.jpg
+    Flange Wedge                                  flange-wedge.jpg
+    Leather Punch                                 leather-punch.jpg
+    Letter & Figure Punch                         letter-figure-punch.jpg
+    Pin Punch                                     pin-punch.jpg
+    Pry Bar                                       pry-bar.jpg
+    Punch                                         punch.jpg
+    Scraper                                       scraper.jpg
+    Wood Chisel                                   wood-chisel.jpg
+
+  Saws  (42 items)
+  --------------------------------------------------------------------
+    Hacksaw Frame                                 hacksaw-frame.jpg
+    Hand Saw                                      hand-saw.jpg
+    Mitre Box                                     mitre-box.jpg
+    Saw                                           saw.jpg
+
+  Screwdrivers  (940 items)
+  --------------------------------------------------------------------
+    Hex Screwdriver                               hex-screwdriver.jpg
+    Line Tester                                   line-tester.jpg
+    Nut Driver                                    nut-driver.jpg
+    Phillips Screwdriver                          phillips-screwdriver.jpg
+    Screwdriver                                   screwdriver.jpg
+    Screwdriver Bit                               screwdriver-bit.jpg
+    Screwdriver Bit Set                           screwdriver-bit-set.jpg
+    Screwdriver Set                               screwdriver-set.jpg
+    Slotted Screwdriver                           slotted-screwdriver.jpg
+    Striking Screwdriver                          striking-screwdriver.jpg
+    Stubby Screwdriver                            stubby-screwdriver.jpg
+    Torx Screwdriver                              torx-screwdriver.jpg
+    Two-in-One Screwdriver                        two-in-one-screwdriver.jpg
+
+  Sockets & Drive Tools  (3195 items)
+  --------------------------------------------------------------------
+    Bit Socket                                    bit-socket.jpg
+    Deep Impact Socket                            deep-impact-socket.jpg
+    Deep Socket                                   deep-socket.jpg
+    Drain Plug Key                                drain-plug-key.jpg
+    Drive Shank                                   drive-shank.jpg
+    E-Torx Socket                                 e-torx-socket.jpg
+    Extension Bar                                 extension-bar.jpg
+    Hex (Allen) Bit Socket                        hex-allen-bit-socket.jpg
+    Impact Extension Bar                          impact-extension-bar.jpg
+    Impact Handle                                 impact-handle.jpg
+    Impact Hex (Allen) Bit Socket                 impact-hex-allen-bit-socket.jpg
+    Impact Socket                                 impact-socket.jpg
+    Impact Spline Socket                          impact-spline-socket.jpg
+    Impact Swivel Socket                          impact-swivel-socket.jpg
+    Impact Torx Bit Socket                        impact-torx-bit-socket.jpg
+    Impact Universal Joint                        impact-universal-joint.jpg
+    Insulated Socket                              insulated-socket.jpg
+    Ratchet Handle                                ratchet-handle.jpg
+    Socket                                        socket.jpg
+    Socket Accessory                              socket-accessory.jpg
+    Socket Adaptor                                socket-adaptor.jpg
+    Socket Handle & Bar                           socket-handle-bar.jpg
+    Socket Set                                    socket-set.jpg
+    Spline Socket                                 spline-socket.jpg
+    Torx Bit Socket                               torx-bit-socket.jpg
+    Universal Joint                               universal-joint.jpg
+
+  Tool Kits & Sets  (56 items)
+  --------------------------------------------------------------------
+    Accessory Kit                                 accessory-kit.jpg
+    Hand Tool Kit                                 hand-tool-kit.jpg
+
+  Torque Tools  (668 items)
+  --------------------------------------------------------------------
+    Digital Torque Wrench                         digital-torque-wrench.jpg
+    Torque Multiplier                             torque-multiplier.jpg
+    Torque Screwdriver                            torque-screwdriver.jpg
+    Torque Wrench                                 torque-wrench.jpg
+    Torque Wrench Adaptor                         torque-wrench-adaptor.jpg
+    Torque Wrench Interchangeable Head            torque-wrench-interchangeable-head.jpg
+
+  Wrenches & Spanners  (3457 items)
+  --------------------------------------------------------------------
+    Adjustable Open End Insert                    adjustable-open-end-insert.jpg
+    Adjustable Wrench                             adjustable-wrench.jpg
+    Chain Pipe Wrench                             chain-pipe-wrench.jpg
+    CNC Machine Spanner                           cnc-machine-spanner.jpg
+    Combination Spanner                           combination-spanner.jpg
+    Combination Spanner Set                       combination-spanner-set.jpg
+    Cross Rim Wrench                              cross-rim-wrench.jpg
+    Cross Wrench                                  cross-wrench.jpg
+    Crowfoot Spanner                              crowfoot-spanner.jpg
+    Deep Offset Ring Spanner                      deep-offset-ring-spanner.jpg
+    Double Open End Spanner                       double-open-end-spanner.jpg
+    Double Open End Spanner Set                   double-open-end-spanner-set.jpg
+    Flare Nut Spanner                             flare-nut-spanner.jpg
+    Hook / C Spanner                              hook-c-spanner.jpg
+    Insulated Open End Spanner                    insulated-open-end-spanner.jpg
+    L-Spanner                                     l-spanner.jpg
+    Pipe Wrench                                   pipe-wrench.jpg
+    Ratcheting Combination Spanner                ratcheting-combination-spanner.jpg
+    Ratcheting Flare Nut Spanner                  ratcheting-flare-nut-spanner.jpg
+    Ratcheting Ring Spanner                       ratcheting-ring-spanner.jpg
+    Ring Spanner                                  ring-spanner.jpg
+    Ring Spanner Set                              ring-spanner-set.jpg
+    S-Spanner                                     s-spanner.jpg
+    Self-Tightening Spanner                       self-tightening-spanner.jpg
+    Single Open End Spanner                       single-open-end-spanner.jpg
+    Single Ring Spanner                           single-ring-spanner.jpg
+    Slogging Open End Spanner                     slogging-open-end-spanner.jpg
+    Slogging Ring Spanner                         slogging-ring-spanner.jpg
+    Slogging Spanner                              slogging-spanner.jpg
+    Spanner Set                                   spanner-set.jpg
+    Special Purpose Wrench                        special-purpose-wrench.jpg
+    Strap Wrench                                  strap-wrench.jpg
+    T-Handle Socket Spanner                       t-handle-socket-spanner.jpg
+    Tubular Box Spanner                           tubular-box-spanner.jpg
+    Universal Spanner                             universal-spanner.jpg
+    Valve Spanner                                 valve-spanner.jpg
+    Wheel Spanner                                 wheel-spanner.jpg
+
+========================================================================
+CUTTING TOOLS & ABRASIVES
+========================================================================
+
+  Abrasives  (60 items)
+  --------------------------------------------------------------------
+    Abrasive Disc & Paper                         abrasive-disc-paper.jpg
+    Cutting & Grinding Wheel                      cutting-grinding-wheel.jpg
+
+  Blades & Consumables  (61 items)
+  --------------------------------------------------------------------
+    Fastener & Consumable                         fastener-consumable.jpg
+    Hacksaw Blade                                 hacksaw-blade.jpg
+    Nails & Nailer                                nails-nailer.jpg
+    Spare Blade                                   spare-blade.jpg
+    Utility Knife Blade                           utility-knife-blade.jpg
+
+  Drilling & Hole Making  (165 items)
+  --------------------------------------------------------------------
+    Hole Saw                                      hole-saw.jpg
+    HSS Drill Bit                                 hss-drill-bit.jpg
+    Masonry / SDS Drill Bit                       masonry-sds-drill-bit.jpg
+
+  Threading  (12 items)
+  --------------------------------------------------------------------
+    Tap & Die                                     tap-die.jpg
+
+========================================================================
+TOOL STORAGE & WORKSHOP
+========================================================================
+
+  Clamps & Vices  (46 items)
+  --------------------------------------------------------------------
+    Bench Vice                                    bench-vice.jpg
+    Pipe Vice                                     pipe-vice.jpg
+
+  Tool Storage  (177 items)
+  --------------------------------------------------------------------
+    Modular Storage                               modular-storage.jpg
+    Tool Bag                                      tool-bag.jpg
+    Tool Box                                      tool-box.jpg
+
+  Workshop Equipment  (69 items)
+  --------------------------------------------------------------------
+    Magnetic Tool                                 magnetic-tool.jpg
+    Work Light                                    work-light.jpg
+    Workbench                                     workbench.jpg
+
+========================================================================
+LUBRICATION & FLUID HANDLING
+========================================================================
+
+  Fluid Handling  (168 items)
+  --------------------------------------------------------------------
+    Coupler                                       coupler.jpg
+    Drum Accessory                                drum-accessory.jpg
+    Filter                                        filter.jpg
+    Flow Meter                                    flow-meter.jpg
+    Funnel                                        funnel.jpg
+    Hose & Nozzle                                 hose-nozzle.jpg
+    Hose Reel                                     hose-reel.jpg
+    Measuring Jug                                 measuring-jug.jpg
+    Oil Can & Jug                                 oil-can-jug.jpg
+    Oil Drain                                     oil-drain.jpg
+    Pump                                          pump.jpg
+
+  Greasing Equipment  (95 items)
+  --------------------------------------------------------------------
+    Grease Cartridge                              grease-cartridge.jpg
+    Grease Fitting                                grease-fitting.jpg
+    Grease Gun                                    grease-gun.jpg
+    Grease Pump                                   grease-pump.jpg
+    Grease Pump Kit                               grease-pump-kit.jpg
+
+========================================================================
+MEASURING & LAYOUT
+========================================================================
+
+  Levels & Layout  (126 items)
+  --------------------------------------------------------------------
+    Chalk Line                                    chalk-line.jpg
+    Detector                                      detector.jpg
+    Laser Distance Measurer                       laser-distance-measurer.jpg
+    Laser Level                                   laser-level.jpg
+    Measuring Tape                                measuring-tape.jpg
+    Measuring Wheel                               measuring-wheel.jpg
+    Plumb Bob                                     plumb-bob.jpg
+    Sliding Bevel                                 sliding-bevel.jpg
+    Spirit Level                                  spirit-level.jpg
+    Steel Rule                                    steel-rule.jpg
+    Try Square                                    try-square.jpg
+
+  Precision Measuring  (50 items)
+  --------------------------------------------------------------------
+    Caliper                                       caliper.jpg
+    Feeler Gauge                                  feeler-gauge.jpg
+    Inspection & Site Instrument                  inspection-site-instrument.jpg
+    Micrometer                                    micrometer.jpg
+    Spring Divider                                spring-divider.jpg
+    Vernier Caliper                               vernier-caliper.jpg
+
+========================================================================
+POWER TOOLS
+========================================================================
+
+  Pneumatic Tools  (28 items)
+  --------------------------------------------------------------------
+    Air Blow Gun                                  air-blow-gun.jpg
+    Air Impact Wrench                             air-impact-wrench.jpg
+    Pneumatic Tool                                pneumatic-tool.jpg
+
+  Power Tool Accessories  (21 items)
+  --------------------------------------------------------------------
+    Battery & Charger                             battery-charger.jpg
+    Power Tool Accessory                          power-tool-accessory.jpg
+
+  Power Tools  (121 items)
+  --------------------------------------------------------------------
+    Angle Grinder                                 angle-grinder.jpg
+    Cordless Ratchet                              cordless-ratchet.jpg
+    Cutting Machine                               cutting-machine.jpg
+    Demolition Breaker                            demolition-breaker.jpg
+    Drill                                         drill.jpg
+    Hammer Drill                                  hammer-drill.jpg
+    Impact Driver                                 impact-driver.jpg
+    Impact Wrench                                 impact-wrench.jpg
+    Jigsaw                                        jigsaw.jpg
+    Oscillating Multi-Tool                        oscillating-multi-tool.jpg
+    Power Tool                                    power-tool.jpg
+    Rotary Hammer                                 rotary-hammer.jpg
+
+========================================================================
+LIFTING & PULLING
+========================================================================
+
+  Jacks & Lifting  (73 items)
+  --------------------------------------------------------------------
+    Hydraulic Bottle Jack                         hydraulic-bottle-jack.jpg
+    Table Lifter                                  table-lifter.jpg
+
+  Pullers  (40 items)
+  --------------------------------------------------------------------
+    Bearing Puller                                bearing-puller.jpg
+    Gear Puller                                   gear-puller.jpg
+
+========================================================================
+MATERIAL HANDLING
+========================================================================
+
+  Trucks & Trolleys  (67 items)
+  --------------------------------------------------------------------
+    Hand Truck / Trolley                          hand-truck-trolley.jpg
+    Lifting Accessory                             lifting-accessory.jpg
