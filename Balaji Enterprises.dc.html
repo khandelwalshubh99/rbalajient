@@ -40,22 +40,22 @@
         </div>
       </a>
       <nav style="display:flex;align-items:center;gap:36px" class="be-nav-desktop">
-        <a href="#about" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#fff">About</a>
-        <a href="#services" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#fff">Services</a>
-        <a href="#portfolio" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#fff">Portfolio</a>
+        <a href="#about" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#F5883E">About</a>
+        <a href="#services" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#F5883E">Services</a>
+        <a href="#portfolio" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#F5883E">Portfolio</a>
         <button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;font-family:inherit;cursor:pointer;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</button>
-        <a href="#contact" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#fff">Contact</a>
-        <a href="tel:9302110344" style="background:#F5883E;color:#081B33;padding:10px 20px;border-radius:3px;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:0.02em" style-hover="background:#ffffff">Call Now</a>
+        <a href="#contact" style="color: #081B33D1; text-decoration: none; font-weight: 600; font-size: 15px" style-hover="color:#F5883E">Contact</a>
+        <a href="tel:9302110344" style="background:#F5883E;color:#081B33;padding:10px 20px;border-radius:3px;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:0.02em" style-hover="background:#E0762B">Call Now</a>
       </nav>
-      <button onClick="{{ toggleNav }}" style="display:none;background:none;border:1px solid rgba(255,255,255,0.3);border-radius:4px;width:44px;height:44px;color:#fff;font-size:20px;cursor:pointer" class="be-nav-toggle">☰</button>
+      <button onClick="{{ toggleNav }}" style="display:none;background:none;border:1px solid rgba(8,27,51,0.22);border-radius:4px;width:44px;height:44px;color:#081B33;font-size:20px;cursor:pointer" class="be-nav-toggle">☰</button>
     </div>
     <sc-if value="{{ navOpen }}">
-      <div style="padding:8px 32px 24px;display:flex;flex-direction:column;gap:18px;border-top:1px solid rgba(255,255,255,0.08)">
-        <a href="#about" onClick="{{ toggleNav }}" style="color:#fff;text-decoration:none;font-weight:700;font-size:16px">About</a>
-        <a href="#services" onClick="{{ toggleNav }}" style="color:#fff;text-decoration:none;font-weight:700;font-size:16px">Services</a>
-        <a href="#portfolio" onClick="{{ toggleNav }}" style="color:#fff;text-decoration:none;font-weight:700;font-size:16px">Portfolio</a>
-        <button onClick="{{ openProductsMobile }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:#fff;font-weight:700;font-size:16px">Products</button>
-        <a href="#contact" onClick="{{ toggleNav }}" style="color:#fff;text-decoration:none;font-weight:700;font-size:16px">Contact</a>
+      <div style="padding:8px 32px 24px;display:flex;flex-direction:column;gap:18px;border-top:1px solid rgba(8,27,51,0.1)">
+        <a href="#about" onClick="{{ toggleNav }}" style="color:#081B33;text-decoration:none;font-weight:700;font-size:16px">About</a>
+        <a href="#services" onClick="{{ toggleNav }}" style="color:#081B33;text-decoration:none;font-weight:700;font-size:16px">Services</a>
+        <a href="#portfolio" onClick="{{ toggleNav }}" style="color:#081B33;text-decoration:none;font-weight:700;font-size:16px">Portfolio</a>
+        <button onClick="{{ openProductsMobile }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:#081B33;font-weight:700;font-size:16px">Products</button>
+        <a href="#contact" onClick="{{ toggleNav }}" style="color:#081B33;text-decoration:none;font-weight:700;font-size:16px">Contact</a>
       </div>
     </sc-if>
   </header>

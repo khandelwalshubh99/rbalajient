@@ -225,8 +225,8 @@ sub('''      <div>
 for _old, _new in [
     ('<button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;font-family:inherit;cursor:pointer;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</button>',
      '<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>'),
-    ('<button onClick="{{ openProductsMobile }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:#fff;font-weight:700;font-size:16px">Products</button>',
-     '<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>'),
+    ('<button onClick="{{ openProductsMobile }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:#081B33;font-weight:700;font-size:16px">Products</button>',
+     '<a href="/products/" style="text-decoration:none;color:#081B33;font-weight:700;font-size:16px">Products</a>'),
     ('<button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;cursor:pointer;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</button>',
      '<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>'),
 ]:
@@ -383,9 +383,9 @@ for _o, _n in [
     ('<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>',
      '<a href="/industries/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Industries</a>'
      '<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>'),
-    ('<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>',
-     '<a href="/industries/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Industries</a>'
-     '<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>'),
+    ('<a href="/products/" style="text-decoration:none;color:#081B33;font-weight:700;font-size:16px">Products</a>',
+     '<a href="/industries/" style="text-decoration:none;color:#081B33;font-weight:700;font-size:16px">Industries</a>'
+     '<a href="/products/" style="text-decoration:none;color:#081B33;font-weight:700;font-size:16px">Products</a>'),
     ('<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>',
      '<a href="/industries/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Industries</a>'
      '<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>'),
