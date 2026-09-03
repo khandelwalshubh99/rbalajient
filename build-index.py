@@ -290,6 +290,33 @@ for _cls, _needle in [
         sys.exit("mobile: ." + _cls + " target already has a class attribute")
     src = src[:_tag + 4] + ' class="%s"' % _cls + src[_tag + 4:]
 
+# Tag the real content wrappers. Every one carries a max-width; the three
+# decorative absolutely-positioned layers do not - and a blanket
+# "section > div" padding rule reaches those too, which inflated the hero's
+# 2px accent line into a 90px orange band. .be-pad is the subset whose
+# vertical padding is big enough to be worth trimming on a phone, so the
+# header and the footer bar keep their tight spacing.
+_wrap = re.compile(r'<div([^>]*?)style="([^"]*?max-width:1\d{3}px[^"]*)"')
+
+
+def _tag_wrap(m):
+    attrs, style = m.group(1), m.group(2)
+    classes = ["be-wrap"]
+    _pad = re.search(r"padding:\s*(\d+)px", style)
+    if _pad and int(_pad.group(1)) >= 56:
+        classes.append("be-pad")
+    joined = " ".join(classes)
+    if 'class="' in attrs:
+        attrs = attrs.replace('class="', 'class="%s ' % joined, 1)
+    else:
+        attrs = ' class="%s"' % joined + attrs
+    return '<div%sstyle="%s"' % (attrs, style)
+
+
+src, _n = _wrap.subn(_tag_wrap, src)
+if _n != 12:
+    sys.exit("mobile: expected 12 content wrappers, tagged %d" % _n)
+
 sub("</style>", """
     /* ---------- mobile. Nothing here applies above 860px. ---------- */
     @media (max-width: 860px) {
@@ -299,7 +326,7 @@ sub("</style>", """
       .be-about, .be-contact-grid { grid-template-columns: 1fr !important; }
       .be-footer { grid-template-columns: 1fr 1fr !important; }
       .be-brands { grid-template-columns: repeat(4, 1fr) !important; }
-      section > div, footer > div { padding-left: 20px !important; padding-right: 20px !important; }
+      .be-wrap { padding-left: 20px !important; padding-right: 20px !important; }
       .be-contact-grid { gap: 40px !important; }
     }
     @media (max-width: 560px) {
@@ -307,7 +334,7 @@ sub("</style>", """
       .be-services, .be-footer { grid-template-columns: 1fr !important; }
       .be-brands { grid-template-columns: repeat(3, 1fr) !important; }
       /* the desktop vertical rhythm is dead scrolling on a phone */
-      section > div { padding-top: 52px !important; padding-bottom: 38px !important; }
+      .be-pad { padding-top: 52px !important; padding-bottom: 38px !important; }
     }
   </style>""", "mobile stylesheet")
 

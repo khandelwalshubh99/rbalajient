@@ -132,7 +132,7 @@
       .be-about, .be-contact-grid { grid-template-columns: 1fr !important; }
       .be-footer { grid-template-columns: 1fr 1fr !important; }
       .be-brands { grid-template-columns: repeat(4, 1fr) !important; }
-      section > div, footer > div { padding-left: 20px !important; padding-right: 20px !important; }
+      .be-wrap { padding-left: 20px !important; padding-right: 20px !important; }
       .be-contact-grid { gap: 40px !important; }
     }
     @media (max-width: 560px) {
@@ -140,7 +140,7 @@
       .be-services, .be-footer { grid-template-columns: 1fr !important; }
       .be-brands { grid-template-columns: repeat(3, 1fr) !important; }
       /* the desktop vertical rhythm is dead scrolling on a phone */
-      section > div { padding-top: 52px !important; padding-bottom: 38px !important; }
+      .be-pad { padding-top: 52px !important; padding-bottom: 38px !important; }
     }
   </style>
   <script src="./catalogue.js" defer></script>
@@ -150,7 +150,7 @@
 
   <!-- HEADER -->
   <header style="position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); background-color: #FFFFFFF5">
-    <div style="max-width:1280px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <div class="be-wrap" style="max-width:1280px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
       <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none">
         <img src="assets/logo.png" alt="Balaji Enterprises" style="height:44px;width:44px;object-fit:contain">
         <div style="display:flex;flex-direction:column;line-height:1.05">
@@ -182,7 +182,7 @@
   <sc-if value="{{ showHome }}" hint-placeholder-val="{{ true }}">
   <!-- HERO -->
   <section id="top" data-screen-label="Hero" style="position:relative;background:#081B33;overflow:hidden">
-    <div style="max-width:1280px;margin:0 auto;padding:88px 32px 88px;position:relative;z-index:2">
+    <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:88px 32px 88px;position:relative;z-index:2">
       <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(245,136,62,0.12);border:1px solid rgba(245,136,62,0.35);padding:8px 16px;border-radius:2px;margin-bottom:28px">
         <span style="width:7px;height:7px;background:#F5883E;border-radius:50%"></span>
         <span style="color:#F5883E;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase">Authorised Distributor · Est. 1996</span>
@@ -209,7 +209,7 @@
 
   <!-- STATS STRIP -->
   <section style="background:#FBF8F2;border-bottom:1px solid #E7E2D6">
-    <div class="be-stats" style="max-width:1280px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
+    <div class="be-wrap be-pad be-stats" style="max-width:1280px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
       <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
         <div style="border-left:2px solid #F5883E;padding-left:18px">
           <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">{{ s.value }}</div>
@@ -222,7 +222,7 @@
 
   <!-- ABOUT -->
   <section id="about" data-screen-label="About" style="background:#FBF8F2">
-    <div style="max-width:1280px;margin:0 auto;padding:100px 32px">
+    <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:100px 32px">
       <div>
         <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">About Balaji Enterprises</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#081B33;margin:14px 0 24px">A Trusted Supply Partner,<br>Not Just a Vendor.</h2>
@@ -246,7 +246,7 @@
   <!-- SERVICES / INDUSTRIES -->
   <section id="services" data-screen-label="Services" style="background:#081B33;position:relative;overflow:hidden">
     <div style="position:absolute;top:0;right:0;width:420px;height:420px;background:radial-gradient(circle,rgba(245,136,62,0.16),transparent 70%)"></div>
-    <div style="max-width:1280px;margin:0 auto;padding:100px 32px;position:relative;z-index:1">
+    <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:100px 32px;position:relative;z-index:1">
       <div style="max-width:640px;margin-bottom:56px">
         <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">What We Serve</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#fff;margin:14px 0 0">Industrial Segments We Cater To</h2>
@@ -270,7 +270,7 @@
 
   <!-- PORTFOLIO: PRODUCT CATEGORIES -->
   <section id="portfolio" data-screen-label="Portfolio" style="background:#FBF8F2">
-    <div style="max-width:1280px;margin:0 auto;padding:100px 32px 60px">
+    <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:100px 32px 60px">
       <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
         <div style="max-width:640px">
           <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Our Portfolio</span>
@@ -292,7 +292,7 @@
 
   <!-- BRANDS MARQUEE -->
   <section data-screen-label="Brands" style="background:#FBF8F2;border-top:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:64px 0">
-    <div style="max-width:1280px;margin:0 auto;padding:0 32px 40px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+    <div class="be-wrap" style="max-width:1280px;margin:0 auto;padding:0 32px 40px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
       <div>
         <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">DEALERSHIPS</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(28px,3vw,38px);color:#081B33;margin:10px 0 0">Brands We Represent</h2>
@@ -307,7 +307,7 @@
       </div>
     </div>
 
-    <div style="max-width:1280px;margin:40px auto 0;padding:0 32px">
+    <div class="be-wrap" style="max-width:1280px;margin:40px auto 0;padding:0 32px">
       <div class="be-brands" style="display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
         <sc-for list="{{ brandLogos }}" as="brand" hint-placeholder-count="25">
           <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
@@ -321,7 +321,7 @@
   <!-- CTA BANNER -->
   <section style="background:#F5883E;position:relative;overflow:hidden">
     <div style="position:absolute;inset:0;opacity:0.12;background-image:repeating-linear-gradient(135deg,#081B33 0,#081B33 2px,transparent 2px,transparent 30px)"></div>
-    <div style="max-width:1280px;margin:0 auto;padding:64px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;position:relative;z-index:1">
+    <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:64px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;position:relative;z-index:1">
       <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);color:#081B33;margin:0;max-width:640px">Need bulk pricing or a custom procurement list?</h3>
       <a href="#contact" style="background:#081B33;color:#fff;padding:18px 34px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;flex-shrink:0" style-hover="background:#0F2E52">Talk to Our Team</a>
     </div>
@@ -329,7 +329,7 @@
 
   <!-- CONTACT -->
   <section id="contact" data-screen-label="Contact" style="background:#FBF8F2">
-    <div class="be-contact-grid" style="max-width:1280px;margin:0 auto;padding:100px 32px;display:grid;grid-template-columns:{{ contactGridCols }};gap:64px">
+    <div class="be-wrap be-pad be-contact-grid" style="max-width:1280px;margin:0 auto;padding:100px 32px;display:grid;grid-template-columns:{{ contactGridCols }};gap:64px">
       <div style="max-width:520px">
         <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Get In Touch</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#081B33;margin:14px 0 32px">Let's Talk Supply.</h2>
@@ -391,7 +391,7 @@
 
   <!-- FOOTER -->
   <footer style="background:#081B33;border-top:1px solid rgba(255,255,255,0.08)">
-    <div class="be-footer" style="max-width:1280px;margin:0 auto;padding:56px 32px 32px;display:grid;grid-template-columns:1.3fr 0.8fr 1fr 1fr;gap:36px">
+    <div class="be-wrap be-pad be-footer" style="max-width:1280px;margin:0 auto;padding:56px 32px 32px;display:grid;grid-template-columns:1.3fr 0.8fr 1fr 1fr;gap:36px">
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
           <img src="assets/logo.png" alt="Balaji Enterprises" style="height:38px;width:38px;object-fit:contain">
@@ -425,7 +425,7 @@
         </div>
       </div>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:22px 32px;max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div class="be-wrap" style="border-top:1px solid rgba(255,255,255,0.08);padding:22px 32px;max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
       <span style="font-size:13px;color:rgba(255,255,255,0.4)">© 2026 Balaji Enterprises. All rights reserved.</span>
       <span style="font-size:13px;color:rgba(255,255,255,0.4)">rbalajient.com</span>
     </div>
