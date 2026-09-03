@@ -338,5 +338,59 @@ sub("</style>", """
     }
   </style>""", "mobile stylesheet")
 
+# --- 10. industry segment pages ----------------------------------------------
+# /industries/ is generated separately (build/build.js) and is the main internal
+# linking surface into /products/. Without this step the eight segment pages are
+# live but unreachable from the home page: the segment grid is six hard-coded
+# <div>s with no links and the wrong six segments.
+
+sub('''    const industryList = [
+      { name: "Manufacturing", desc: "Precision hand & power tools for production lines and workshops." },
+      { name: "Construction", desc: "Rugged equipment built for on-site demands and heavy use." },
+      { name: "Automotive", desc: "Torque wrenches, garage tools and service equipment." },
+      { name: "Fabrication", desc: "Cutting, grinding and holding tools for metalwork." },
+      { name: "Maintenance & MRO", desc: "Ready-stock consumables to keep operations running." },
+      { name: "Dealers & Retail", desc: "Bulk supply and channel support for resellers." },
+    ]''',
+    '''    const industryList = [
+      { name: "Automotive & Auto Components", desc: "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers.", href: "/industries/automotive-auto-components/" },
+      { name: "Pharmaceutical & Life Sciences", desc: "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites.", href: "/industries/pharmaceutical-life-sciences/" },
+      { name: "Food, Beverage & Agro", desc: "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants.", href: "/industries/food-beverage-agro-processing/" },
+      { name: "Engineering & Fabrication", desc: "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter.", href: "/industries/engineering-fabrication/" },
+      { name: "Textiles & Garments", desc: "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing.", href: "/industries/textiles-garments/" },
+      { name: "Power & Electrical", desc: "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets.", href: "/industries/power-utilities-electrical/" },
+      { name: "Construction & Infrastructure", desc: "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers.", href: "/industries/construction-infrastructure/" },
+      { name: "Plastics, Packaging & Printing", desc: "Mould change kits, tool room precision and blade continuity for moulders, converters and printers.", href: "/industries/plastics-packaging-printing/" },
+    ]''',
+    "industry list")
+
+# segment card: <div> -> <a href>
+sub('''          <div style="background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">{{ ind.n }}</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">{{ ind.name }}</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">{{ ind.desc }}</div>
+          </div>''',
+    '''          <a href="{{ ind.href }}" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">{{ ind.n }}</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">{{ ind.name }}</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">{{ ind.desc }}</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>''',
+    "segment card")
+
+# nav: an Industries entry beside Products, in all three places
+for _o, _n in [
+    ('<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>',
+     '<a href="/industries/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Industries</a>'
+     '<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>'),
+    ('<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>',
+     '<a href="/industries/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Industries</a>'
+     '<a href="/products/" style="text-decoration:none;color:#fff;font-weight:700;font-size:16px">Products</a>'),
+    ('<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>',
+     '<a href="/industries/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Industries</a>'
+     '<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>'),
+]:
+    sub(_o, _n, "Industries nav entry")
+
 out.write_text(src)
 print("wrote", out, len(src), "bytes")

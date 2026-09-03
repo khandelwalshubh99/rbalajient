@@ -518,6 +518,21 @@ def main():
     write(OUT / "index.html", hub_page(cats, counts))
     urls.append("/products/")
 
+    # /industries/ pages are generated separately (build/build.js). The sitemap
+    # is rebuilt from scratch here, so they must be listed or they vanish.
+    urls.append("/industries/")
+    for _seg in [
+        "automotive-auto-components",
+        "pharmaceutical-life-sciences",
+        "food-beverage-agro-processing",
+        "engineering-fabrication",
+        "textiles-garments",
+        "power-utilities-electrical",
+        "construction-infrastructure",
+        "plastics-packaging-printing"
+    ]:
+        urls.append(f"/industries/{_seg}/")
+
     seen, ordered = set(), []
     for u in urls:
         if u not in seen:
