@@ -107,7 +107,7 @@
     }
   ]
 }</script>
-<script src="./support.js"></script>
+<script src="./support.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -115,7 +115,9 @@
 <helmet>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"></noscript>
   <style>
     html { scroll-behavior: smooth; }
     body { margin: 0; font-family: 'Manrope', sans-serif; background: #FBF8F2; }
@@ -143,7 +145,6 @@
       .be-pad { padding-top: 52px !important; padding-bottom: 38px !important; }
     }
   </style>
-  <script src="./catalogue.js" defer></script>
 </helmet>
 
 <div style="width:100%;overflow-x:hidden;background:#FBF8F2;color:#0B1F33">
@@ -439,16 +440,7 @@
 <script src="/assets/email-protect.js" defer></script>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {}, &quot;brandMarquee&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Behavior&quot;}, &quot;showQuoteForm&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Behavior&quot;}}">
 class Component extends DCLogic {
-  state = { navOpen: false, page: "home", activeSub: null, brandFilter: [], sort: "name", expanded: [], query: "", ready: false };
-
-  componentDidMount() {
-    if (window.BE_CATALOGUE) { this.setState({ ready: true }); return; }
-    this.catTimer = setInterval(() => {
-      if (window.BE_CATALOGUE) { clearInterval(this.catTimer); this.setState({ ready: true }); }
-    }, 120);
-  }
-
-  componentWillUnmount() { clearInterval(this.catTimer); }
+  state = { navOpen: false, page: "home", activeSub: null, brandFilter: [], sort: "name", expanded: [], query: "" };
 
   photoCache = {};
 

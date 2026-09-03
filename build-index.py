@@ -117,7 +117,7 @@ sub(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<script src="./support.js" defer></script>
 </head>''',
 f'''<html lang="en-IN">
 <head>
@@ -142,7 +142,7 @@ f'''<html lang="en-IN">
 <meta name="twitter:description" content="{DESC}">
 <meta name="twitter:image" content="{SITE}assets/logo.png">
 <script type="application/ld+json">{JSONLD}</script>
-<script src="./support.js"></script>
+<script src="./support.js" defer></script>
 </head>''', "head block")
 
 # --- 2. drop the image-slot authoring import -----------------------------
@@ -181,9 +181,6 @@ src = re.sub(r'\n\s*slot(?:Id|Hint): [^\n]*,(?=\n)', '', src)
 removed = len(re.findall(r'slot(?:Id|Hint):', before)) - len(re.findall(r'slot(?:Id|Hint):', src))
 if removed != 4:
     sys.exit("expected to strip 4 slot props, stripped %d" % removed)
-
-sub('<script src="./catalogue.js"></script>',
-    '<script src="./catalogue.js" defer></script>', "catalogue.js defer")
 
 # --- 6. crawlable catalogue links -----------------------------------------
 # The app reaches the catalogue through onClick state changes, so the static
