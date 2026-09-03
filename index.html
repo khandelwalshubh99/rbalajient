@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Balaji Enterprises — Industrial Tools &amp; MRO Supplier in Indore</title>
-<meta name="description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore, Madhya Pradesh. 12,000+ items across 25 leading brands, ready stock since 1996.">
+<title>Balaji Enterprises — Industrial Tools &amp; MRO Supplier, Indore</title>
+<meta name="description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore. 12,000+ items, 25 brands, since 1996.">
 <link rel="canonical" href="https://www.rbalajient.com/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#081B33">
@@ -13,13 +13,13 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Balaji Enterprises">
 <meta property="og:locale" content="en_IN">
-<meta property="og:title" content="Balaji Enterprises — Industrial Tools &amp; MRO Supplier in Indore">
-<meta property="og:description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore, Madhya Pradesh. 12,000+ items across 25 leading brands, ready stock since 1996.">
+<meta property="og:title" content="Balaji Enterprises — Industrial Tools &amp; MRO Supplier, Indore">
+<meta property="og:description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore. 12,000+ items, 25 brands, since 1996.">
 <meta property="og:image" content="https://www.rbalajient.com/assets/logo.png">
 <meta property="og:url" content="https://www.rbalajient.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Balaji Enterprises — Industrial Tools &amp; MRO Supplier in Indore">
-<meta name="twitter:description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore, Madhya Pradesh. 12,000+ items across 25 leading brands, ready stock since 1996.">
+<meta name="twitter:title" content="Balaji Enterprises — Industrial Tools &amp; MRO Supplier, Indore">
+<meta name="twitter:description" content="Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment in Indore. 12,000+ items, 25 brands, since 1996.">
 <meta name="twitter:image" content="https://www.rbalajient.com/assets/logo.png">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -368,175 +368,6 @@
       </sc-if>
     </div>
   </section>
-  </sc-if>
-
-  <!-- PRODUCTS PAGE -->
-  <sc-if value="{{ showProducts }}">
-  <div data-screen-label="Products">
-    <section style="background:#081B33;position:relative;overflow:hidden">
-      <div style="position:absolute;top:0;right:0;width:420px;height:420px;background:radial-gradient(circle,rgba(245,136,62,0.16),transparent 70%)"></div>
-      <div style="max-width:1280px;margin:0 auto;padding:56px 32px 64px;position:relative;z-index:1">
-        <button onClick="{{ goHome }}" style="background:none;border:1px solid rgba(255,255,255,0.24);border-radius:3px;padding:9px 16px;color:rgba(255,255,255,0.8);font-family:inherit;font-weight:700;font-size:13px;cursor:pointer;margin-bottom:32px" style-hover="border-color:#F5883E;color:#F5883E">← Back to home</button>
-        <span style="display:block;color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Product Catalogue</span>
-        <h1 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,5.4vw,72px);line-height:1;color:#fff;margin:14px 0 24px">EVERY TOOL,<br><span style="color:#F5883E">EVERY SPECIFICATION.</span></h1>
-        <p style="font-size:17px;line-height:1.6;color:rgba(255,255,255,0.7);max-width:660px;margin:0">Browse by category. Each product lists the brands we stock for it, with sizes and specifications set out brand by brand so procurement teams can compare and order directly.</p>
-      </div>
-    </section>
-
-    <div style="background:#fff;border-bottom:1px solid #E7E2D6">
-      <div style="max-width:1400px;margin:0 auto;padding:12px 32px;display:flex;align-items:center;gap:10px;font-size:12.5px;color:#5C6B7C;font-weight:600">
-        <button onClick="{{ goHome }}" style="background:none;border:none;padding:0;font-family:inherit;font-size:12.5px;font-weight:600;color:#5C6B7C;cursor:pointer" style-hover="color:#F5883E">Home</button>
-        <span>/</span>
-        <span>Products</span>
-        <span>/</span>
-        <span style="color:#081B33;font-weight:700">{{ activeCategoryName }}</span>
-      </div>
-    </div>
-
-    <div style="max-width:1400px;margin:0 auto;padding:36px 32px 80px;display:grid;grid-template-columns:272px 1fr;gap:40px;align-items:start">
-
-      <aside style="position:sticky;top:100px;display:flex;flex-direction:column;gap:26px">
-        <input type="search" placeholder="Search products…" value="{{ query }}" onChange="{{ setQuery }}" style="width:100%;border:1px solid #E7E2D6;border-radius:3px;background:#fff;padding:13px 14px;font-family:inherit;font-size:14px;font-weight:600;color:#081B33">
-        <div style="border:1px solid #E7E2D6;border-radius:4px;background:#fff;overflow:hidden">
-          <div style="padding:13px 18px;background:#081B33;font-weight:800;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#fff">Categories</div>
-          <div style="max-height:460px;overflow-y:auto">
-            <sc-for list="{{ productCategories }}" as="pc" hint-placeholder-count="20">
-              <button onClick="{{ pc.select }}" style="display:flex;width:100%;align-items:center;justify-content:space-between;gap:8px;text-align:left;background:{{ pc.rowBg }};border:none;border-bottom:1px solid #F0EBE0;padding:10px 18px;font-family:inherit;font-size:13.5px;font-weight:{{ pc.rowWeight }};color:{{ pc.rowColor }};cursor:pointer" style-hover="background:#FBF8F2">
-                <span style="display:flex;flex-direction:column;gap:2px">
-                  <span style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9AA6B2">{{ pc.group }}</span>
-                  <span>{{ pc.name }}</span>
-                </span>
-                <span style="font-size:11.5px;color:#9AA6B2;font-weight:600">{{ pc.count }}</span>
-              </button>
-            </sc-for>
-          </div>
-        </div>
-
-        <sc-if value="{{ hasBrandFilters }}">
-          <div style="border:1px solid #E7E2D6;border-radius:4px;background:#fff;overflow:hidden">
-            <div style="padding:13px 18px;background:#FBF8F2;border-bottom:1px solid #E7E2D6;font-weight:800;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5C6B7C">Brand</div>
-            <div style="padding:14px 18px;display:flex;flex-direction:column;gap:11px">
-              <sc-for list="{{ brandFilters }}" as="bf" hint-placeholder-count="4">
-                <label style="display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;color:#0B1F33;cursor:pointer">
-                  <input type="checkbox" checked="{{ bf.active }}" onChange="{{ bf.toggle }}" style="width:15px;height:15px;accent-color:#F5883E;cursor:pointer">
-                  <span>{{ bf.name }}</span>
-                </label>
-              </sc-for>
-            </div>
-            <sc-if value="{{ filtersActive }}">
-              <button onClick="{{ clearFilters }}" style="width:100%;background:none;border:none;border-top:1px solid #F0EBE0;padding:11px;font-family:inherit;font-size:12.5px;font-weight:700;color:#F5883E;cursor:pointer" style-hover="background:#FBF8F2">Clear filters</button>
-            </sc-if>
-          </div>
-        </sc-if>
-
-        <div style="border:1px solid #E7E2D6;border-radius:4px;background:#081B33;padding:22px">
-          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:19px;color:#fff;line-height:1.15;margin-bottom:8px">Can't find a size?</div>
-          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.6);margin:0 0 16px">We source to specification across all brands we represent.</p>
-          <button onClick="{{ goContact }}" style="width:100%;background:#F5883E;color:#081B33;border:none;padding:12px;border-radius:3px;font-family:inherit;font-weight:800;font-size:13.5px;cursor:pointer" style-hover="background:#fff">Request a Quote</button>
-        </div>
-      </aside>
-
-      <div>
-        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:2px solid #081B33;padding-bottom:16px;margin-bottom:28px">
-          <div>
-            <span style="display:block;color:#F5883E;font-weight:800;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px">{{ activeGroupName }}</span>
-            <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(28px,3.2vw,42px);line-height:1;color:#081B33;margin:0 0 8px">{{ activeCategoryName }}</h2>
-            <span style="font-size:13.5px;color:#5C6B7C;font-weight:600">{{ resultSummary }}</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px">
-            <span style="font-size:12.5px;font-weight:700;color:#5C6B7C;letter-spacing:0.04em;text-transform:uppercase">Sort</span>
-            <select value="{{ sort }}" onChange="{{ setSort }}" style="border:1px solid #E7E2D6;border-radius:3px;background:#fff;padding:9px 12px;font-family:inherit;font-size:13.5px;font-weight:600;color:#081B33;cursor:pointer">
-              <option value="name">Product name</option>
-              <option value="brands">Most brands stocked</option>
-            </select>
-          </div>
-        </div>
-
-        <div style="display:flex;flex-direction:column;gap:22px">
-          <sc-for list="{{ visibleProducts }}" as="prod" hint-placeholder-count="3">
-            <div style="border:1px solid #E7E2D6;border-radius:4px;background:#fff;overflow:hidden">
-              <div style="display:grid;grid-template-columns:200px 1fr;gap:26px;padding:24px">
-                <div style="position:relative;height:170px;border:1px solid #F0EBE0;border-radius:3px;overflow:hidden;background:#FBF8F2">
-                  <sc-if value="{{ prod.hasPhoto }}">
-                    <div role="img" aria-label="{{ prod.name }}" style="{{ prod.photoStyle }}"></div>
-                  </sc-if>
-                  <sc-if value="{{ prod.noPhoto }}">
-                    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:14px;text-align:center;background:#FBF8F2">
-                      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#CBC1AE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg>
-                      <span style="font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:#A99F8D">Photo on request</span>
-                    </div>
-                  </sc-if>
-                </div>
-                <div>
-                  <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:25px;color:#081B33;margin:0 0 8px;line-height:1.08">{{ prod.name }}</h3>
-                  <p style="font-size:13.5px;line-height:1.6;color:#5C6B7C;margin:0 0 14px;max-width:620px">{{ prod.note }}</p>
-                  <div style="font-size:12.5px;font-weight:700;color:#081B33;letter-spacing:0.03em;margin-bottom:14px">{{ prod.meta }}</div>
-                  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px">
-                    <sc-for list="{{ prod.brandNames }}" as="bn" hint-placeholder-count="3">
-                      <span style="border:1px solid #E7E2D6;background:#FBF8F2;color:#081B33;font-weight:700;font-size:11.5px;letter-spacing:0.04em;padding:6px 11px;border-radius:2px">{{ bn }}</span>
-                    </sc-for>
-                  </div>
-                  <div style="display:flex;gap:12px;flex-wrap:wrap">
-                    <button onClick="{{ prod.toggle }}" style="background:#081B33;color:#fff;border:none;padding:11px 20px;border-radius:3px;font-family:inherit;font-weight:800;font-size:13px;cursor:pointer" style-hover="background:#0F2E52">{{ prod.toggleLabel }}</button>
-                    <button onClick="{{ goContact }}" style="background:none;color:#081B33;border:1px solid #CFC7B6;padding:11px 20px;border-radius:3px;font-family:inherit;font-weight:800;font-size:13px;cursor:pointer" style-hover="border-color:#F5883E;color:#F5883E">Request quote</button>
-                  </div>
-                </div>
-              </div>
-
-              <sc-if value="{{ prod.expanded }}">
-                <div style="border-top:1px solid #E7E2D6;background:#FBF8F2;padding:24px;display:flex;flex-direction:column;gap:22px">
-                  <sc-for list="{{ prod.brands }}" as="br" hint-placeholder-count="2">
-                    <div style="border:1px solid #E7E2D6;border-radius:4px;overflow:hidden;background:#fff">
-                      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;background:#081B33">
-                        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:17px;color:#fff;letter-spacing:0.02em">{{ br.name }}</span>
-                        <span style="font-size:11px;font-weight:700;color:#F5883E;letter-spacing:0.08em;text-transform:uppercase">{{ br.tag }}</span>
-                      </div>
-                      <div style="overflow-x:auto;max-width:100%">
-                        <table style="border-collapse:separate;border-spacing:0;font-size:13.5px;min-width:100%">
-                          <thead>
-                            <tr>
-                              <sc-for list="{{ br.cols }}" as="col" hint-placeholder-count="4">
-                                <th style="{{ col.style }}">{{ col.label }}</th>
-                              </sc-for>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <sc-for list="{{ br.rows }}" as="row" hint-placeholder-count="4">
-                              <tr>
-                                <sc-for list="{{ row }}" as="cell" hint-placeholder-count="4">
-                                  <td style="{{ cell.style }}">{{ cell.v }}</td>
-                                </sc-for>
-                              </tr>
-                            </sc-for>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </sc-for>
-                </div>
-              </sc-if>
-            </div>
-          </sc-for>
-
-          <sc-if value="{{ noResults }}">
-            <div style="border:1px dashed #CFC7B6;border-radius:4px;padding:40px;background:#fff">
-              <div style="font-weight:800;font-size:16px;color:#081B33;margin-bottom:8px">{{ emptyTitle }}</div>
-              <p style="font-size:14px;line-height:1.6;color:#5C6B7C;margin:0 0 20px;max-width:580px">We stock this category across multiple brands. Send us your requirement and we will share the current brand-wise size and specification list with pricing.</p>
-              <button onClick="{{ goContact }}" style="background:#F5883E;color:#081B33;border:none;padding:13px 24px;border-radius:3px;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer" style-hover="background:#081B33;color:#fff">Request this list</button>
-            </div>
-          </sc-if>
-        </div>
-      </div>
-    </div>
-
-    <section style="background:#F5883E;position:relative;overflow:hidden">
-      <div style="position:absolute;inset:0;opacity:0.12;background-image:repeating-linear-gradient(135deg,#081B33 0,#081B33 2px,transparent 2px,transparent 30px)"></div>
-      <div style="max-width:1280px;margin:0 auto;padding:64px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;position:relative;z-index:1">
-        <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);color:#081B33;margin:0;max-width:640px">Found what you need? Send us the list and sizes.</h3>
-        <button onClick="{{ goContact }}" style="background:#081B33;color:#fff;border:none;padding:18px 34px;border-radius:3px;font-family:inherit;font-weight:800;font-size:15px;cursor:pointer;flex-shrink:0" style-hover="background:#0F2E52">Request a Quote</button>
-      </div>
-    </section>
-  </div>
   </sc-if>
 
   <!-- FOOTER -->

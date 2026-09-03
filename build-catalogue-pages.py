@@ -73,6 +73,21 @@ def num(n):
     return f"{n:,}"
 
 
+# Google truncates titles near 60 chars and snippets near 155. Rather than a
+# single template that overflows on long product names, try progressively
+# shorter forms and take the first that fits, so short names keep the local
+# keyword and only the longest lose it.
+TITLE_CAP = 60
+DESC_CAP = 155
+
+
+def fit(candidates, cap):
+    for c in candidates:
+        if len(c) <= cap:
+            return c
+    return candidates[-1]
+
+
 def photo_for(name):
     for ext in ("jpg", "png"):
         if (PHOTOS / f"{slug(name)}.{ext}").exists():
@@ -216,10 +231,15 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
     brands = sorted({b["name"] for _, bs in groups for b in bs})
     n_rows = sum(len(b["rows"]) for _, bs in groups for b in bs)
 
-    meta_desc = (f"{name} — {num(n_rows)} size{'s' if n_rows != 1 else ''} and part "
-                 f"numbers from {', '.join(brands[:4])}"
-                 f"{' and more' if len(brands) > 4 else ''}, with specifications "
-                 f"and list prices. Ready stock from Balaji Enterprises, Indore.")
+    unit = "size" if n_rows == 1 else "sizes"
+    meta_desc = fit(
+        [f"{name}: {num(n_rows)} {unit} and part numbers from "
+         f"{', '.join(brands[:k])}{' and more' if k < len(brands) else ''}, with "
+         f"specifications and list prices. Ready stock in Indore."
+         for k in range(len(brands), 0, -1)]
+        + [f"{name}: {num(n_rows)} {unit} and part numbers with specifications "
+           f"and list prices. Ready stock from Balaji Enterprises, Indore."],
+        DESC_CAP)
 
     crumb_nav, crumb_ld = crumbs([
         ("Home", "/"), ("Products", "/products/"),
@@ -277,8 +297,15 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
             if photo else
             '<div class="prod-photo no-photo"><span>Photo on request</span></div>')
 
-    return head(f"{name} — {', '.join(brands[:3])} | Balaji Enterprises Indore",
-                meta_desc, SITE + url, ld(prod_ld, crumb_ld)) + f"""
+    title = fit([
+        f"{name} — {num(n_rows)} Sizes & Prices | Balaji Enterprises Indore",
+        f"{name} — {num(n_rows)} Sizes & Prices | Balaji Enterprises",
+        f"{name} — {num(n_rows)} Sizes | Balaji Enterprises",
+        f"{name} | Balaji Enterprises Indore",
+        f"{name} | Balaji Enterprises",
+    ], TITLE_CAP)
+
+    return head(title, meta_desc, SITE + url, ld(prod_ld, crumb_ld)) + f"""
 <main id="main">
   <div class="wrap">
     {crumb_nav}
@@ -340,12 +367,23 @@ def category_page(cat, types_by_sub, url, cats, card_brands):
                "mainEntity": {"@type": "ItemList", "numberOfItems": n_types,
                               "itemListElement": listed}}
 
-    desc = (f'{cat["name"]} from Balaji Enterprises, Indore — {n_types} product '
-            f"types, {num(n_items)} listed sizes and part numbers with specifications "
-            "and list prices. Authorised distributor, ready stock since 1996.")
+    desc = fit([
+        f'{cat["name"]} in Indore: {n_types} product types, {num(n_items)} listed '
+        "sizes and part numbers with specifications and list prices. Authorised "
+        "distributor, ready stock since 1996.",
+        f'{cat["name"]} in Indore: {n_types} product types, {num(n_items)} sizes '
+        "and part numbers with specs and list prices. Authorised distributor since 1996.",
+        f'{cat["name"]} in Indore: {n_types} product types, {num(n_items)} sizes '
+        "with specs and list prices. Balaji Enterprises, since 1996.",
+    ], DESC_CAP)
 
-    return head(f'{cat["name"]} Supplier in Indore | Balaji Enterprises',
-                desc, SITE + url, ld(page_ld, crumb_ld)) + f"""
+    title = fit([
+        f'{cat["name"]} Supplier in Indore | Balaji Enterprises',
+        f'{cat["name"]} in Indore | Balaji Enterprises',
+        f'{cat["name"]} | Balaji Enterprises',
+    ], TITLE_CAP)
+
+    return head(title, desc, SITE + url, ld(page_ld, crumb_ld)) + f"""
 <main id="main">
   <div class="wrap">
     {crumb_nav}
@@ -384,11 +422,13 @@ def hub_page(cats, counts, url="/products/"):
                "mainEntity": {"@type": "ItemList", "numberOfItems": len(cats),
                               "itemListElement": listed}}
 
-    return head("Product Catalogue — Industrial Tools & MRO Supplies | Balaji Enterprises",
-                f"Browse {num(total)} industrial tool and MRO listings across {len(cats)} "
-                "categories — hand tools, power tools, measuring instruments, "
-                "abrasives and more, with sizes, part numbers and list prices from "
-                "Balaji Enterprises, Indore.",
+    return head("Tool & MRO Catalogue | Balaji Enterprises Indore",
+                fit([f"Browse {num(total)} tool and MRO listings across {len(cats)} "
+                     "categories — hand tools, power tools, measuring instruments and "
+                     "abrasives — with sizes, part numbers and list prices. Indore.",
+                     f"Browse {num(total)} tool and MRO listings across {len(cats)} "
+                     "categories, with sizes, part numbers and list prices. "
+                     "Balaji Enterprises, Indore."], DESC_CAP),
                 SITE + url, ld(page_ld, crumb_ld)) + f"""
 <main id="main">
   <div class="wrap">

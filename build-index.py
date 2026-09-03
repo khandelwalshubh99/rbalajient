@@ -20,10 +20,10 @@ def sub(old, new, label):
 
 # --- 1. head -------------------------------------------------------------
 SITE  = "https://www.rbalajient.com/"
-TITLE = "Balaji Enterprises — Industrial Tools &amp; MRO Supplier in Indore"
-DESC  = ("Authorised distributor of hand tools, power tools, measuring instruments and "
-         "industrial MRO equipment in Indore, Madhya Pradesh. 12,000+ items across 25 "
-         "leading brands, ready stock since 1996.")
+TITLE = "Balaji Enterprises — Industrial Tools &amp; MRO Supplier, Indore"  # 60 chars
+DESC  = ("Authorised distributor of hand tools, power tools, measuring instruments "
+         "and industrial MRO equipment in Indore. 12,000+ items, 25 brands, since "
+         "1996.")  # 150 chars
 
 JSONLD = """{
   "@context": "https://schema.org",
@@ -252,6 +252,17 @@ sub('''            <div style="font-size:12px;font-weight:700;color:#F5883E;lett
 sub('name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),',
     'name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),\n        href: "/products/" + s.catSlug + "/#" + s.slug,',
     "category href")
+
+# --- 8. drop the unreachable in-page catalogue view -------------------------
+# Nothing opens it since the navigation was pointed at /products/, but it still
+# shipped ~14KB of markup carrying 55 unrendered {{ }} tokens and a second <h1>
+# that a non-JS crawler reads as page content.
+_start = src.index("  <!-- PRODUCTS PAGE -->")
+_end = src.index("  <!-- FOOTER -->")
+_dead = src[_start:_end]
+if not (10000 < len(_dead) < 20000 and "showProducts" in _dead):
+    sys.exit("products-page block looks wrong (%d bytes); refusing to cut" % len(_dead))
+src = src[:_start] + src[_end:]
 
 out.write_text(src)
 print("wrote", out, len(src), "bytes")
