@@ -264,5 +264,52 @@ if not (10000 < len(_dead) < 20000 and "showProducts" in _dead):
     sys.exit("products-page block looks wrong (%d bytes); refusing to cut" % len(_dead))
 src = src[:_start] + src[_end:]
 
+# --- 9. mobile layout -------------------------------------------------------
+# The design carries no media queries at all, so at 375px the desktop nav
+# overflows (543px of links in a 375px viewport, "Call Now" clipped off-screen)
+# while the hamburger the design already ships sits at display:none, and every
+# grid keeps its desktop column count - 5 brand logos across 311px, 20 category
+# cards at 4 across. Everything below is inside a media query, so the desktop
+# rendering is byte-for-byte unchanged.
+
+# The grids are inline-styled and otherwise unaddressable, so tag each one.
+# Contact already carries .be-contact-grid from the design.
+for _cls, _needle in [
+    ("be-stats", "grid-template-columns:repeat(4,1fr);gap:32px"),
+    ("be-about", "grid-template-columns:1fr 1fr;gap:24px 32px"),
+    ("be-services", "grid-template-columns:repeat(3,1fr);gap:1px"),
+    ("be-cats", "grid-template-columns:repeat(4,1fr);border-top:1px solid #E7E2D6"),
+    ("be-brands", "grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6"),
+    ("be-footer", "grid-template-columns:1.3fr 0.8fr 1fr 1fr"),
+]:
+    _i = src.find(_needle)
+    if _i == -1:
+        sys.exit("mobile: could not find the grid for ." + _cls)
+    _tag = src.rfind("<div", 0, _i)
+    if 'class="' in src[_tag:_i]:
+        sys.exit("mobile: ." + _cls + " target already has a class attribute")
+    src = src[:_tag + 4] + ' class="%s"' % _cls + src[_tag + 4:]
+
+sub("</style>", """
+    /* ---------- mobile. Nothing here applies above 860px. ---------- */
+    @media (max-width: 860px) {
+      .be-nav-desktop { display: none !important; }
+      .be-nav-toggle { display: block !important; }
+      .be-services { grid-template-columns: repeat(2, 1fr) !important; }
+      .be-about, .be-contact-grid { grid-template-columns: 1fr !important; }
+      .be-footer { grid-template-columns: 1fr 1fr !important; }
+      .be-brands { grid-template-columns: repeat(4, 1fr) !important; }
+      section > div, footer > div { padding-left: 20px !important; padding-right: 20px !important; }
+      .be-contact-grid { gap: 40px !important; }
+    }
+    @media (max-width: 560px) {
+      .be-stats, .be-cats { grid-template-columns: repeat(2, 1fr) !important; }
+      .be-services, .be-footer { grid-template-columns: 1fr !important; }
+      .be-brands { grid-template-columns: repeat(3, 1fr) !important; }
+      /* the desktop vertical rhythm is dead scrolling on a phone */
+      section > div { padding-top: 52px !important; padding-bottom: 38px !important; }
+    }
+  </style>""", "mobile stylesheet")
+
 out.write_text(src)
 print("wrote", out, len(src), "bytes")

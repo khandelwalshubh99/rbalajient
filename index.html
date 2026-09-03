@@ -123,6 +123,25 @@
     ::selection { background: #F5883E; color: #fff; }
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  
+    /* ---------- mobile. Nothing here applies above 860px. ---------- */
+    @media (max-width: 860px) {
+      .be-nav-desktop { display: none !important; }
+      .be-nav-toggle { display: block !important; }
+      .be-services { grid-template-columns: repeat(2, 1fr) !important; }
+      .be-about, .be-contact-grid { grid-template-columns: 1fr !important; }
+      .be-footer { grid-template-columns: 1fr 1fr !important; }
+      .be-brands { grid-template-columns: repeat(4, 1fr) !important; }
+      section > div, footer > div { padding-left: 20px !important; padding-right: 20px !important; }
+      .be-contact-grid { gap: 40px !important; }
+    }
+    @media (max-width: 560px) {
+      .be-stats, .be-cats { grid-template-columns: repeat(2, 1fr) !important; }
+      .be-services, .be-footer { grid-template-columns: 1fr !important; }
+      .be-brands { grid-template-columns: repeat(3, 1fr) !important; }
+      /* the desktop vertical rhythm is dead scrolling on a phone */
+      section > div { padding-top: 52px !important; padding-bottom: 38px !important; }
+    }
   </style>
   <script src="./catalogue.js" defer></script>
 </helmet>
@@ -190,7 +209,7 @@
 
   <!-- STATS STRIP -->
   <section style="background:#FBF8F2;border-bottom:1px solid #E7E2D6">
-    <div style="max-width:1280px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
+    <div class="be-stats" style="max-width:1280px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
       <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
         <div style="border-left:2px solid #F5883E;padding-left:18px">
           <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">{{ s.value }}</div>
@@ -209,7 +228,7 @@
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#081B33;margin:14px 0 24px">A Trusted Supply Partner,<br>Not Just a Vendor.</h2>
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 18px">Based in Indore, Madhya Pradesh, we stand as a reliable and preferred authorised distributor of hand tools, power tools and industrial equipment, serving clients across the state and beyond.</p>
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 36px">Our enduring emphasis on transparency, ethical practice and client-centric operations has fostered sustained trust and repeat engagement from customers who prioritise dependable, long-term supply partnerships.</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 32px">
+        <div class="be-about" style="display:grid;grid-template-columns:1fr 1fr;gap:24px 32px">
           <sc-for list="{{ aboutPoints }}" as="p" hint-placeholder-count="4">
             <div style="display:flex;gap:14px">
               <div style="width:8px;height:8px;border-radius:50%;background:#F5883E;margin-top:8px;flex-shrink:0"></div>
@@ -232,7 +251,7 @@
         <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">What We Serve</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#fff;margin:14px 0 0">Industrial Segments We Cater To</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
+      <div class="be-services" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
         <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="6">
           <div style="background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
             <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">{{ ind.n }}</div>
@@ -259,7 +278,7 @@
         </div>
         <p style="font-size:14.5px;color:#5C6B7C;max-width:340px;margin:0">From everyday hand tools to specialised MRO equipment, organised so procurement teams find what they need, fast.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
+      <div class="be-cats" style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
         <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="20">
           <a href="{{ cat.href }}" style="display:block;text-decoration:none;border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:26px 22px;background:#FBF8F2;cursor:pointer" style-hover="background:#fff">
             <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:14px;color:#F5883E;margin-bottom:16px">{{ cat.n }}</div>
@@ -289,7 +308,7 @@
     </div>
 
     <div style="max-width:1280px;margin:40px auto 0;padding:0 32px">
-      <div style="display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
+      <div class="be-brands" style="display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
         <sc-for list="{{ brandLogos }}" as="brand" hint-placeholder-count="25">
           <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
             <div role="img" aria-label="{{ brand.name }}" style="{{ brand.logoStyle }}"></div>
@@ -372,7 +391,7 @@
 
   <!-- FOOTER -->
   <footer style="background:#081B33;border-top:1px solid rgba(255,255,255,0.08)">
-    <div style="max-width:1280px;margin:0 auto;padding:56px 32px 32px;display:grid;grid-template-columns:1.3fr 0.8fr 1fr 1fr;gap:36px">
+    <div class="be-footer" style="max-width:1280px;margin:0 auto;padding:56px 32px 32px;display:grid;grid-template-columns:1.3fr 0.8fr 1fr 1fr;gap:36px">
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
           <img src="assets/logo.png" alt="Balaji Enterprises" style="height:38px;width:38px;object-fit:contain">
