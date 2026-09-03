@@ -376,3 +376,26 @@ tbody tr:last-child td { border-bottom: 0; }
   .filter-bar { gap: 8px 10px; }
   .chip { padding: 7px 11px; }
 }
+
+/* Used in these industries — the reverse of the /industries/ linking. */
+.used-in { border-top: 1px solid var(--line); padding: 30px 0 10px; }
+.used-in h2 {
+  font-family: 'Big Shoulders Display', sans-serif; font-weight: 800;
+  font-size: 20px; color: var(--navy); margin: 0 0 8px; text-transform: uppercase;
+}
+.used-lead { font-size: 14.5px; line-height: 1.6; color: var(--muted); margin: 0 0 20px; max-width: 60ch; }
+.used-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px;
+}
+.used-grid a {
+  display: block; height: 100%; padding: 16px 18px; text-decoration: none;
+  border: 1px solid var(--line); border-radius: 3px; background: #fff;
+}
+.used-grid a:hover { border-color: var(--navy); background: var(--cream); }
+.used-n {
+  display: block; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800;
+  font-size: 13px; color: var(--orange); margin-bottom: 6px;
+}
+.used-name { display: block; font-weight: 700; font-size: 15px; color: var(--navy); line-height: 1.25; }
+.used-note { display: block; font-size: 13px; line-height: 1.55; color: var(--muted); margin-top: 6px; }

@@ -1,0 +1,5036 @@
+{
+ "/products/hand-tools/c-clamp/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/f-clamp-bar-clamp/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/locking-clamp/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/file/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Deburring after cut"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/flat-file/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/half-round-file/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/hand-file/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/mill-file/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/needle-file-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/round-file/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/saw-file/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/square-file/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/surform-blade/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/three-square-file/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/wood-rasp/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/axe/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/ball-pein-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Beryllium-copper for spark-free striking"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/brass-hammer/": [
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/claw-hammer/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/club-hammer/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/copper-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Die alignment without bruising the tool steel"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/cross-pein-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/dead-blow-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/engineer-hammer/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/hammer-spare-head/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/machinist-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/mallet/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Nylon — never steel on a sealing jaw"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Nylon"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/rubber-pvc-hammer/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  }
+ ],
+ "/products/hand-tools/sledge-hammer/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/soft-face-hammer/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/spare-handle/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/flag-hex-key/": [
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/hex-allen-key/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "NSA / NSB variants stocked"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/hex-torx-key-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/hex-key-screwdriver/": [
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/t-handle-hex-key/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Speed on repetitive access"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/t-handle-torx-key/": [
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/torx-key/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/caulking-gun/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Sealant and adhesive application"
+  }
+ ],
+ "/products/hand-tools/multi-tool/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Brick sets and bolsters"
+  }
+ ],
+ "/products/hand-tools/palm-sander/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/pipe-bender/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/plane/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/riveter/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/screw-extractor/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/site-utility-tool/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Crate openers, shovels, scrapers in NSA / NSB"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Shovels and site tools"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Scoops and hopper tools"
+  }
+ ],
+ "/products/hand-tools/spoke-shave/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/tyre-lever/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/wire-brush/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Aluminium-bronze bristles"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/bent-nose-plier/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/bolt-cutter/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/cable-cutter/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/circlip-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/combination-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "VDE insulated variants stocked"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/diagonal-cutting-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Flush cutters for yarn and cable ties"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/locking-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/long-nose-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/plier/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "NSA / NSB"
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/precision-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/scissors/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/slip-joint-plier/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/specialty-cutter/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/tin-snip/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/tower-pincer/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Binding"
+  }
+ ],
+ "/products/hand-tools/utility-knife/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Blade holders and doctor blade handling"
+  }
+ ],
+ "/products/hand-tools/water-pump-plier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/wire-rope-cutter/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/wire-stripper-crimper/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/centre-punch/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/cold-chisel/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/dot-punch/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/flange-wedge/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  }
+ ],
+ "/products/hand-tools/leather-punch/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Belt, strap and label punching in garment units"
+  }
+ ],
+ "/products/hand-tools/letter-figure-punch/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Permanent core and gland marking"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Tool tagging — stamped tools come back more often than painted ones"
+  }
+ ],
+ "/products/hand-tools/pin-punch/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/pry-bar/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/punch/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/scraper/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Brass and non-sparking, never steel on a die face"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Stainless pattern"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Brass only on hot faces"
+  }
+ ],
+ "/products/hand-tools/wood-chisel/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/hacksaw-frame/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/hand-saw/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/mitre-box/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/saw/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Carpentry bench — hand saws, mitre boxes and planes"
+  }
+ ],
+ "/products/hand-tools/hex-screwdriver/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/line-tester/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/nut-driver/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/phillips-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Insulated VDE variants for panel work"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Insulated VDE variants"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "VDE 1000V, two-colour insulation"
+  }
+ ],
+ "/products/hand-tools/screwdriver-bit/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/screwdriver-bit-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/screwdriver-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Precision"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Precision"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Precision"
+  }
+ ],
+ "/products/hand-tools/slotted-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/striking-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/stubby-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/torx-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/two-in-one-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/bit-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/deep-impact-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/deep-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/drain-plug-key/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Sump plugs vary by make — a key set beats an adjustable and a prayer"
+  }
+ ],
+ "/products/hand-tools/drive-shank/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/e-torx-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/extension-bar/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/hex-allen-bit-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/impact-extension-bar/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/impact-handle/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/impact-hex-allen-bit-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/impact-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "6-point only — 12-point on an impact gun is how heads get rounded"
+  }
+ ],
+ "/products/hand-tools/impact-spline-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/impact-swivel-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/impact-torx-bit-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/impact-universal-joint/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/insulated-socket/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/ratchet-handle/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/socket-accessory/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/socket-adaptor/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/socket-handle-bar/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/socket-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Chrome-plated"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/spline-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/torx-bit-socket/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/universal-joint/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/accessory-kit/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Includes flat tyre repair kits"
+  }
+ ],
+ "/products/hand-tools/hand-tool-kit/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Full NSA kit, boxed and counted"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Full insulated hand tool kit, boxed"
+  }
+ ],
+ "/products/hand-tools/digital-torque-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/torque-multiplier/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Heavy fastenings without a cheater bar"
+  }
+ ],
+ "/products/hand-tools/torque-screwdriver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Loose terminals are the most common failure cause in a panel"
+  }
+ ],
+ "/products/hand-tools/torque-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Click type, one per torque band per station"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Flange bolting"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Busbar and clamp torque values"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/torque-wrench-adaptor/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Extends a wrench you already own instead of buying a second one"
+  }
+ ],
+ "/products/hand-tools/torque-wrench-interchangeable-head/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/adjustable-open-end-insert/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/adjustable-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/chain-pipe-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/cnc-machine-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/combination-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/combination-spanner-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/cross-rim-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/cross-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/crowfoot-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Union and tri-clamp nuts in a pipe run with no swing room"
+  }
+ ],
+ "/products/hand-tools/deep-offset-ring-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/double-open-end-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "NSA / NSB variants stocked"
+  }
+ ],
+ "/products/hand-tools/double-open-end-spanner-set/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  }
+ ],
+ "/products/hand-tools/flare-nut-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Brake and fuel line unions without rounding the nut"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Refrigeration line unions"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/hook-c-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Bearing lock nuts on mill and extraction drives"
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Spindle and drum lock nuts"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/insulated-open-end-spanner/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/l-spanner/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/pipe-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/ratcheting-combination-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Where the swing angle is too tight for a ratchet handle"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Restricted-access fastenings"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/ratcheting-flare-nut-spanner/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  }
+ ],
+ "/products/hand-tools/ratcheting-ring-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/hand-tools/ring-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "NSA / NSB"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/hand-tools/ring-spanner-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/s-spanner/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/self-tightening-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/single-open-end-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  }
+ ],
+ "/products/hand-tools/single-ring-spanner/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/slogging-open-end-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/slogging-ring-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Die clamp bolts sized for slogging, not for a ratchet"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/slogging-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Heavy commercial-vehicle fastenings"
+  }
+ ],
+ "/products/hand-tools/spanner-set/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/hand-tools/special-purpose-wrench/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Includes the NSA oxygen bottle wrench"
+  }
+ ],
+ "/products/hand-tools/strap-wrench/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/t-handle-socket-spanner/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/hand-tools/tubular-box-spanner/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/universal-spanner/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/hand-tools/valve-spanner/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/hand-tools/wheel-spanner/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "The single most-replaced tool in a fleet garage"
+  }
+ ],
+ "/products/cutting-tools-abrasives/abrasive-disc-paper/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Discs, sheets and rolls"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Roller and blade holder cleaning"
+  }
+ ],
+ "/products/cutting-tools-abrasives/cutting-grinding-wheel/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/fastener-consumable/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Anchors, staples and fixings"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/hacksaw-blade/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/nails-nailer/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/spare-blade/": [
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/utility-knife-blade/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/hole-saw/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Gland plate and enclosure entries"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/hss-drill-bit/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "1–13 mm, five per size in the common range"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/masonry-sds-drill-bit/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/cutting-tools-abrasives/tap-die/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Threading dies for pipework"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Threading dies"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/tool-storage-workshop/bench-vice/": [
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/tool-storage-workshop/pipe-vice/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/tool-storage-workshop/modular-storage/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Shadow-boarded kit trolleys"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "The kit trolley itself"
+  }
+ ],
+ "/products/tool-storage-workshop/tool-bag/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Pouch with belt loop — the kit has to travel with the fitter"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Issued per trade, named"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/tool-storage-workshop/tool-box/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Sealed box or stainless trolley, not an open tray"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Lockable site chest"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Lockable"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/tool-storage-workshop/magnetic-tool/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Magnetic base for the dial gauge"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Magnetic pickup for dropped fasteners"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Magnetic squares and holders"
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Magnetic base for the dial gauge"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Magnetic base for dial gauges"
+  }
+ ],
+ "/products/tool-storage-workshop/work-light/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Underbody inspection lamp"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Sealed body — a vented torch fills with water"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/tool-storage-workshop/workbench/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/lubrication-fluid-handling/coupler/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Standard, needle and right-angle — match the coupler to the nipple"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/drum-accessory/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking drum opener for solvent drums"
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Drum keys and openers"
+  }
+ ],
+ "/products/lubrication-fluid-handling/filter/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Strap filter wrench for booth filter housings"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/lubrication-fluid-handling/flow-meter/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Where consumption has to be measured rather than estimated"
+  }
+ ],
+ "/products/lubrication-fluid-handling/funnel/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/lubrication-fluid-handling/hose-nozzle/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Flexible hose and rigid extensions for blind points"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/hose-reel/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/lubrication-fluid-handling/measuring-jug/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/lubrication-fluid-handling/oil-can-jug/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/oil-drain/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/pump/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Drum pumps and transfer pumps for bulk decanting"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/lubrication-fluid-handling/grease-cartridge/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "EP2 and high-temp"
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Keep H1 and EP2 physically separated at the store, not just labelled"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/grease-fitting/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Nipples shear off; keep an assortment"
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Nipple assortment: straight, 45°, 90°"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lubrication-fluid-handling/grease-gun/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "High-temp grade"
+  }
+ ],
+ "/products/lubrication-fluid-handling/grease-pump/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/lubrication-fluid-handling/grease-pump-kit/": [
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  }
+ ],
+ "/products/measuring-layout/chalk-line/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/detector/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Cable and stud detection before you drill into a wall"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/laser-distance-measurer/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Cable runs measured once, properly"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/laser-level/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/measuring-tape/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/measuring-wheel/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/plumb-bob/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/sliding-bevel/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/spirit-level/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/measuring-layout/steel-rule/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Stainless, no printed paint to shed"
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Stainless"
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/try-square/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/caliper/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/feeler-gauge/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Card settings live and die on these"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/inspection-site-instrument/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Measuring staff and site instruments"
+  }
+ ],
+ "/products/measuring-layout/micrometer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/spring-divider/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/measuring-layout/vernier-caliper/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/power-tools/air-blow-gun/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/power-tools/air-impact-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/power-tools/pneumatic-tool/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Where the shop already has line air"
+  }
+ ],
+ "/products/power-tools/battery-charger/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Two batteries per cordless tool, or the tool sits idle half the shift"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Field work is untethered — plan batteries, not just tools"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Two batteries per tool, or the tool sits idle half the shift"
+  }
+ ],
+ "/products/power-tools/power-tool-accessory/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  }
+ ],
+ "/products/power-tools/angle-grinder/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/power-tools/cordless-ratchet/": [
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  }
+ ],
+ "/products/power-tools/cutting-machine/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/power-tools/demolition-breaker/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Heavy breaking, where a rotary hammer will die trying"
+  }
+ ],
+ "/products/power-tools/drill/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/power-tools/hammer-drill/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/power-tools/impact-driver/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/power-tools/impact-wrench/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  }
+ ],
+ "/products/power-tools/jigsaw/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/power-tools/oscillating-multi-tool/": [
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/power-tools/power-tool/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Sanders and polishers"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Vibrator servicing and site machines"
+  }
+ ],
+ "/products/power-tools/rotary-hammer/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Anchoring cable tray and gland plates"
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  }
+ ],
+ "/products/lifting-pulling/hydraulic-bottle-jack/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lifting-pulling/table-lifter/": [
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lifting-pulling/bearing-puller/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "Spindle bearing replacement in situ"
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/lifting-pulling/gear-puller/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/material-handling/hand-truck-trolley/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers."
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ],
+ "/products/material-handling/lifting-accessory/": [
+  {
+   "n": "01",
+   "name": "Automotive & Auto Components",
+   "href": "/industries/automotive-auto-components/",
+   "note": "Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers."
+  },
+  {
+   "n": "02",
+   "name": "Pharmaceutical & Life Sciences",
+   "href": "/industries/pharmaceutical-life-sciences/",
+   "note": "Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites."
+  },
+  {
+   "n": "03",
+   "name": "Food, Beverage & Agro",
+   "href": "/industries/food-beverage-agro-processing/",
+   "note": "Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants."
+  },
+  {
+   "n": "04",
+   "name": "Engineering & Fabrication",
+   "href": "/industries/engineering-fabrication/",
+   "note": "Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter."
+  },
+  {
+   "n": "05",
+   "name": "Textiles & Garments",
+   "href": "/industries/textiles-garments/",
+   "note": "High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing."
+  },
+  {
+   "n": "06",
+   "name": "Power & Electrical",
+   "href": "/industries/power-utilities-electrical/",
+   "note": "Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets."
+  },
+  {
+   "n": "07",
+   "name": "Construction & Infrastructure",
+   "href": "/industries/construction-infrastructure/",
+   "note": "Stackers and lifting straps"
+  },
+  {
+   "n": "08",
+   "name": "Plastics, Packaging & Printing",
+   "href": "/industries/plastics-packaging-printing/",
+   "note": "Mould change kits, tool room precision and blade continuity for moulders, converters and printers."
+  }
+ ]
+}

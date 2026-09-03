@@ -30,6 +30,13 @@ SITE = "https://www.rbalajient.com"
 OUT = ROOT / "products"
 PHOTOS = ROOT / "assets" / "products"
 
+# Written by build/build.js alongside the /industries/ pages: which segments
+# reference each product type, and the segment-specific note for it. Renders as
+# the reverse of the industry -> product linking, so the two directions stay in
+# step without this script re-deriving any of it. Absent = no strips, no error.
+_map_file = ROOT / "industries-map.json"
+INDUSTRY_MAP = json.loads(_map_file.read_text()) if _map_file.exists() else {}
+
 PHONE = "9302110344"
 SALES = "sales@rbalajient.com"
 ADDRESS = "118 Siyaganj Main Road, Indore, 452007 (MP)"
@@ -265,6 +272,22 @@ def product_page(cat, sub, name, groups, sibs, url, cats):
       </div>
     </section>""")
 
+    used = ""
+    _segs = INDUSTRY_MAP.get(url, [])
+    if _segs:
+        cards = "".join(
+            f'<li><a href="{sg["href"]}"><span class="used-n">{e(sg["n"])}</span>'
+            f'<span class="used-name">{e(sg["name"])}</span>'
+            f'<span class="used-note">{e(sg["note"])}</span></a></li>'
+            for sg in _segs)
+        used = f"""
+    <section class="used-in">
+      <h2>Used in these industries</h2>
+      <p class="used-lead">Where {e(name)} shows up on the shop floor, and what it is
+      doing there. Each page carries the full tool and MRO checklist for that plant.</p>
+      <ul class="used-grid">{cards}</ul>
+    </section>"""
+
     rel = ""
     if sibs:
         items = "".join(f'<li><a href="{u}">{e(n)}</a></li>' for n, u in sibs)
@@ -314,6 +337,7 @@ def product_page(cat, sub, name, groups, sibs, url, cats):
     exclude taxes &mdash; contact us for current trade pricing and availability.</p>
     <div class="spec-filter" data-spec-filter hidden></div>
     {"".join(tables)}
+    {used}
     {rel}
   </div>
 </main>
