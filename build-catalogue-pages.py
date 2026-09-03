@@ -34,9 +34,6 @@ PHONE = "9302110344"
 SALES = "sales@rbalajient.com"
 ADDRESS = "118 Siyaganj Main Road, Indore, 452007 (MP)"
 
-# Descriptions the source data failed to resolve — rendering them would put
-# "[Category not found]" on a live page.
-JUNK_DESC = re.compile(r"^\s*\[.*\]\s*$")
 
 # Assets are served with max-age=86400, so a plain /assets/catalogue.css would
 # keep returning visitors on the previous build for up to a day. Every
@@ -59,14 +56,6 @@ def slug(s):
 def e(s):
     return html.escape(str(s), quote=True)
 
-
-def soften(s):
-    """Descriptions arrive shouting (C-CLAMP - 55 mm MAX. OPENING). Sentence-case
-    the ones that are essentially all-caps; leave mixed-case strings alone."""
-    letters = [c for c in s if c.isalpha()]
-    if len(letters) > 3 and all(c.isupper() for c in letters):
-        return s[0].upper() + s[1:].lower()
-    return s
 
 
 def num(n):
@@ -224,7 +213,7 @@ def write(path, content):
 # page builders
 # --------------------------------------------------------------------------
 
-def product_page(cat, sub, name, groups, lead, sibs, url, cats):
+def product_page(cat, sub, name, groups, sibs, url, cats):
     """groups: [(cols, brands)] — more than one only where the source data holds
     two type entries under the same name in the same category."""
     photo = photo_for(name)
@@ -249,8 +238,7 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
                "category": f'{cat["name"]} > {sub}',
                "brand": [{"@type": "Brand", "name": b} for b in brands],
                "url": SITE + url}
-    if lead:
-        prod_ld["description"] = lead
+    prod_ld["description"] = meta_desc
     if photo:
         prod_ld["image"] = SITE + photo
 
@@ -314,7 +302,6 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
       <div class="prod-intro">
         <span class="eyebrow">{e(cat["name"])} &middot; {e(sub)}</span>
         <h1>{e(name)}</h1>
-        {f'<p class="lead">{e(lead)}</p>' if lead else ''}
         <p class="meta">{num(n_rows)} listed size{"s" if n_rows != 1 else ""} &amp; part numbers &middot; {len(brands)} brand{"s" if len(brands) != 1 else ""}</p>
         <ul class="brand-chips">{"".join(f"<li>{e(b)}</li>" for b in brands)}</ul>
         <div class="cta-row">
@@ -497,11 +484,8 @@ def main():
             for t in sub["types"]:
                 slot = by_name.setdefault(
                     t["name"], {"sub": sub["name"], "sub_slug": sub["slug"],
-                                "groups": [], "descs": []})
+                                "groups": []})
                 slot["groups"].append((t["cols"], t["brands"]))
-                d = (t.get("desc") or "").strip()
-                if d and not JUNK_DESC.match(d):
-                    slot["descs"].append(d)
 
         card_brands = {
             n: "|".join(sorted({b["name"] for _, bs in i["groups"] for b in bs}))
@@ -518,9 +502,8 @@ def main():
         for name, info in by_name.items():
             u = f'/products/{cat["slug"]}/{slug(name)}/'
             sibs = [(n, su) for n, su, _ in types_by_sub[info["sub"]][1] if n != name][:14]
-            lead = soften(info["descs"][0]) if info["descs"] else ""
             write(OUT / cat["slug"] / slug(name) / "index.html",
-                  product_page(cat, info["sub"], name, info["groups"], lead,
+                  product_page(cat, info["sub"], name, info["groups"],
                                sibs, u, cats))
             urls.append(u)
             n_products += 1
