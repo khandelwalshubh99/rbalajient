@@ -157,6 +157,8 @@ a { color: inherit; }
 .footer-brand img { height: 38px; width: 38px; object-fit: contain; }
 .footer-brand-name { font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 18px; color: #fff; }
 .footer-desc { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; max-width: 320px; }
+.footer-social { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-top: 18px; border: 1px solid rgba(255,255,255,0.18); border-radius: 50%; color: rgba(255,255,255,0.6); }
+.footer-social:hover { color: #fff; border-color: #F5883E; }
 .footer-col-title { font-weight: 800; font-size: 13px; color: #F5883E; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
 .footer-links { display: flex; flex-direction: column; gap: 12px; }
 .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14.5px; }
