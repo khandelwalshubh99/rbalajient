@@ -319,7 +319,6 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
         <ul class="brand-chips">{"".join(f"<li>{e(b)}</li>" for b in brands)}</ul>
         <div class="cta-row">
           <a class="btn-primary" href="mailto:{SALES}?subject={subject}&amp;body={body}">Request a Quote</a>
-          <a class="btn-outline" href="tel:{PHONE}">Call {PHONE}</a>
         </div>
       </div>
     </div>
