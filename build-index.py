@@ -7,7 +7,7 @@ live page differs from it in exactly three ways:
   2. the image-slot authoring widget swapped for a neutral placeholder
   3. no dependency on image-slot.js
 """
-import sys, pathlib, re
+import sys, pathlib, re, hashlib
 
 src = pathlib.Path(sys.argv[1]).read_text()
 out = pathlib.Path(sys.argv[2])
@@ -388,6 +388,17 @@ for _o, _n in [
      '<a href="/products/" style="text-decoration:none;color:rgba(255,255,255,0.6);font-size:14.5px" style-hover="color:#fff">Products</a>'),
 ]:
     sub(_o, _n, "Industries nav entry")
+
+# --- 11. cache-bust email-protect.js -----------------------------------------
+# /assets/* is served with a 24h Cache-Control, so a returning visitor's
+# browser won't pick up a script fix until the referenced URL itself
+# changes -- found this the hard way testing one. Content-hash query param,
+# matching the convention build-catalogue-pages.py already uses for its own
+# assets.
+_em_hash = hashlib.md5((out.parent / "assets" / "email-protect.js").read_bytes()).hexdigest()[:8]
+sub('<script src="/assets/email-protect.js" defer></script>',
+    f'<script src="/assets/email-protect.js?v={_em_hash}" defer></script>',
+    "email-protect.js cache-bust")
 
 out.write_text(src)
 print("wrote", out, len(src), "bytes")
