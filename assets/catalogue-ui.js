@@ -31,7 +31,11 @@
 
     box.hidden = false;
 
-    fetch("/assets/search-index.json")
+    // Assets are cached for a day, so the pages hand us a content version to
+    // append; a rebuilt index is a new URL rather than a stale cache hit.
+    var v = box.dataset.indexV ? "?v=" + box.dataset.indexV : "";
+
+    fetch("/assets/search-index.json" + v)
       .then(function (r) { return r.json(); })
       .then(function (d) {
         products = d.map(function (p) {
@@ -44,7 +48,7 @@
     function loadParts() {
       if (parts || partsPending) return;
       partsPending = true;
-      fetch("/assets/parts-index.json")
+      fetch("/assets/parts-index.json" + v)
         .then(function (r) { return r.json(); })
         .then(function (d) {
           parts = d.map(function (x) { return { id: x[0], u: x[1], k: norm(x[0]) }; });

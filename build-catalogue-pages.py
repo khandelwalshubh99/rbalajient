@@ -21,6 +21,7 @@ import html
 import json
 import pathlib
 import re
+import hashlib
 import shutil
 from urllib.parse import quote
 
@@ -36,6 +37,19 @@ ADDRESS = "118 Siyaganj Main Road, Indore, 452007 (MP)"
 # Descriptions the source data failed to resolve — rendering them would put
 # "[Category not found]" on a live page.
 JUNK_DESC = re.compile(r"^\s*\[.*\]\s*$")
+
+# Assets are served with max-age=86400, so a plain /assets/catalogue.css would
+# keep returning visitors on the previous build for up to a day. Every
+# reference carries a content hash instead: the cache stays aggressive and a
+# changed file is a changed URL, so updates land immediately.
+VER = {"css": "0", "js": "0", "idx": "0"}
+
+
+def digest(*parts):
+    h = hashlib.md5()
+    for x in parts:
+        h.update(x if isinstance(x, bytes) else str(x).encode())
+    return h.hexdigest()[:8]
 
 
 def slug(s):
@@ -93,9 +107,9 @@ def head(title, desc, canonical, jsonld):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/catalogue.css">
+<link rel="stylesheet" href="/assets/catalogue.css?v={VER['css']}">
 <script type="application/ld+json">{jsonld}</script>
-<script src="/assets/catalogue-ui.js" defer></script>
+<script src="/assets/catalogue-ui.js?v={VER['js']}" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -154,8 +168,9 @@ def footer(cats):
 """
 
 
-SEARCH = """
-    <div class="search-box" data-search hidden>
+def search_box():
+    return f"""
+    <div class="search-box" data-search data-index-v="{VER['idx']}" hidden>
       <label class="sr-only" for="cat-q">Search products and part numbers</label>
       <input id="cat-q" type="search" autocomplete="off" role="combobox"
              aria-expanded="false" aria-controls="cat-results"
@@ -341,7 +356,7 @@ def category_page(cat, types_by_sub, url, cats, card_brands):
       part numbers. Every product lists the brands we stock for it, with
       specifications set out brand by brand.</p>
     </div>
-    {SEARCH}
+    {search_box()}
     <div class="filter-bar" data-brand-filter hidden></div>
     {"".join(blocks)}
   </div>
@@ -386,7 +401,7 @@ def hub_page(cats, counts, url="/products/"):
       specifications set out brand by brand so procurement teams can compare and
       order directly.</p>
     </div>
-    {SEARCH}
+    {search_box()}
     <ul class="cat-grid">{"".join(cards)}</ul>
   </div>
 </main>
@@ -402,6 +417,35 @@ def main():
 
     if OUT.exists():
         shutil.rmtree(OUT)
+
+    # Search indexes first: pages embed their version, so they must exist and be
+    # hashed before a single page is written. Products are tiny and load with
+    # the page; part numbers are an order of magnitude bigger, so
+    # catalogue-ui.js fetches that one only once someone types a digit.
+    prod_index, part_index, seen_u = [], [], set()
+    for cat in cats:
+        for sub in cat["subs"]:
+            for t in sub["types"]:
+                u = f'/products/{cat["slug"]}/{slug(t["name"])}/'
+                if u not in seen_u:
+                    seen_u.add(u)
+                    prod_index.append({"n": t["name"], "u": u, "c": cat["name"],
+                                       "s": sub["name"],
+                                       "b": sorted({b["name"] for b in t["brands"]})})
+                for b in t["brands"]:
+                    for row in b["rows"]:
+                        if row and row[0] and row[0] != "\u2014":
+                            part_index.append([row[0], u])
+    blobs = {}
+    for fname, payload in (("search-index.json", prod_index),
+                           ("parts-index.json", part_index)):
+        blob = json.dumps(payload, separators=(",", ":"), ensure_ascii=False)
+        (ROOT / "assets" / fname).write_text(blob, encoding="utf-8")
+        blobs[fname] = blob
+
+    VER["css"] = digest((ROOT / "assets" / "catalogue.css").read_bytes())
+    VER["js"] = digest((ROOT / "assets" / "catalogue-ui.js").read_bytes())
+    VER["idx"] = digest(blobs["search-index.json"], blobs["parts-index.json"])
 
     urls, counts, n_products = ["/"], {}, 0
 
@@ -451,30 +495,6 @@ def main():
 
     write(OUT / "index.html", hub_page(cats, counts))
     urls.append("/products/")
-
-    # Search indexes. Products are tiny and load with the page; part numbers are
-    # an order of magnitude bigger, so catalogue-ui.js fetches that one only
-    # once someone types something containing a digit.
-    prod_index, part_index, seen_u = [], [], set()
-    for cat in cats:
-        for sub in cat["subs"]:
-            for t in sub["types"]:
-                u = f'/products/{cat["slug"]}/{slug(t["name"])}/'
-                bs = sorted({b["name"] for b in t["brands"]})
-                if u not in seen_u:
-                    seen_u.add(u)
-                    prod_index.append({"n": t["name"], "u": u, "c": cat["name"],
-                                       "s": sub["name"], "b": bs})
-                for b in t["brands"]:
-                    for row in b["rows"]:
-                        if row and row[0] and row[0] != "\u2014":
-                            part_index.append([row[0], u])
-    for fname, payload in (("search-index.json", prod_index),
-                           ("parts-index.json", part_index)):
-        (ROOT / "assets" / fname).write_text(
-            json.dumps(payload, separators=(",", ":"), ensure_ascii=False),
-            encoding="utf-8")
-    print(f"search idx : {len(prod_index)} products, {len(part_index)} part numbers")
 
     seen, ordered = set(), []
     for u in urls:
