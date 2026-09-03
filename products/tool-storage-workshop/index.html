@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/catalogue.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Tool Storage & Workshop — Balaji Enterprises", "url": "https://www.rbalajient.com/products/tool-storage-workshop/", "mainEntity": {"@type": "ItemList", "numberOfItems": 8, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bench Vice", "url": "https://www.rbalajient.com/products/tool-storage-workshop/bench-vice/"}, {"@type": "ListItem", "position": 2, "name": "Pipe Vice", "url": "https://www.rbalajient.com/products/tool-storage-workshop/pipe-vice/"}, {"@type": "ListItem", "position": 3, "name": "Modular Storage", "url": "https://www.rbalajient.com/products/tool-storage-workshop/modular-storage/"}, {"@type": "ListItem", "position": 4, "name": "Tool Bag", "url": "https://www.rbalajient.com/products/tool-storage-workshop/tool-bag/"}, {"@type": "ListItem", "position": 5, "name": "Tool Box", "url": "https://www.rbalajient.com/products/tool-storage-workshop/tool-box/"}, {"@type": "ListItem", "position": 6, "name": "Magnetic Tool", "url": "https://www.rbalajient.com/products/tool-storage-workshop/magnetic-tool/"}, {"@type": "ListItem", "position": 7, "name": "Work Light", "url": "https://www.rbalajient.com/products/tool-storage-workshop/work-light/"}, {"@type": "ListItem", "position": 8, "name": "Workbench", "url": "https://www.rbalajient.com/products/tool-storage-workshop/workbench/"}]}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rbalajient.com/"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.rbalajient.com/products/"}, {"@type": "ListItem", "position": 3, "name": "Tool Storage & Workshop"}]}]}</script>
+<script src="/assets/catalogue-ui.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,39 +52,48 @@
       specifications set out brand by brand.</p>
     </div>
     
+    <div class="search-box" data-search hidden>
+      <label class="sr-only" for="cat-q">Search products and part numbers</label>
+      <input id="cat-q" type="search" autocomplete="off" role="combobox"
+             aria-expanded="false" aria-controls="cat-results"
+             placeholder="Search 243 products or a part number…">
+      <div class="search-results" id="cat-results" data-results role="listbox" hidden></div>
+    </div>
+    <div class="filter-bar" data-brand-filter hidden></div>
+    
     <section class="sub-block" id="tool-storage-workshop-clamps-vices">
       <h2>Clamps &amp; Vices</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/tool-storage-workshop/bench-vice/"><img src="/assets/products/bench-vice.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|GROZ|STANLEY|TAPARIA"><a href="/products/tool-storage-workshop/bench-vice/"><img src="/assets/products/bench-vice.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Bench Vice</span>
           <span class="type-meta">34 sizes</span></a></li>
-        <li class="type-card"><a href="/products/tool-storage-workshop/pipe-vice/"><img src="/assets/products/pipe-vice.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|TAPARIA"><a href="/products/tool-storage-workshop/pipe-vice/"><img src="/assets/products/pipe-vice.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Pipe Vice</span>
           <span class="type-meta">12 sizes</span></a></li></ul>
     </section>
     <section class="sub-block" id="tool-storage-workshop-tool-storage">
       <h2>Tool Storage</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/tool-storage-workshop/modular-storage/"><img src="/assets/products/modular-storage.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|DEWALT|STANLEY|TAPARIA"><a href="/products/tool-storage-workshop/modular-storage/"><img src="/assets/products/modular-storage.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Modular Storage</span>
           <span class="type-meta">76 sizes</span></a></li>
-        <li class="type-card"><a href="/products/tool-storage-workshop/tool-bag/"><img src="/assets/products/tool-bag.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|DEWALT|GROZ|STANLEY|TAPARIA"><a href="/products/tool-storage-workshop/tool-bag/"><img src="/assets/products/tool-bag.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Tool Bag</span>
           <span class="type-meta">55 sizes</span></a></li>
-        <li class="type-card"><a href="/products/tool-storage-workshop/tool-box/"><img src="/assets/products/tool-box.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|GROZ|STANLEY|TAPARIA"><a href="/products/tool-storage-workshop/tool-box/"><img src="/assets/products/tool-box.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Tool Box</span>
           <span class="type-meta">46 sizes</span></a></li></ul>
     </section>
     <section class="sub-block" id="tool-storage-workshop-workshop-equipment">
       <h2>Workshop Equipment</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/tool-storage-workshop/magnetic-tool/"><img src="/assets/products/magnetic-tool.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|GROZ|STANLEY|TAPARIA"><a href="/products/tool-storage-workshop/magnetic-tool/"><img src="/assets/products/magnetic-tool.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Magnetic Tool</span>
           <span class="type-meta">14 sizes</span></a></li>
-        <li class="type-card"><a href="/products/tool-storage-workshop/work-light/"><img src="/assets/products/work-light.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DEWALT|GROZ|STANLEY"><a href="/products/tool-storage-workshop/work-light/"><img src="/assets/products/work-light.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Work Light</span>
           <span class="type-meta">53 sizes</span></a></li>
-        <li class="type-card"><a href="/products/tool-storage-workshop/workbench/"><img src="/assets/products/workbench.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="BLACK &amp; DECKER|STANLEY"><a href="/products/tool-storage-workshop/workbench/"><img src="/assets/products/workbench.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Workbench</span>
           <span class="type-meta">2 sizes</span></a></li></ul>
     </section>

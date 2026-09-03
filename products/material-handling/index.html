@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/catalogue.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Material Handling — Balaji Enterprises", "url": "https://www.rbalajient.com/products/material-handling/", "mainEntity": {"@type": "ItemList", "numberOfItems": 2, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Hand Truck / Trolley", "url": "https://www.rbalajient.com/products/material-handling/hand-truck-trolley/"}, {"@type": "ListItem", "position": 2, "name": "Lifting Accessory", "url": "https://www.rbalajient.com/products/material-handling/lifting-accessory/"}]}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rbalajient.com/"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.rbalajient.com/products/"}, {"@type": "ListItem", "position": 3, "name": "Material Handling"}]}]}</script>
+<script src="/assets/catalogue-ui.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,13 +52,22 @@
       specifications set out brand by brand.</p>
     </div>
     
+    <div class="search-box" data-search hidden>
+      <label class="sr-only" for="cat-q">Search products and part numbers</label>
+      <input id="cat-q" type="search" autocomplete="off" role="combobox"
+             aria-expanded="false" aria-controls="cat-results"
+             placeholder="Search 243 products or a part number…">
+      <div class="search-results" id="cat-results" data-results role="listbox" hidden></div>
+    </div>
+    <div class="filter-bar" data-brand-filter hidden></div>
+    
     <section class="sub-block" id="material-handling-trucks-trolleys">
       <h2>Trucks &amp; Trolleys</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/material-handling/hand-truck-trolley/"><img src="/assets/products/hand-truck-trolley.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="BLACK &amp; DECKER|STANLEY"><a href="/products/material-handling/hand-truck-trolley/"><img src="/assets/products/hand-truck-trolley.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Hand Truck / Trolley</span>
           <span class="type-meta">61 sizes</span></a></li>
-        <li class="type-card"><a href="/products/material-handling/lifting-accessory/"><img src="/assets/products/lifting-accessory.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="STANLEY"><a href="/products/material-handling/lifting-accessory/"><img src="/assets/products/lifting-accessory.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Lifting Accessory</span>
           <span class="type-meta">6 sizes</span></a></li></ul>
     </section>

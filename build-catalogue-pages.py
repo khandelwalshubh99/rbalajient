@@ -95,6 +95,7 @@ def head(title, desc, canonical, jsonld):
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/catalogue.css">
 <script type="application/ld+json">{jsonld}</script>
+<script src="/assets/catalogue-ui.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -151,6 +152,16 @@ def footer(cats):
 </body>
 </html>
 """
+
+
+SEARCH = """
+    <div class="search-box" data-search hidden>
+      <label class="sr-only" for="cat-q">Search products and part numbers</label>
+      <input id="cat-q" type="search" autocomplete="off" role="combobox"
+             aria-expanded="false" aria-controls="cat-results"
+             placeholder="Search 243 products or a part number\u2026">
+      <div class="search-results" id="cat-results" data-results role="listbox" hidden></div>
+    </div>"""
 
 
 def crumbs(trail):
@@ -273,6 +284,7 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
     <h2 class="specs-h">Sizes, part numbers &amp; specifications</h2>
     <p class="specs-note">Listed brand by brand. Prices are list prices in INR and
     exclude taxes &mdash; contact us for current trade pricing and availability.</p>
+    <div class="spec-filter" data-spec-filter hidden></div>
     {"".join(tables)}
     {rel}
   </div>
@@ -280,7 +292,7 @@ def product_page(cat, sub, name, groups, lead, sibs, url, cats):
 """ + footer(cats)
 
 
-def category_page(cat, types_by_sub, url, cats):
+def category_page(cat, types_by_sub, url, cats, card_brands):
     n_types = sum(len(v[1]) for v in types_by_sub.values())
     n_items = sum(r for v in types_by_sub.values() for _, _, r in v[1])
 
@@ -298,7 +310,7 @@ def category_page(cat, types_by_sub, url, cats):
             thumb = (f'<img src="{ph}" alt="" loading="lazy" width="64" height="64">'
                      if ph else '<span class="thumb-blank" aria-hidden="true"></span>')
             cards.append(f"""
-        <li class="type-card"><a href="{u}">{thumb}
+        <li class="type-card" data-brands="{e(card_brands.get(name, ""))}"><a href="{u}">{thumb}
           <span class="type-name">{e(name)}</span>
           <span class="type-meta">{num(rows)} size{"s" if rows != 1 else ""}</span></a></li>""")
         blocks.append(f"""
@@ -329,6 +341,8 @@ def category_page(cat, types_by_sub, url, cats):
       part numbers. Every product lists the brands we stock for it, with
       specifications set out brand by brand.</p>
     </div>
+    {SEARCH}
+    <div class="filter-bar" data-brand-filter hidden></div>
     {"".join(blocks)}
   </div>
 </main>
@@ -372,6 +386,7 @@ def hub_page(cats, counts, url="/products/"):
       specifications set out brand by brand so procurement teams can compare and
       order directly.</p>
     </div>
+    {SEARCH}
     <ul class="cat-grid">{"".join(cards)}</ul>
   </div>
 </main>
@@ -405,6 +420,10 @@ def main():
                 if d and not JUNK_DESC.match(d):
                     slot["descs"].append(d)
 
+        card_brands = {
+            n: "|".join(sorted({b["name"] for _, bs in i["groups"] for b in bs}))
+            for n, i in by_name.items()}
+
         types_by_sub = {}
         for name, info in by_name.items():
             rows = sum(len(b["rows"]) for _, bs in info["groups"] for b in bs)
@@ -427,11 +446,35 @@ def main():
         counts[cat["slug"]] = (
             len(by_name), sum(r for v in types_by_sub.values() for _, _, r in v[1]))
         write(OUT / cat["slug"] / "index.html",
-              category_page(cat, types_by_sub, cu, cats))
+              category_page(cat, types_by_sub, cu, cats, card_brands))
         urls.append(cu)
 
     write(OUT / "index.html", hub_page(cats, counts))
     urls.append("/products/")
+
+    # Search indexes. Products are tiny and load with the page; part numbers are
+    # an order of magnitude bigger, so catalogue-ui.js fetches that one only
+    # once someone types something containing a digit.
+    prod_index, part_index, seen_u = [], [], set()
+    for cat in cats:
+        for sub in cat["subs"]:
+            for t in sub["types"]:
+                u = f'/products/{cat["slug"]}/{slug(t["name"])}/'
+                bs = sorted({b["name"] for b in t["brands"]})
+                if u not in seen_u:
+                    seen_u.add(u)
+                    prod_index.append({"n": t["name"], "u": u, "c": cat["name"],
+                                       "s": sub["name"], "b": bs})
+                for b in t["brands"]:
+                    for row in b["rows"]:
+                        if row and row[0] and row[0] != "\u2014":
+                            part_index.append([row[0], u])
+    for fname, payload in (("search-index.json", prod_index),
+                           ("parts-index.json", part_index)):
+        (ROOT / "assets" / fname).write_text(
+            json.dumps(payload, separators=(",", ":"), ensure_ascii=False),
+            encoding="utf-8")
+    print(f"search idx : {len(prod_index)} products, {len(part_index)} part numbers")
 
     seen, ordered = set(), []
     for u in urls:

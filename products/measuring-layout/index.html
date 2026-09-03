@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/catalogue.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Measuring & Layout — Balaji Enterprises", "url": "https://www.rbalajient.com/products/measuring-layout/", "mainEntity": {"@type": "ItemList", "numberOfItems": 17, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Chalk Line", "url": "https://www.rbalajient.com/products/measuring-layout/chalk-line/"}, {"@type": "ListItem", "position": 2, "name": "Detector", "url": "https://www.rbalajient.com/products/measuring-layout/detector/"}, {"@type": "ListItem", "position": 3, "name": "Laser Distance Measurer", "url": "https://www.rbalajient.com/products/measuring-layout/laser-distance-measurer/"}, {"@type": "ListItem", "position": 4, "name": "Laser Level", "url": "https://www.rbalajient.com/products/measuring-layout/laser-level/"}, {"@type": "ListItem", "position": 5, "name": "Measuring Tape", "url": "https://www.rbalajient.com/products/measuring-layout/measuring-tape/"}, {"@type": "ListItem", "position": 6, "name": "Measuring Wheel", "url": "https://www.rbalajient.com/products/measuring-layout/measuring-wheel/"}, {"@type": "ListItem", "position": 7, "name": "Plumb Bob", "url": "https://www.rbalajient.com/products/measuring-layout/plumb-bob/"}, {"@type": "ListItem", "position": 8, "name": "Sliding Bevel", "url": "https://www.rbalajient.com/products/measuring-layout/sliding-bevel/"}, {"@type": "ListItem", "position": 9, "name": "Spirit Level", "url": "https://www.rbalajient.com/products/measuring-layout/spirit-level/"}, {"@type": "ListItem", "position": 10, "name": "Steel Rule", "url": "https://www.rbalajient.com/products/measuring-layout/steel-rule/"}, {"@type": "ListItem", "position": 11, "name": "Try Square", "url": "https://www.rbalajient.com/products/measuring-layout/try-square/"}, {"@type": "ListItem", "position": 12, "name": "Caliper", "url": "https://www.rbalajient.com/products/measuring-layout/caliper/"}, {"@type": "ListItem", "position": 13, "name": "Feeler Gauge", "url": "https://www.rbalajient.com/products/measuring-layout/feeler-gauge/"}, {"@type": "ListItem", "position": 14, "name": "Inspection & Site Instrument", "url": "https://www.rbalajient.com/products/measuring-layout/inspection-site-instrument/"}, {"@type": "ListItem", "position": 15, "name": "Micrometer", "url": "https://www.rbalajient.com/products/measuring-layout/micrometer/"}, {"@type": "ListItem", "position": 16, "name": "Spring Divider", "url": "https://www.rbalajient.com/products/measuring-layout/spring-divider/"}, {"@type": "ListItem", "position": 17, "name": "Vernier Caliper", "url": "https://www.rbalajient.com/products/measuring-layout/vernier-caliper/"}]}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rbalajient.com/"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.rbalajient.com/products/"}, {"@type": "ListItem", "position": 3, "name": "Measuring & Layout"}]}]}</script>
+<script src="/assets/catalogue-ui.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,62 +52,71 @@
       specifications set out brand by brand.</p>
     </div>
     
+    <div class="search-box" data-search hidden>
+      <label class="sr-only" for="cat-q">Search products and part numbers</label>
+      <input id="cat-q" type="search" autocomplete="off" role="combobox"
+             aria-expanded="false" aria-controls="cat-results"
+             placeholder="Search 243 products or a part number…">
+      <div class="search-results" id="cat-results" data-results role="listbox" hidden></div>
+    </div>
+    <div class="filter-bar" data-brand-filter hidden></div>
+    
     <section class="sub-block" id="measuring-layout-levels-layout">
       <h2>Levels &amp; Layout</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/measuring-layout/chalk-line/"><img src="/assets/products/chalk-line.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DEWALT|STANLEY|TAPARIA"><a href="/products/measuring-layout/chalk-line/"><img src="/assets/products/chalk-line.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Chalk Line</span>
           <span class="type-meta">4 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/detector/"><img src="/assets/products/detector.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="STANLEY"><a href="/products/measuring-layout/detector/"><img src="/assets/products/detector.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Detector</span>
           <span class="type-meta">1 size</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/laser-distance-measurer/"><img src="/assets/products/laser-distance-measurer.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DEWALT|STANLEY"><a href="/products/measuring-layout/laser-distance-measurer/"><img src="/assets/products/laser-distance-measurer.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Laser Distance Measurer</span>
           <span class="type-meta">5 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/laser-level/"><img src="/assets/products/laser-level.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DEWALT|STANLEY"><a href="/products/measuring-layout/laser-level/"><img src="/assets/products/laser-level.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Laser Level</span>
           <span class="type-meta">9 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/measuring-tape/"><img src="/assets/products/measuring-tape.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|STANLEY|TAPARIA"><a href="/products/measuring-layout/measuring-tape/"><img src="/assets/products/measuring-tape.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Measuring Tape</span>
           <span class="type-meta">26 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/measuring-wheel/"><img src="/assets/products/measuring-wheel.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="STANLEY"><a href="/products/measuring-layout/measuring-wheel/"><img src="/assets/products/measuring-wheel.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Measuring Wheel</span>
           <span class="type-meta">2 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/plumb-bob/"><img src="/assets/products/plumb-bob.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|STANLEY"><a href="/products/measuring-layout/plumb-bob/"><img src="/assets/products/plumb-bob.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Plumb Bob</span>
           <span class="type-meta">3 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/sliding-bevel/"><img src="/assets/products/sliding-bevel.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="STANLEY"><a href="/products/measuring-layout/sliding-bevel/"><img src="/assets/products/sliding-bevel.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Sliding Bevel</span>
           <span class="type-meta">1 size</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/spirit-level/"><img src="/assets/products/spirit-level.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="BLACK &amp; DECKER|DENEERS|DEWALT|STANLEY|TAPARIA"><a href="/products/measuring-layout/spirit-level/"><img src="/assets/products/spirit-level.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Spirit Level</span>
           <span class="type-meta">49 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/steel-rule/"><span class="thumb-blank" aria-hidden="true"></span>
+        <li class="type-card" data-brands="DENEERS|STANLEY"><a href="/products/measuring-layout/steel-rule/"><span class="thumb-blank" aria-hidden="true"></span>
           <span class="type-name">Steel Rule</span>
           <span class="type-meta">6 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/try-square/"><img src="/assets/products/try-square.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|DEWALT|STANLEY|TAPARIA"><a href="/products/measuring-layout/try-square/"><img src="/assets/products/try-square.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Try Square</span>
           <span class="type-meta">20 sizes</span></a></li></ul>
     </section>
     <section class="sub-block" id="measuring-layout-precision-measuring">
       <h2>Precision Measuring</h2>
       <ul class="type-grid">
-        <li class="type-card"><a href="/products/measuring-layout/caliper/"><img src="/assets/products/caliper.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|STANLEY|TAPARIA"><a href="/products/measuring-layout/caliper/"><img src="/assets/products/caliper.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Caliper</span>
           <span class="type-meta">17 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/feeler-gauge/"><img src="/assets/products/feeler-gauge.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|STANLEY"><a href="/products/measuring-layout/feeler-gauge/"><img src="/assets/products/feeler-gauge.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Feeler Gauge</span>
           <span class="type-meta">6 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/inspection-site-instrument/"><img src="/assets/products/inspection-site-instrument.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DEWALT|STANLEY"><a href="/products/measuring-layout/inspection-site-instrument/"><img src="/assets/products/inspection-site-instrument.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Inspection &amp; Site Instrument</span>
           <span class="type-meta">5 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/micrometer/"><img src="/assets/products/micrometer.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS"><a href="/products/measuring-layout/micrometer/"><img src="/assets/products/micrometer.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Micrometer</span>
           <span class="type-meta">8 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/spring-divider/"><img src="/assets/products/spring-divider.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS|TAPARIA"><a href="/products/measuring-layout/spring-divider/"><img src="/assets/products/spring-divider.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Spring Divider</span>
           <span class="type-meta">8 sizes</span></a></li>
-        <li class="type-card"><a href="/products/measuring-layout/vernier-caliper/"><img src="/assets/products/vernier-caliper.jpg" alt="" loading="lazy" width="64" height="64">
+        <li class="type-card" data-brands="DENEERS"><a href="/products/measuring-layout/vernier-caliper/"><img src="/assets/products/vernier-caliper.jpg" alt="" loading="lazy" width="64" height="64">
           <span class="type-name">Vernier Caliper</span>
           <span class="type-meta">6 sizes</span></a></li></ul>
     </section>
