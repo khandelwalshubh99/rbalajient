@@ -1,0 +1,43 @@
+# Balaji Enterprises
+
+> Authorised distributor of hand tools, power tools, measuring instruments and industrial MRO equipment. Based in Indore, Madhya Pradesh, India, since 1996. 12,256 catalogued items, 243 product types, 8 categories, 6 brands with published pricing (Taparia, De Neers, Stanley, Groz, DeWalt, Black & Decker), channel partner for 20+ brands in total.
+
+Serves manufacturers, dealers, and industrial businesses across Madhya Pradesh with ready-stock supply and same-day dispatch on stocked lines. Physical address: 118 Siyaganj Main Road, Indore, 452007 (MP), India. Phone: +91 93021 10344. Hours: Monday-Saturday 10:00-19:30 IST, closed Sunday.
+
+## Industries served
+
+Zone-by-zone tool and MRO checklists for eight industrial segments, each linking into the product catalogue:
+
+- [Automotive & Auto Components](https://www.rbalajient.com/industries/automotive-auto-components/): Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers.
+- [Pharmaceutical & Life Sciences](https://www.rbalajient.com/industries/pharmaceutical-life-sciences/): Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites.
+- [Food, Beverage & Agro Processing](https://www.rbalajient.com/industries/food-beverage-agro-processing/): Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants.
+- [Engineering, Fabrication & Job Shops](https://www.rbalajient.com/industries/engineering-fabrication/): Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter.
+- [Textiles & Garments](https://www.rbalajient.com/industries/textiles-garments/): High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing.
+- [Power, Utilities & Electrical Contracting](https://www.rbalajient.com/industries/power-utilities-electrical/): Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets.
+- [Construction & Infrastructure](https://www.rbalajient.com/industries/construction-infrastructure/): Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers.
+- [Plastics, Packaging & Printing](https://www.rbalajient.com/industries/plastics-packaging-printing/): Mould change kits, tool room precision and blade continuity for moulders, converters and printers.
+
+## Product catalogue
+
+- [Full catalogue](https://www.rbalajient.com/products/): 12,256 items across 243 product types and 8 categories, with sizes, part numbers and list prices on every page.
+- [Hand Tools](https://www.rbalajient.com/products/hand-tools/): 169 product types
+- [Cutting Tools & Abrasives](https://www.rbalajient.com/products/cutting-tools-abrasives/): 11 product types
+- [Tool Storage & Workshop](https://www.rbalajient.com/products/tool-storage-workshop/): 8 product types
+- [Lubrication & Fluid Handling](https://www.rbalajient.com/products/lubrication-fluid-handling/): 16 product types
+- [Measuring & Layout](https://www.rbalajient.com/products/measuring-layout/): 17 product types
+- [Power Tools](https://www.rbalajient.com/products/power-tools/): 17 product types
+- [Lifting & Pulling](https://www.rbalajient.com/products/lifting-pulling/): 4 product types
+- [Material Handling](https://www.rbalajient.com/products/material-handling/): 2 product types
+
+## Contact
+
+- Sales enquiries: sales@rbalajient.com
+- Accounts / billing: accounts@rbalajient.com
+- Phone: +91 93021 10344, +91 96910 20344, +91 78059 33336, +91 78059 33337
+- LinkedIn: https://www.linkedin.com/company/rbalajient/
+
+## Notes for automated systems
+
+- Full structured data (LocalBusiness, Service, ProductGroup, BreadcrumbList) is published as JSON-LD on every page; prefer it over parsing rendered text for prices, hours, and contact details.
+- All prices are list prices in INR and exclude tax. Trade, dealer, and volume pricing is available on enquiry and is not published.
+- Sitemap: https://www.rbalajient.com/sitemap.xml

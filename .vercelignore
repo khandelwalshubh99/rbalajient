@@ -1,0 +1,12 @@
+# Build-time-only files: never fetched by the deployed site at runtime, only
+# used locally to generate index.html and the products/industries trees.
+# Excluding them (rather than relying on robots.txt/noindex, which only ask
+# well-behaved crawlers not to index -- they don't stop a scraper fetching the
+# file directly) means they 404 on the live domain instead of serving.
+Balaji Enterprises.dc.html
+build-catalogue-pages.py
+build-index.py
+github.md
+product-photo-filenames.txt
+image-slot.js
+industries-map.json

@@ -15,26 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     return el ? el.value : '';
   }
 
-  function mailto(subject, lines) {
-    return 'mailto:sales@rbalajient.com?subject=' + encodeURIComponent(subject) +
-      '&body=' + encodeURIComponent(lines.join('\n'));
-  }
+  // Address is base64 rather than a literal so it doesn't sit in plaintext in
+  // this file -- same reasoning as the [data-em] links in email-protect.js.
+  var SALES_EMAIL = atob('c2FsZXNAcmJhbGFqaWVudC5jb20=');
 
-  // Homepage quote form.
-  var form = document.getElementById('quote-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var company = val('qf-company');
-      window.location.href = mailto('Quote Request' + (company ? ' - ' + company : ''), [
-        'Name: ' + val('qf-name'),
-        'Company: ' + company,
-        'Phone / Email: ' + val('qf-contact'),
-        '',
-        'Requirement:',
-        val('qf-message')
-      ]);
-    });
+  function mailto(subject, lines) {
+    return 'mailto:' + SALES_EMAIL + '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(lines.join('\n'));
   }
 
   // Enquiry form on the generated industry, catalogue and product-type pages.

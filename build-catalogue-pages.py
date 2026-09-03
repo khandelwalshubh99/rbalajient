@@ -23,7 +23,6 @@ import pathlib
 import re
 import hashlib
 import shutil
-from urllib.parse import quote
 
 ROOT = pathlib.Path(__file__).parent
 SITE = "https://www.rbalajient.com"
@@ -46,7 +45,7 @@ ADDRESS = "118 Siyaganj Main Road, Indore, 452007 (MP)"
 # keep returning visitors on the previous build for up to a day. Every
 # reference carries a content hash instead: the cache stays aggressive and a
 # changed file is a changed URL, so updates land immediately.
-VER = {"css": "0", "js": "0", "idx": "0"}
+VER = {"css": "0", "js": "0", "idx": "0", "em": "0"}
 
 
 def digest(*parts):
@@ -95,7 +94,7 @@ def photo_for(name):
 # shared chrome
 # --------------------------------------------------------------------------
 
-def head(title, desc, canonical, jsonld):
+def head(title, desc, canonical, jsonld, robots="index, follow, max-image-preview:large, max-snippet:-1"):
     return f"""<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -104,7 +103,7 @@ def head(title, desc, canonical, jsonld):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{canonical}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="{robots}">
 <meta name="theme-color" content="#081B33">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <meta property="og:type" content="website">
@@ -120,6 +119,7 @@ def head(title, desc, canonical, jsonld):
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/catalogue.css?v={VER['css']}">
 <script type="application/ld+json">{jsonld}</script>
+<script src="/assets/email-protect.js?v={VER['em']}" defer></script>
 <script src="/assets/catalogue-ui.js?v={VER['js']}" defer></script>
 </head>
 <body>
@@ -132,6 +132,7 @@ def head(title, desc, canonical, jsonld):
     </a>
     <nav class="site-nav">
       <a href="/products/">Products</a>
+      <a href="/industries/">Industries</a>
       <a href="/#about">About</a>
       <a href="/#contact">Contact</a>
       <a href="tel:{PHONE}" class="btn-call">Call Now</a>
@@ -165,7 +166,7 @@ def footer(cats):
       <ul class="footer-list">
         <li>{ADDRESS}</li>
         <li><a href="tel:{PHONE}">{PHONE}</a></li>
-        <li><a href="mailto:{SALES}">{SALES}</a></li>
+        <li><a href="javascript:void(0)" data-em="c2FsZXNAcmJhbGFqaWVudC5jb20=" class="js-email-text">sales [at] rbalajient.com</a></li>
         <li>Mon&ndash;Sat 10:00&ndash;19:30</li>
       </ul>
     </div>
@@ -298,11 +299,13 @@ def product_page(cat, sub, name, groups, sibs, url, cats):
       <ul class="pill-list">{items}</ul>
     </section>"""
 
-    # Percent-encode both, or a product name containing "&" (Abrasive Disc &
-    # Paper) truncates the mailto body and leaves a bare & in the attribute.
-    subject = quote(f"Quote request: {name}", safe="")
-    body = quote(f"Please send current pricing and availability for {name}."
-                 "\r\n\r\nSizes / part numbers needed:\r\n", safe="")
+    # Raw (not percent-encoded) text: email-protect.js runs encodeURIComponent
+    # itself when it builds the mailto: at hydration time. e() still has to
+    # HTML-escape it for the attribute (a product name with "&" -- Abrasive
+    # Disc & Paper -- would otherwise break the attribute).
+    subject = e(f"Quote request: {name}")
+    body = e(f"Please send current pricing and availability for {name}.\n\n"
+             "Sizes / part numbers needed:\n")
 
     hero = (f'<div class="prod-photo"><img src="{photo}" alt="{e(name)} supplied by '
             f'Balaji Enterprises, Indore" width="300" height="300"></div>'
@@ -329,7 +332,7 @@ def product_page(cat, sub, name, groups, sibs, url, cats):
         <p class="meta">{num(n_rows)} listed size{"s" if n_rows != 1 else ""} &amp; part numbers &middot; {len(brands)} brand{"s" if len(brands) != 1 else ""}</p>
         <ul class="brand-chips">{"".join(f"<li>{e(b)}</li>" for b in brands)}</ul>
         <div class="cta-row">
-          <a class="btn-primary" href="mailto:{SALES}?subject={subject}&amp;body={body}">Request a Quote</a>
+          <a class="btn-primary" href="javascript:void(0)" data-em="c2FsZXNAcmJhbGFqaWVudC5jb20=" data-subject="{subject}" data-body="{body}">Request a Quote</a>
         </div>
       </div>
     </div>
@@ -459,6 +462,41 @@ def hub_page(cats, counts, url="/products/"):
 """ + footer(cats)
 
 
+def not_found_page(cats):
+    """The custom 404 -- Vercel's static builder serves this automatically
+    for any unmatched path, with a real 404 status (not a redirect to /)."""
+    quick = "".join(
+        f'<a href="/products/{c["slug"]}/">{e(c["name"])}</a>' for c in cats)
+
+    page_ld = {"@type": "WebPage", "name": "Page Not Found",
+               "url": SITE + "/404.html",
+               "isPartOf": {"@type": "WebSite", "name": "Balaji Enterprises", "url": SITE}}
+
+    return head("Page Not Found | Balaji Enterprises",
+                "That page doesn't exist or has moved. Browse the tool and MRO "
+                "catalogue or get in touch -- Balaji Enterprises, Indore.",
+                SITE + "/404.html", ld(page_ld),
+                robots="noindex, follow") + f"""
+<main id="main">
+  <div class="wrap error-page">
+    <p class="error-code">404</p>
+    <h1 class="error-title">That page took a wrong turn.</h1>
+    <p class="error-lead">The link's broken, or the page has moved. The catalogue and
+    the rest of the site are one click away.</p>
+    <div class="error-actions">
+      <a class="btn-primary" href="/">Home</a>
+      <a class="btn-outline" href="/products/">Browse the Catalogue</a>
+      <a class="btn-outline" href="/industries/">Industries We Serve</a>
+    </div>
+    <div class="error-links">
+      <h2>Or jump straight to a category</h2>
+      <div class="error-link-grid">{quick}</div>
+    </div>
+  </div>
+</main>
+""" + footer(cats)
+
+
 # --------------------------------------------------------------------------
 
 def main():
@@ -485,7 +523,7 @@ def main():
                                        "b": sorted({b["name"] for b in t["brands"]})})
                 for b in t["brands"]:
                     for row in b["rows"]:
-                        if row and row[0] and row[0] != "\u2014":
+                        if row and row[0] and row[0] != "-":
                             part_index.append([row[0], u])
     blobs = {}
     for fname, payload in (("search-index.json", prod_index),
@@ -496,6 +534,7 @@ def main():
 
     VER["css"] = digest((ROOT / "assets" / "catalogue.css").read_bytes())
     VER["js"] = digest((ROOT / "assets" / "catalogue-ui.js").read_bytes())
+    VER["em"] = digest((ROOT / "assets" / "email-protect.js").read_bytes())
     VER["idx"] = digest(blobs["search-index.json"], blobs["parts-index.json"])
 
     urls, counts, n_products = ["/"], {}, 0
@@ -542,6 +581,12 @@ def main():
 
     write(OUT / "index.html", hub_page(cats, counts))
     urls.append("/products/")
+
+    # Vercel's static builder serves this automatically for any unmatched
+    # path, with a real 404 status. Root-level, not under OUT, and never in
+    # the sitemap -- a 404 page has no business being indexed or crawled as
+    # a destination.
+    write(ROOT / "404.html", not_found_page(cats))
 
     # /industries/ pages are generated separately (build/build.js). The sitemap
     # is rebuilt from scratch here, so they must be listed or they vanish.

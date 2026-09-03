@@ -16,6 +16,9 @@
     return String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   };
 
+  // Base64, not a literal, so the address isn't plaintext in this file.
+  var SALES_EMAIL = atob("c2FsZXNAcmJhbGFqaWVudC5jb20=");
+
   // ---------------------------------------------------------------- search
   function initSearch() {
     var box = document.querySelector("[data-search]");
@@ -131,7 +134,7 @@
           html = '<div class="sr-empty">Searching part numbers&hellip;</div>';
         } else {
           html = '<div class="sr-empty">Nothing matches &ldquo;' + esc(q)
-               + '&rdquo;. Try a shorter term, or <a href="mailto:sales@rbalajient.com">ask us</a>.</div>';
+               + '&rdquo;. Try a shorter term, or <a href="mailto:' + SALES_EMAIL + '">ask us</a>.</div>';
         }
       }
 

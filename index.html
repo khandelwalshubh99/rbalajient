@@ -349,8 +349,8 @@
           </div>
           <div>
             <div style="font-weight:800;font-size:13px;color:#5C6B7C;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px">Email</div>
-            <a href="mailto:sales@rbalajient.com" style="display:block;font-size:16px;color:#081B33;font-weight:600;text-decoration:none;margin-bottom:2px" style-hover="color:#F5883E">sales@rbalajient.com</a>
-            <a href="mailto:accounts@rbalajient.com" style="display:block;font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">accounts@rbalajient.com</a>
+            <a href="javascript:void(0)" data-em="c2FsZXNAcmJhbGFqaWVudC5jb20=" class="js-email-text" style="display:block;font-size:16px;color:#081B33;font-weight:600;text-decoration:none;margin-bottom:2px" style-hover="color:#F5883E">sales [at] rbalajient.com</a>
+            <a href="javascript:void(0)" data-em="YWNjb3VudHNAcmJhbGFqaWVudC5jb20=" class="js-email-text" style="display:block;font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">accounts [at] rbalajient.com</a>
           </div>
         </div>
         <a href="https://taponn.me/balajienterprises" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:20px;height:auto;border-radius:4px;overflow:hidden;background:#0B2A4E;text-decoration:none;padding:20px" style-hover="background:#123A63">
@@ -423,7 +423,7 @@
         <div style="display:flex;flex-direction:column;gap:12px;font-size:14.5px;color:rgba(255,255,255,0.6)">
           <span>118 Siyaganj Main Road, Indore, 452007 (MP)</span>
           <a href="tel:9302110344" style="color:rgba(255,255,255,0.6);text-decoration:none" style-hover="color:#fff">9302110344</a>
-          <a href="mailto:sales@rbalajient.com" style="color:rgba(255,255,255,0.6);text-decoration:none" style-hover="color:#fff">sales@rbalajient.com</a>
+          <a href="javascript:void(0)" data-em="c2FsZXNAcmJhbGFqaWVudC5jb20=" class="js-email-text" style="color:rgba(255,255,255,0.6);text-decoration:none" style-hover="color:#fff">sales [at] rbalajient.com</a>
         </div>
       </div>
     </div>
@@ -435,6 +435,8 @@
 </div>
 
 </x-dc>
+
+<script src="/assets/email-protect.js" defer></script>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {}, &quot;brandMarquee&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Behavior&quot;}, &quot;showQuoteForm&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Behavior&quot;}}">
 class Component extends DCLogic {
   state = { navOpen: false, page: "home", activeSub: null, brandFilter: [], sort: "name", expanded: [], query: "", ready: false };
@@ -517,7 +519,8 @@ class Component extends DCLogic {
       "Requirement:",
       message,
     ];
-    const mailto = `mailto:sales@rbalajient.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+    const SALES_EMAIL = atob("c2FsZXNAcmJhbGFqaWVudC5jb20=");
+    const mailto = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
     window.location.href = mailto;
   };
 

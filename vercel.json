@@ -9,15 +9,6 @@
           "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
       ]
-    },
-    {
-      "source": "/(Balaji%20Enterprises.dc.html|github.md|product-photo-filenames.txt|build-index.py|industries-map.json)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
     }
   ]
 }
