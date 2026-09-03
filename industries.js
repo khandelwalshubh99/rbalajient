@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Name: ' + val('ef-name'),
           'Company / Plant: ' + company,
           'Phone / Email: ' + val('ef-contact'),
-          'Segment: ' + (segment || '—'),
+          'Segment: ' + (segment || '-'),
           'Page: ' + tag,
           '',
           'Requirement:',

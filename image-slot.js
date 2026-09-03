@@ -1,15 +1,14 @@
 // @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
 /* BEGIN USAGE */
 /**
- * <image-slot> — user-fillable image placeholder.
+ * <image-slot>, user-fillable image placeholder.
  *
  * Drop this into a deck, mockup, or page wherever a design needs an image.
  * You control the slot's shape; it sizes to its container by default. When the search_stock_photos tool
- * is available, prefill the slot by default — write the photo's URL into
+ * is available, prefill the slot by default, write the photo's URL into
  * src (with credit/credit-href); the user can still fill or replace it
  * by dragging an image file onto it (or clicking to browse). The dropped
- * image persists across reloads via a .image-slots.state.json sidecar —
- * same read-via-fetch / write-via-window.omelette pattern as
+ * image persists across reloads via a .image-slots.state.json sidecar, * same read-via-fetch / write-via-window.omelette pattern as
  * design_canvas.jsx, so the filled slot shows on share links, downloaded
  * zips, and PPTX export. Outside the omelette runtime the slot is read-only.
  *
@@ -20,19 +19,18 @@
  * sidecar; keep slot ids distinct across them.
  *
  * Attributes:
- *   id           Persistence key. REQUIRED for the drop to survive reload —
- *                every slot on the page needs a distinct id.
+ *   id           Persistence key. REQUIRED for the drop to survive reload, *                every slot on the page needs a distinct id.
  *   shape        'rect' | 'rounded' | 'circle' | 'pill'   (default 'rounded')
  *                'circle' applies 50% border-radius; on a non-square slot
- *                that's an ellipse — set equal width and height for a true
+ *                that's an ellipse, set equal width and height for a true
  *                circle.
  *   radius       Corner radius in px for 'rounded'.       (default 12)
- *   mask         Any CSS clip-path value. Overrides `shape` — use this for
+ *   mask         Any CSS clip-path value. Overrides `shape`, use this for
  *                hexagons, blobs, arbitrary polygons.
  *   fit          Initial framing baseline: cover | contain.   (default 'cover')
  *                cover starts the image filling the frame (overflow cropped);
  *                contain starts it fully visible (letterboxed). Either way the
- *                user can always pan/scale from there — double-click, or the
+ *                user can always pan/scale from there, double-click, or the
  *                Edit control, enters reframe mode (drag to move, scroll or
  *                corner-handles to scale; Escape / click-out commits). The
  *                crop persists alongside the image in the sidecar.
@@ -47,34 +45,33 @@
  *                plus.unsplash.com, …): an Unsplash src with no credit
  *                renders an error tile INSTEAD of the photo (Unsplash
  *                terms forbid showing their photos unattributed). Use the
- *                exact form 'Photo by {photographer name} on Unsplash' —
- *                the overlay then links the name to credit-href and
+ *                exact form 'Photo by {photographer name} on Unsplash', *                the overlay then links the name to credit-href and
  *                'Unsplash' to the Unsplash homepage, and links back to
  *                unsplash.com automatically get the required utm referral
  *                params appended at render time. The credit belongs to
  *                the src image, so it only shows while src is what's
- *                displayed — a user-dropped image hides it.
+ *                displayed, a user-dropped image hides it.
  *   credit-href  Link for the photographer's name in the credit overlay
  *                (their Unsplash profile URL from the stock-photo search
- *                results). http(s) URLs only — anything else renders the
+ *                results). http(s) URLs only, anything else renders the
  *                name as plain text.
  *
  * Sizing: the slot fills its container by default (width/height 100%).
- * Put it in a sized wrapper — absolutely positioned, a grid cell, a fixed
- * frame — and it takes exactly that box. When the parent's height is
+ * Put it in a sized wrapper, absolutely positioned, a grid cell, a fixed
+ * frame, and it takes exactly that box. When the parent's height is
  * indefinite (ordinary flow), it falls back to full width at a 3:2 aspect
  * ratio instead of collapsing. In a shrink-to-fit parent (a float,
  * width:max-content, an unsized absolute wrapper), percentages have
- * nothing to resolve against — size the slot or its wrapper explicitly
+ * nothing to resolve against, size the slot or its wrapper explicitly
  * there. For a fixed-size slot, set
  * width/height on the element itself (inline style), which overrides the
  * default. When
  * layering content above a slot (full-bleed layouts), make the overlay
- * click-through — pointer-events: none on scrims/text plates, re-enabled
- * on interactive children — so the slot's hover controls stay reachable.
+ * click-through, pointer-events: none on scrims/text plates, re-enabled
+ * on interactive children, so the slot's hover controls stay reachable.
  * Keep the slot's bottom-left corner visually clear as well: the credit
  * overlay renders there, and a dark fade or text plate covering it hides
- * the attribution Unsplash's terms require — end the fade above that
+ * the attribution Unsplash's terms require, end the fade above that
  * corner, or keep it nearly transparent where the credit sits.
  *
  * Usage:
@@ -102,17 +99,17 @@
   //    params appended when absent (credit-href values live in page
   //    content that can't be edited after the fact).
   // Keep the utm_source value in sync with UTM_SOURCE in
-  // platform/web-agent/unsplash.ts — this file is a project-local
+  // platform/web-agent/unsplash.ts, this file is a project-local
   // artifact and cannot import it (equality is pinned by tests).
   const UNSPLASH_HOMEPAGE_HREF =
     'https://unsplash.com/?utm_source=claude_design&utm_medium=referral';
   // Host rule mirrors the hotlink validator that admits Unsplash srcs into
   // pages in the first place (cdn$ in unsplash.ts: apex or any subdomain)
-  // — Unsplash+ results serve from plus.unsplash.com, not just images.*,
+  //, Unsplash+ results serve from plus.unsplash.com, not just images.*,
   // and an admitted-but-uncredited photo must error whatever unsplash
   // host it rides on.
   // Trailing-dot FQDNs (images.unsplash.com.) are the same host to the
-  // browser but would miss the regex — strip one dot so the check fails
+  // browser but would miss the regex, strip one dot so the check fails
   // CLOSED (unrecognized-but-real Unsplash srcs must error, not render).
   const isUnsplashHost = (u) => {
     try {
@@ -145,13 +142,13 @@
       return href;
     }
   };
-  // 2× a ~600px slot in a 1920-wide deck — retina-sharp without making the
+  // 2× a ~600px slot in a 1920-wide deck, retina-sharp without making the
   // sidecar enormous. A 1200px WebP at q=0.85 is ~150-300KB.
   const MAX_DIM = 1200;
   // Raster formats only. SVG is excluded (can carry script; createImageBitmap
   // on SVG blobs is inconsistent). GIF is excluded because the canvas
   // re-encode keeps only the first frame, so an animated GIF would silently
-  // go still — better to reject than surprise.
+  // go still, better to reject than surprise.
   const ACCEPT = ['image/png', 'image/jpeg', 'image/webp', 'image/avif'];
 
   // ── Shared sidecar store ────────────────────────────────────────────────
@@ -161,7 +158,7 @@
   // the host allowlists to *.state.json basenames only.
   const subs = new Set();
   let slots = {};
-  // ids explicitly cleared before the sidecar fetch resolved — otherwise
+  // ids explicitly cleared before the sidecar fetch resolved, otherwise
   // the merge below can't tell "never set" from "just deleted" and would
   // resurrect the sidecar's stale value.
   const tombstones = new Set();
@@ -178,7 +175,7 @@
         if (j && typeof j === 'object') {
           const merged = Object.assign({}, j, slots);
           // A framing-only write that raced ahead of hydration must not
-          // drop a user image that's only on disk — inherit u from the
+          // drop a user image that's only on disk, inherit u from the
           // sidecar for any in-memory entry that lacks one.
           for (const k in slots) {
             if (merged[k] && !merged[k].u && j[k]) {
@@ -203,14 +200,13 @@
   let saveDirty = false;
   // Unload-time flush: save()'s serialization defers a mid-RTT re-fire to a
   // .then that never runs in an unloading document, silently dropping a
-  // pagehide commit. Post the current slots immediately instead — content
+  // pagehide commit. Post the current slots immediately instead, content
   // is a superset snapshot of any in-flight save's, the write is a
   // whole-file last-writer-wins replace, and postMessage FIFO delivers it
   // to the host after the in-flight one, so a backend-side reorder at
   // worst reproduces the dropped-commit outcome this flush improves on.
   // Guarded on the initial sidecar read: pre-hydration slots can miss
-  // other slots' persisted entries, and flushing it would clobber them —
-  // that narrow case stays best-effort (the in-memory merge in load()
+  // other slots' persisted entries, and flushing it would clobber them, // that narrow case stays best-effort (the in-memory merge in load()
   // cannot happen in an unloading document anyway).
   function flushNow() {
     if (!loaded) return;
@@ -244,7 +240,7 @@
     if (val) { slots[id] = val; tombstones.delete(id); }
     else { delete slots[id]; if (!loaded) tombstones.add(id); }
     subs.forEach((fn) => fn());
-    // A drop is rare + high-value — write immediately so nav-away can't lose
+    // A drop is rare + high-value, write immediately so nav-away can't lose
     // it. Gate on the initial read so we don't overwrite a sidecar we haven't
     // merged yet; the merge in load() keeps this change once the read lands.
     if (loaded) save(); else load().then(save);
@@ -275,7 +271,7 @@
   const stylesheet =
     // Fill the container by default: slots are usually placed inside a
     // sized wrapper (a hero frame, a grid cell, an inset:0 layer) and are
-    // expected to take that box — a fixed intrinsic size would render as
+    // expected to take that box, a fixed intrinsic size would render as
     // a small tile in the corner of a full-bleed wrapper instead.
     // aspect-ratio is the companion fallback that keeps a bare slot
     // visible when the parent's height is indefinite: height:100%
@@ -335,7 +331,7 @@
     // legible over the image.
     // The UA [popover] base rule styles the element in EVERY state (only
     // display:none is gated on :not(:popover-open), and the display:flex
-    // below overrides that) — so the UA resets live HERE, like .spill's,
+    // below overrides that), so the UA resets live HERE, like .spill's,
     // or the ordinary hover-state strip renders as a bordered Canvas box
     // centered by margin:auto. inset:auto precedes top/right (shorthand).
     '.ctl{position:absolute;inset:auto;top:8px;right:8px;margin:0;border:0;padding:0;' +
@@ -344,7 +340,7 @@
     '  white-space:nowrap}' +
     // While reframing, the spill owns the top layer and would swallow every
     // click on the in-frame controls. Promoting .ctl into the top layer
-    // ABOVE the spill (shown after it — later popovers stack higher) keeps
+    // ABOVE the spill (shown after it, later popovers stack higher) keeps
     // Edit-as-toggle and Replace clickable mid-reframe. _applyView pins it
     // to the frame's top-right in viewport px (translateX(-100%)
     // right-aligns against the computed left edge); inset:auto clears the
@@ -363,18 +359,18 @@
     '  font:10px/1.2 system-ui,-apple-system,sans-serif;text-decoration:none;' +
     '  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(6px)}' +
     // The credit is a SPAN holding one or two <a>s (Unsplash's prescribed
-    // form links the photographer AND Unsplash) — anchors style inline so
+    // form links the photographer AND Unsplash), anchors style inline so
     // the overlay reads as one line of text.
     '.credit a{color:inherit;text-decoration:none}' +
     '.credit a:hover,.credit a:focus-visible{text-decoration:underline}' +
     ':host([data-filled][data-credit]) .credit{display:block}' +
-    // Exports must ship JUST the image — no hover controls, no credit chip
+    // Exports must ship JUST the image, no hover controls, no credit chip
     // (the host marks <html data-om-exporting> for the capture window; the
     // page-level hide script can't reach shadow DOM, this rule can).
     ':host-context([data-om-exporting]) .ctl,' +
     ':host-context([data-om-exporting]) .credit{display:none !important}' +
     // Attribution error tile: REPLACES the photo when an Unsplash src has
-    // no credit attribute — rendering the photo uncredited is the terms
+    // no credit attribute, rendering the photo uncredited is the terms
     // violation, so the photo must not appear at all.
     // Calm and neutral on purpose (review feedback): the tile informs the
     // user; the fix instructions are machine-facing (usage docblock, tool
@@ -408,13 +404,13 @@
 
     /** Duplicate-slide hook (called by deck-stage, see its
      *  _remintDuplicateIds): copy this id's stored image, if any, under a
-     *  freshly minted key and return that key — so a duplicated slide's
+     *  freshly minted key and return that key, so a duplicated slide's
      *  slot keeps its dropped photo instead of reverting to the
      *  placeholder. 'isFree' is the caller's uniqueness check (document
      *  ids); candidates must ALSO be unused in the sidecar, which can
      *  hold keys from other pages sharing the project root. (An EMPTY
      *  slot on another page leaves no sidecar entry, so its id is not
-     *  detectable here — a minted key can collide with it and that slot
+     *  detectable here, a minted key can collide with it and that slot
      *  would show this photo. Same blast radius as two pages reusing an
      *  id by hand, which the shared sidecar already permits.) Returns null
      *  when no id could be minted (caller strips the id, today's
@@ -422,7 +418,7 @@
     static cloneSlot(fromId, isFree) {
       if (typeof fromId !== 'string' || !fromId) return null;
       // Pre-hydration the store can't veto candidates or source the copy
-      // — degrade to the strip (today's behavior) rather than mint
+      //, degrade to the strip (today's behavior) rather than mint
       // against keys we can't see yet. Any rendered (= droppable) slot
       // means load() has already settled.
       if (!loaded) return null;
@@ -432,7 +428,7 @@
         if (toId === fromId) continue;
         if (slots[toId] !== undefined) {
           // Reuse a key holding this exact value (bytes AND crop) if no
-          // live element here owns it — a duplicate op the host refused
+          // live element here owns it, a duplicate op the host refused
           // after minting leaves such a key behind, and reusing keeps
           // refused retries from accumulating one orphaned copy per
           // attempt. Full equality (not just bytes) so a byte-identical
@@ -457,7 +453,7 @@
       super();
       // clonable: rail thumbnails deep-clone slides and carry this shadow
       // along; reuse an already-cloned root so upgrade-after-clone works.
-      // (Deliberately NOT serializable — a getHTML consumer would embed
+      // (Deliberately NOT serializable, a getHTML consumer would embed
       // multi-MB sidecar data-URLs into serialized page HTML.)
       const root = this.shadowRoot ||
         this.attachShadow({ mode: 'open', clonable: true });
@@ -474,7 +470,7 @@
         '    <div class="cap">This photo needs attribution</div></div>' +
         '  <div class="ring" part="ring"></div>' +
         '</div>' +
-        // Outside .frame, like .spill/.ctl — the frame's overflow:hidden +
+        // Outside .frame, like .spill/.ctl, the frame's overflow:hidden +
         // border-radius/clip-path would cut the credit off on circle/pill/mask.
         // A SPAN, not an <a>: the prescribed Unsplash credit holds two links
         // (photographer + Unsplash), built per-render in _render().
@@ -486,7 +482,7 @@
         '</div>' +
         // data-dc-edit-transparent: the DC editor's edit-mode picker lets
         // clicks through for chrome marked with it (EDIT_TRANSPARENT_SEL)
-        // — without it, Replace/Edit clicks in Edit mode are swallowed by
+        //, without it, Replace/Edit clicks in Edit mode are swallowed by
         // element selection and the controls look dead.
         '<div class="ctl" popover="manual" data-dc-edit-transparent><button data-act="replace" title="Replace image">Replace</button>' +
         '  <button data-act="edit" title="Reframe image">Edit</button></div>' +
@@ -511,13 +507,13 @@
       this._gen = 0;
       this._view = { s: 1, x: 0, y: 0 };
       this._subFn = () => this._render();
-      // Shadow-DOM listeners live with the shadow DOM — bound once here so
+      // Shadow-DOM listeners live with the shadow DOM, bound once here so
       // disconnect/reconnect (e.g. React remount) doesn't stack handlers.
       this._empty.addEventListener('click', () => this._input.click());
       root.addEventListener('click', (e) => {
         const act = e.target && e.target.getAttribute && e.target.getAttribute('data-act');
         if (!act) return;
-        // The hidden controls are opacity-0 but still tabbable — without
+        // The hidden controls are opacity-0 but still tabbable, without
         // this gate a keyboard user could drive them on a read-only share
         // link (mirrors the dblclick handler's editable gate).
         if (!this.hasAttribute('data-editable')) return;
@@ -539,10 +535,10 @@
         if (f) this._ingest(f);
         this._input.value = '';
       });
-      // naturalWidth/Height aren't known until load — re-apply so the cover
+      // naturalWidth/Height aren't known until load, re-apply so the cover
       // baseline is computed from real dimensions, not the 100%×100% fallback.
       this._img.addEventListener('load', () => this._applyView());
-      // Gated only on editable — any filled slot can be repositioned/scaled,
+      // Gated only on editable, any filled slot can be repositioned/scaled,
       // regardless of fit. Share links (no writeFile) stay static.
       this.addEventListener('dblclick', (e) => {
         if (!this.hasAttribute('data-editable') || !this._reframes()) return;
@@ -566,7 +562,7 @@
         if (corner) {
           // Resize about the OPPOSITE corner. Viewport-px throughout (rect
           // fw/fh, not clientWidth) so the math survives a transform:scale()
-          // ancestor — deck_stage renders slides scaled-to-fit.
+          // ancestor, deck_stage renders slides scaled-to-fit.
           const iw = this._img.naturalWidth || 1, ih = this._img.naturalHeight || 1;
           const contain = (this.getAttribute('fit') || 'cover').toLowerCase() === 'contain';
           const base = contain ? Math.min(fw / iw, fh / ih) : Math.max(fw / iw, fh / ih);
@@ -615,8 +611,7 @@
         this._spill.addEventListener('pointerup', up);
         this._spill.addEventListener('pointercancel', up);
       });
-      // Wheel zoom stays available inside reframe mode as a trackpad nicety —
-      // zooms toward the cursor (offset' = cursor·(1-k) + offset·k).
+      // Wheel zoom stays available inside reframe mode as a trackpad nicety, // zooms toward the cursor (offset' = cursor·(1-k) + offset·k).
       this.addEventListener('wheel', (e) => {
         if (!this.hasAttribute('data-reframe')) return;
         e.preventDefault();
@@ -636,7 +631,7 @@
     }
 
     connectedCallback() {
-      // Warn once per page — an id-less slot works for the session but
+      // Warn once per page, an id-less slot works for the session but
       // cannot persist, and two id-less slots would share nothing.
       if (!this.id && !ImageSlot._warned) {
         ImageSlot._warned = true;
@@ -650,8 +645,7 @@
       // The host may inject window.omelette.writeFile AFTER the first render;
       // re-render on hover so the editable-gated controls reliably appear.
       this.addEventListener('pointerenter', this._subFn);
-      // width%/height% in _applyView encode the frame aspect at call time —
-      // a host resize (responsive grid, pane divider) would stretch the
+      // width%/height% in _applyView encode the frame aspect at call time, // a host resize (responsive grid, pane divider) would stretch the
       // image until the next _render. Re-render on size change: _render()
       // re-seeds _view from stored before clamp/apply, so a shrink→grow
       // cycle round-trips instead of ratcheting x/y toward the narrower
@@ -670,7 +664,7 @@
       this.removeEventListener('dragleave', this);
       this.removeEventListener('drop', this);
       if (this._ro) { this._ro.disconnect(); this._ro = null; }
-      // commit=false: a disconnect is not a user intent — committing here
+      // commit=false: a disconnect is not a user intent, committing here
       // would persist whatever half-finished drag a React remount or DOM
       // splice happened to interrupt. Deliberate exits commit on their own
       // paths (Escape/click-out/toggle), and unloads commit via pagehide.
@@ -749,7 +743,7 @@
     }
 
     // Reframe state lives only in this DOM until commit, invisible to the
-    // host's dirty signals — announce enter/exit so the host can hold
+    // host's dirty signals, announce enter/exit so the host can hold
     // auto-reloads for exactly the gesture (the guest bundle forwards
     // image-slot:reframe to the host as imageSlotReframe). Dispatched on
     // the element (composed, so it escapes shadow roots) while connected;
@@ -768,7 +762,7 @@
 
     attributeChangedCallback() { if (this.shadowRoot) this._render(); }
 
-    // handleEvent — one listener object for all four drag events keeps the
+    // handleEvent, one listener object for all four drag events keeps the
     // add/remove symmetric and the depth counter correct.
     handleEvent(e) {
       if (e.type === 'dragenter' || e.type === 'dragover') {
@@ -779,7 +773,7 @@
         if (e.type === 'dragenter') this._depth++;
         this.setAttribute('data-over', '');
       } else if (e.type === 'dragleave') {
-        // dragenter/leave fire for every descendant crossing — count depth
+        // dragenter/leave fire for every descendant crossing, count depth
         // so hovering the icon inside the empty state doesn't flicker.
         if (--this._depth <= 0) { this._depth = 0; this.removeAttribute('data-over'); }
       } else if (e.type === 'drop') {
@@ -800,13 +794,13 @@
       }
       // toDataUrl can take hundreds of ms on a large photo. A Clear or a
       // newer drop during that window would be clobbered when this await
-      // resumes — bump + capture a generation so stale encodes bail.
+      // resumes, bump + capture a generation so stale encodes bail.
       const gen = ++this._gen;
       try {
         const w = this.clientWidth || this.offsetWidth || MAX_DIM;
         const url = await toDataUrl(file, w);
         if (gen !== this._gen) return;
-        // Only exit reframe once the new image is in hand — a rejected type
+        // Only exit reframe once the new image is in hand, a rejected type
         // or decode failure leaves the in-progress crop untouched.
         this._exitReframe(false);
         const val = { u: url, s: 1, x: 0, y: 0 };
@@ -831,7 +825,7 @@
       setTimeout(() => { if (this._err === d) { d.remove(); this._err = null; } }, 3000);
     }
 
-    // Reframing (pan/resize) is available on any filled slot — the user can
+    // Reframing (pan/resize) is available on any filled slot, the user can
     // always reposition/scale. `fit` only sets the initial baseline (see
     // _geom): contain starts fully-visible, cover starts frame-filling.
     _reframes() {
@@ -843,7 +837,7 @@
     // contain = fit fully inside (letterboxed). Zooming a contain image past
     // s where it overflows naturally becomes a crop. Null until the img has
     // loaded (naturalWidth is 0 before that) or when the slot has no layout
-    // box — ResizeObserver fires with a 0×0 rect under display:none, and
+    // box, ResizeObserver fires with a 0×0 rect under display:none, and
     // clamping against a degenerate 1×1 frame would silently pull the stored
     // pan toward zero.
     _geom() {
@@ -870,14 +864,14 @@
     _applyView() {
       const g = this._geom();
       // Top-layer controls: pin to the frame's top-right in viewport px
-      // (the same 8px inset as the in-frame layout; unscaled — top-layer UI
+      // (the same 8px inset as the in-frame layout; unscaled, top-layer UI
       // reads as chrome, not page content). BEFORE the geometry branch:
       // placement needs only the frame rect, and a not-yet-loaded or broken
       // src must not leave the promoted strip floating unpositioned. Gated
       // on the popover actually being open: without the Popover API,
       // showPopover() threw (swallowed in _enterReframe), .ctl stays in
       // its in-frame absolute layout, and viewport-px coordinates would
-      // shove it off-frame — and matches(':popover-open') itself throws
+      // shove it off-frame, and matches(':popover-open') itself throws
       // there (unknown pseudo-class), hence the try/catch.
       if (this.hasAttribute('data-reframe')) {
         let onTop = false;
@@ -889,7 +883,7 @@
         }
       }
       if (!g) {
-        // Dimensions not known yet (before img load) — centered fit so there
+        // Dimensions not known yet (before img load), centered fit so there
         // is no flash of an unpositioned image before the geometry lands.
         const contain = (this.getAttribute('fit') || 'cover').toLowerCase() === 'contain';
         this._img.style.width = '100%';
@@ -900,7 +894,7 @@
         return;
       }
       // Baseline (cover-fill or contain-fit) × view scale. Width/height and
-      // left/top are all frame-% — depends only on the frame aspect ratio, so
+      // left/top are all frame-%, depends only on the frame aspect ratio, so
       // a responsive resize keeps the same crop. The spill layer mirrors the
       // same box so its corners = image corners.
       const k = g.base * this._view.s;
@@ -915,8 +909,7 @@
         // Top-layer spill: position in viewport px over the frame. The top
         // layer escapes ancestor transforms entirely, so EVERY term must be
         // in viewport units: getBoundingClientRect gives the frame's scaled
-        // origin AND size, and the rect/layout ratio rescales the ghost —
-        // sizing from layout px alone renders it 1/scale too large under a
+        // origin AND size, and the rect/layout ratio rescales the ghost, // sizing from layout px alone renders it 1/scale too large under a
         // scaled deck slide. Inner ghost + handles stay box-relative.
         const r = this.getBoundingClientRect();
         const sx = g.fw ? r.width / g.fw : 1;
@@ -962,7 +955,7 @@
       this._sub.style.display = editable ? '' : 'none';
 
       // Content. The sidecar is also writable by the agent's write_file
-      // tool, so its value isn't guaranteed canvas-originated — only accept
+      // tool, so its value isn't guaranteed canvas-originated, only accept
       // data:image/ URLs from it. The `src` attribute is author-controlled
       // (Claude wrote it into the HTML) so it passes through unchanged.
       let stored = this.id ? getSlot(this.id) : this._local;
@@ -979,14 +972,14 @@
         };
       }
       this._cap.textContent = this.getAttribute('placeholder') || 'Drop an image';
-      // Toggle via style.display — the [hidden] attribute alone loses to
+      // Toggle via style.display, the [hidden] attribute alone loses to
       // the display:flex / display:block rules in the stylesheet above.
-      // An Unsplash src with no credit attribute must NOT render — showing
+      // An Unsplash src with no credit attribute must NOT render, showing
       // the photo uncredited is the Unsplash-terms violation itself. The
       // error tile replaces the photo until the credit is written. A
       // user-dropped image is the user's own content and always renders.
       // Trimmed: credit is agent/user-editable content, and a whitespace-
-      // only value must count as missing — otherwise it would suppress the
+      // only value must count as missing, otherwise it would suppress the
       // error tile AND render an empty credit box (no text, no links),
       // exactly the unattributed state this gate exists to prevent.
       const credit = (this.getAttribute('credit') || '').trim();
@@ -1040,7 +1033,7 @@
           a.textContent = text;
           return a;
         };
-        // Unsplash's prescribed credit is TWO links — the photographer's
+        // Unsplash's prescribed credit is TWO links, the photographer's
         // name to their profile (credit-href) and 'Unsplash' to the
         // homepage. Render that split whenever the text has the canonical
         // shape; other text keeps the legacy single-link rendering.

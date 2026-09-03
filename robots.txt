@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Design source and internal notes — same content as the home page or not
+# Design source and internal notes: same content as the home page or not
 # intended as pages. Kept in the repo, kept out of the index.
 Disallow: /Balaji%20Enterprises.dc.html
 Disallow: /Balaji Enterprises.dc.html

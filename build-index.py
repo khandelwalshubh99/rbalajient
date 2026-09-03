@@ -20,7 +20,7 @@ def sub(old, new, label):
 
 # --- 1. head -------------------------------------------------------------
 SITE  = "https://www.rbalajient.com/"
-TITLE = "Balaji Enterprises — Industrial Tools &amp; MRO Supplier, Indore"  # 60 chars
+TITLE = "Balaji Enterprises: Industrial Tools &amp; MRO Supplier, Indore"  # 60 chars
 DESC  = ("Authorised distributor of hand tools, power tools, measuring instruments "
          "and industrial MRO equipment in Indore. 12,000+ items, 25 brands, since "
          "1996.")  # 150 chars
@@ -221,7 +221,7 @@ sub('''      <div>
 # handlers that open the in-page view instead, leaving the footer as the only
 # way in. Point every one of them at a real URL.
 
-# nav (desktop), mobile nav, footer — three <button onClick="{{ openProducts...
+# nav (desktop), mobile nav, footer: three <button onClick="{{ openProducts...
 for _old, _new in [
     ('<button onClick="{{ openProducts }}" style="background:none;border:none;padding:0;font-family:inherit;cursor:pointer;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</button>',
      '<a href="/products/" style="text-decoration:none;color:#081B33D1;font-weight:600;font-size:15px" style-hover="color:#F5883E">Products</a>'),

@@ -1,4 +1,4 @@
-/* industries.css — base + section styles for /industries/. Self-contained. */
+/* industries.css: base + section styles for /industries/. Self-contained. */
 
 html { scroll-behavior: smooth; }
 body { margin: 0; font-family: 'Manrope', sans-serif; background: #FBF8F2; color: #0B1F33; }
@@ -187,7 +187,7 @@ a { color: inherit; }
 }
 
 /* ==========================================================================
-   pages.css — styles for the generated /industries/ and /products/ pages.
+   pages.css: styles for the generated /industries/ and /products/ pages.
    Extends styles.css; same palette, same type scale.
    ========================================================================== */
 

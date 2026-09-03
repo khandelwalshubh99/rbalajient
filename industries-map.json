@@ -502,7 +502,7 @@
    "n": "03",
    "name": "Food, Beverage & Agro",
    "href": "/industries/food-beverage-agro-processing/",
-   "note": "Nylon — never steel on a sealing jaw"
+   "note": "Nylon, never steel on a sealing jaw"
   },
   {
    "n": "04",
@@ -1484,7 +1484,7 @@
    "n": "07",
    "name": "Construction & Infrastructure",
    "href": "/industries/construction-infrastructure/",
-   "note": "Tool tagging — stamped tools come back more often than painted ones"
+   "note": "Tool tagging; stamped tools come back more often than painted ones"
   }
  ],
  "/products/hand-tools/pin-punch/": [
@@ -1688,7 +1688,7 @@
    "n": "07",
    "name": "Construction & Infrastructure",
    "href": "/industries/construction-infrastructure/",
-   "note": "Carpentry bench — hand saws, mitre boxes and planes"
+   "note": "Carpentry bench: hand saws, mitre boxes and planes"
   }
  ],
  "/products/hand-tools/hex-screwdriver/": [
@@ -2010,7 +2010,7 @@
    "n": "01",
    "name": "Automotive & Auto Components",
    "href": "/industries/automotive-auto-components/",
-   "note": "Sump plugs vary by make — a key set beats an adjustable and a prayer"
+   "note": "Sump plugs vary by make; a key set beats an adjustable and a prayer"
   }
  ],
  "/products/hand-tools/drive-shank/": [
@@ -2104,7 +2104,7 @@
    "n": "01",
    "name": "Automotive & Auto Components",
    "href": "/industries/automotive-auto-components/",
-   "note": "6-point only — 12-point on an impact gun is how heads get rounded"
+   "note": "6-point only; 12-point on an impact gun is how heads get rounded"
   }
  ],
  "/products/hand-tools/impact-spline-socket/": [
@@ -3560,7 +3560,7 @@
    "n": "05",
    "name": "Textiles & Garments",
    "href": "/industries/textiles-garments/",
-   "note": "Pouch with belt loop — the kit has to travel with the fitter"
+   "note": "Pouch with belt loop, the kit has to travel with the fitter"
   },
   {
    "n": "06",
@@ -3686,7 +3686,7 @@
    "n": "03",
    "name": "Food, Beverage & Agro",
    "href": "/industries/food-beverage-agro-processing/",
-   "note": "Sealed body — a vented torch fills with water"
+   "note": "Sealed body, a vented torch fills with water"
   },
   {
    "n": "04",
@@ -3750,7 +3750,7 @@
    "n": "05",
    "name": "Textiles & Garments",
    "href": "/industries/textiles-garments/",
-   "note": "Standard, needle and right-angle — match the coupler to the nipple"
+   "note": "Standard, needle and right-angle; match the coupler to the nipple"
   },
   {
    "n": "08",
@@ -4518,7 +4518,7 @@
    "n": "06",
    "name": "Power & Electrical",
    "href": "/industries/power-utilities-electrical/",
-   "note": "Field work is untethered — plan batteries, not just tools"
+   "note": "Field work is untethered; plan batteries, not just tools"
   },
   {
    "n": "07",

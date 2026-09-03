@@ -4,10 +4,10 @@
  * page. Everything the page needs to render is already in the HTML; this only
  * adds filtering on top, so the pages stay useful with JS disabled or blocked.
  *
- *   1. global search   — products from a 4KB index loaded up front; part
+ *   1. global search   : products from a 4KB index loaded up front; part
  *                        numbers from a 42KB index fetched on first keystroke
- *   2. brand filter    — category pages, from data-brands on each card
- *   3. spec filter     — product pages, filters rows across all brand tables
+ *   2. brand filter    : category pages, from data-brands on each card
+ *   3. spec filter     : product pages, filters rows across all brand tables
  */
 (function () {
   "use strict";
@@ -267,7 +267,7 @@
 
     wrap.innerHTML = '<label class="sr-only" for="spec-q">Filter sizes and part numbers</label>'
       + '<input id="spec-q" type="search" placeholder="Filter ' + all.length
-      + ' sizes — try a size or part number" autocomplete="off">'
+      + ' sizes, try a size or part number" autocomplete="off">'
       + '<span class="filter-count" role="status"></span>';
     wrap.hidden = false;
 

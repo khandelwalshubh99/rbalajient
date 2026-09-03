@@ -1,8 +1,8 @@
 PRODUCT PHOTO FILENAME CHECKLIST
-Balaji Enterprises — 8 categories, 12256 catalogue items
+Balaji Enterprises: 8 categories, 12256 catalogue items
 
 Upload photos to:  assets/products/
-Accepted formats:  .jpg or .png (either works — the page tries .jpg first, then .png)
+Accepted formats:  .jpg or .png (either works; the page tries .jpg first, then .png)
 Name each file exactly as the FILENAME column below.
 You do not need all of them. Anything missing keeps the placeholder.
 Total product types needing a photo: 243

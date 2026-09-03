@@ -221,7 +221,7 @@ def write(path, content):
 # --------------------------------------------------------------------------
 
 def product_page(cat, sub, name, groups, sibs, url, cats):
-    """groups: [(cols, brands)] — more than one only where the source data holds
+    """groups: [(cols, brands)]; more than one only where the source data holds
     two type entries under the same name in the same category."""
     photo = photo_for(name)
     brands = sorted({b["name"] for _, bs in groups for b in bs})
@@ -309,9 +309,9 @@ def product_page(cat, sub, name, groups, sibs, url, cats):
             '<div class="prod-photo no-photo"><span>Photo on request</span></div>')
 
     title = fit([
-        f"{name} — {num(n_rows)} Sizes & Prices | Balaji Enterprises Indore",
-        f"{name} — {num(n_rows)} Sizes & Prices | Balaji Enterprises",
-        f"{name} — {num(n_rows)} Sizes | Balaji Enterprises",
+        f"{name}: {num(n_rows)} Sizes & Prices | Balaji Enterprises Indore",
+        f"{name}: {num(n_rows)} Sizes & Prices | Balaji Enterprises",
+        f"{name}: {num(n_rows)} Sizes | Balaji Enterprises",
         f"{name} | Balaji Enterprises Indore",
         f"{name} | Balaji Enterprises",
     ], TITLE_CAP)
@@ -372,7 +372,7 @@ def category_page(cat, types_by_sub, url, cats, card_brands):
     </section>""")
 
     page_ld = {"@type": "CollectionPage",
-               "name": f'{cat["name"]} — Balaji Enterprises',
+               "name": f'{cat["name"]} | Balaji Enterprises',
                "url": SITE + url,
                "mainEntity": {"@type": "ItemList", "numberOfItems": n_types,
                               "itemListElement": listed}}
@@ -428,14 +428,14 @@ def hub_page(cats, counts, url="/products/"):
 
     total = sum(v[1] for v in counts.values())
     page_ld = {"@type": "CollectionPage",
-               "name": "Product Catalogue — Balaji Enterprises", "url": SITE + url,
+               "name": "Product Catalogue | Balaji Enterprises", "url": SITE + url,
                "mainEntity": {"@type": "ItemList", "numberOfItems": len(cats),
                               "itemListElement": listed}}
 
     return head("Tool & MRO Catalogue | Balaji Enterprises Indore",
                 fit([f"Browse {num(total)} tool and MRO listings across {len(cats)} "
-                     "categories — hand tools, power tools, measuring instruments and "
-                     "abrasives — with sizes, part numbers and list prices. Indore.",
+                     "categories: hand tools, power tools, measuring instruments and "
+                     "abrasives, with sizes, part numbers and list prices. Indore.",
                      f"Browse {num(total)} tool and MRO listings across {len(cats)} "
                      "categories, with sizes, part numbers and list prices. "
                      "Balaji Enterprises, Indore."], DESC_CAP),

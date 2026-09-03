@@ -579,7 +579,7 @@ class Component extends DCLogic {
       name, n: String(i + 1).padStart(2, "0"), open: () => this.selectCategory(name),
     }));
 
-    const dash = (size, cols) => [size, ...Array(cols - 1).fill("—")];
+    const dash = (size, cols) => [size, ...Array(cols - 1).fill("-")];
     const specTable = (brand, tag, cols, sizes) => ({
       name: brand, tag, cols, rows: sizes.map(s => dash(s, cols.length)),
     });
@@ -606,7 +606,7 @@ class Component extends DCLogic {
       ],
       "Socket Sets": [
         {
-          name: "Socket Set — 1/2\" Drive",
+          name: "Socket Set, 1/2\" Drive",
           note: "Square-drive socket sets with ratchet, extension bars and accessories.",
           brands: [
             specTable("TAPARIA", "Authorised dealer", ["Set Size", "Drive", "Socket Range", "Cat. No."], ["12 pcs", "17 pcs", "21 pcs", "26 pcs"]),
@@ -633,7 +633,7 @@ class Component extends DCLogic {
       const isActive = name === activeCategory;
       return {
         name, n: String(i + 1).padStart(2, "0"),
-        count: (productData[name] || []).length || "—",
+        count: (productData[name] || []).length || "-",
         select: () => this.selectCategory(name),
         rowBg: isActive ? "#FFF3E9" : "#fff",
         rowColor: isActive ? "#F5883E" : "#0B1F33",
@@ -680,7 +680,7 @@ class Component extends DCLogic {
     const flatSubs = [];
     cat.cats.forEach(c => c.subs.forEach(s => flatSubs.push({ ...s, group: c.name, catSlug: c.slug })));
     const activeSubSlug = this.state.activeSub || (flatSubs[0] && flatSubs[0].slug);
-    const activeSub = flatSubs.find(s => s.slug === activeSubSlug) || { name: "—", group: "", types: [], items: 0 };
+    const activeSub = flatSubs.find(s => s.slug === activeSubSlug) || { name: "-", group: "", types: [], items: 0 };
     const q = this.state.query.trim().toLowerCase();
 
     const sidebarSubs = flatSubs.map(s => {

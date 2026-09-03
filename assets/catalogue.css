@@ -1,4 +1,4 @@
-/* Static catalogue pages — palette and type matched to the single-page app. */
+/* Static catalogue pages: palette and type matched to the single-page app. */
 :root {
   --navy: #081B33;
   --navy-2: #0B1F33;
@@ -377,7 +377,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .chip { padding: 7px 11px; }
 }
 
-/* Used in these industries — the reverse of the /industries/ linking. */
+/* Used in these industries: the reverse of the /industries/ linking. */
 .used-in { border-top: 1px solid var(--line); padding: 30px 0 10px; }
 .used-in h2 {
   font-family: 'Big Shoulders Display', sans-serif; font-weight: 800;
