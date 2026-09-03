@@ -225,10 +225,10 @@ tbody tr:last-child td { border-bottom: 0; }
 .pill-list { display: flex; flex-wrap: wrap; gap: 9px; }
 .pill-list a {
   display: inline-block; text-decoration: none; background: #fff;
-  border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px;
-  font-size: 13px; font-weight: 600; color: var(--navy-2);
+  border: 1px solid var(--line); border-radius: 3px; padding: 9px 15px;
+  font-size: 13px; font-weight: 700; color: var(--navy-2);
 }
-.pill-list a:hover { border-color: var(--orange); color: var(--orange); }
+.pill-list a:hover { border-color: var(--navy); background: var(--cream); }
 
 /* ---------- footer ---------- */
 .site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.6); margin-top: 40px; }
@@ -272,69 +272,109 @@ tbody tr:last-child td { border-bottom: 0; }
   .cat-grid { grid-template-columns: 1fr; }
 }
 
-/* ---------- search & filters (progressive enhancement) ---------- */
-/* All three controls ship hidden and are revealed by catalogue-ui.js, so a
-   page with JS blocked shows no dead inputs. */
-.search-box { position: relative; max-width: 560px; margin: 0 0 34px; }
+/* ---------- search & filters (progressive enhancement) ----------
+   Matched to the site: flat, 3px corners, 1px rules, navy blocks with
+   uppercase letter-spaced micro-labels, orange only as an accent.
+   No pills, no soft shadows. All controls ship hidden and are revealed by
+   catalogue-ui.js, so a page with JS blocked shows no dead inputs. */
+
+.search-box { position: relative; max-width: 620px; margin: 0 0 30px; }
 .search-box input {
   width: 100%; border: 1px solid var(--line); border-radius: 3px;
-  background: #fff; padding: 14px 16px; font-family: inherit;
-  font-size: 15px; font-weight: 600; color: var(--navy);
+  background: #fff
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='%235C6B7C' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4.2-4.2'/%3E%3C/svg%3E")
+    16px 50% no-repeat;
+  padding: 15px 16px 15px 45px; font-family: inherit;
+  font-size: 14.5px; font-weight: 600; color: var(--navy);
+  letter-spacing: 0.01em;
 }
-.search-box input::placeholder { color: var(--muted-2); font-weight: 500; }
-.search-box input:focus { outline: none; border-color: var(--orange); }
+.search-box input::placeholder { color: var(--muted-2); font-weight: 600; }
+.search-box input:focus {
+  outline: none; border-color: var(--navy);
+  box-shadow: inset 0 -3px 0 var(--orange);
+}
+.search-box input::-webkit-search-cancel-button { cursor: pointer; }
+
 .search-results {
-  position: absolute; z-index: 90; top: calc(100% + 6px); left: 0; right: 0;
-  max-height: 380px; overflow-y: auto; background: #fff;
-  border: 1px solid var(--line); border-radius: 4px;
-  box-shadow: 0 12px 32px rgba(8, 27, 51, 0.13);
+  position: absolute; z-index: 90; top: calc(100% + 5px); left: 0; right: 0;
+  max-height: 396px; overflow-y: auto; background: #fff;
+  border: 1px solid var(--navy); border-radius: 3px;
 }
+/* echoes the spec-table header exactly */
 .sr-group {
-  padding: 9px 16px; background: var(--cream); border-bottom: 1px solid var(--line-2);
-  font-size: 10.5px; font-weight: 800; letter-spacing: 0.09em;
-  text-transform: uppercase; color: var(--muted);
-  position: sticky; top: 0;
+  position: sticky; top: 0; z-index: 1;
+  padding: 10px 16px; background: var(--navy); color: #fff;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 .sr-row {
-  display: flex; flex-direction: column; gap: 2px; padding: 11px 16px;
-  text-decoration: none; border-bottom: 1px solid var(--line-2);
+  display: block; padding: 12px 16px 12px 14px; text-decoration: none;
+  border-bottom: 1px solid var(--line-2);
+  border-left: 3px solid transparent;
 }
 .sr-row:last-child { border-bottom: 0; }
-.sr-row:hover, .sr-row.on { background: var(--cream); }
-.sr-name { font-weight: 700; font-size: 14px; color: var(--navy); }
-.sr-meta { font-size: 12px; color: var(--muted); }
+.sr-row:hover, .sr-row.on { background: var(--cream); border-left-color: var(--orange); }
+.sr-name { display: block; font-weight: 700; font-size: 14px; color: var(--navy); }
+.sr-meta {
+  display: block; margin-top: 3px; font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted-2);
+}
 .sr-empty { padding: 16px; font-size: 13.5px; color: var(--muted); }
-.sr-empty a { color: var(--orange); }
+.sr-empty a { color: var(--orange); font-weight: 700; }
 
+/* rule-bounded strip, like the bordered grids elsewhere on the site */
 .filter-bar {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
-  padding: 0 0 28px; margin-top: -8px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 15px 0; margin: 0 0 34px;
 }
 .filter-label {
-  font-size: 11px; font-weight: 800; letter-spacing: 0.09em;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--orange);
+}
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; border: 1px solid var(--line); border-radius: 3px;
+  padding: 8px 13px; font-family: inherit; font-size: 11px;
+  font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--navy-2); cursor: pointer;
+}
+.chip:hover { border-color: var(--navy); }
+.chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+.chip-n {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em; color: var(--muted-2);
+}
+.chip.on .chip-n { color: var(--orange); }
+.chip-clear {
+  background: none; border: none; padding: 8px 2px; font-family: inherit;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--orange); cursor: pointer;
+}
+.chip-clear:hover { color: var(--navy); }
+.filter-count {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--muted);
 }
-.chip-row { display: flex; flex-wrap: wrap; gap: 7px; }
-.chip {
-  display: inline-flex; align-items: center; gap: 7px;
-  background: #fff; border: 1px solid var(--line); border-radius: 999px;
-  padding: 7px 14px; font-family: inherit; font-size: 12.5px;
-  font-weight: 700; color: var(--navy-2); cursor: pointer;
-}
-.chip:hover { border-color: var(--orange); }
-.chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
-.chip-n { font-size: 11px; font-weight: 600; color: var(--muted-2); }
-.chip.on .chip-n { color: rgba(255, 255, 255, 0.6); }
-.chip-clear {
-  background: none; border: none; padding: 7px 4px; font-family: inherit;
-  font-size: 12.5px; font-weight: 700; color: var(--orange); cursor: pointer;
-}
-.filter-count { font-size: 12.5px; font-weight: 600; color: var(--muted); }
 
-.spec-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0 0 24px; }
-.spec-filter input {
-  flex: 1 1 320px; max-width: 460px; border: 1px solid var(--line);
-  border-radius: 3px; background: #fff; padding: 11px 14px;
-  font-family: inherit; font-size: 14px; font-weight: 600; color: var(--navy);
+.spec-filter {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: 0 0 26px;
 }
-.spec-filter input:focus { outline: none; border-color: var(--orange); }
+.spec-filter input {
+  flex: 1 1 340px; max-width: 480px;
+  border: 1px solid var(--line); border-radius: 3px;
+  background: #fff
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%235C6B7C' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4.2-4.2'/%3E%3C/svg%3E")
+    14px 50% no-repeat;
+  padding: 12px 14px 12px 40px; font-family: inherit;
+  font-size: 13.5px; font-weight: 600; color: var(--navy);
+}
+.spec-filter input:focus {
+  outline: none; border-color: var(--navy);
+  box-shadow: inset 0 -3px 0 var(--orange);
+}
+
+@media (max-width: 520px) {
+  .filter-bar { gap: 8px 10px; }
+  .chip { padding: 7px 11px; }
+}
