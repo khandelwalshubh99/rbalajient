@@ -109,9 +109,11 @@ h1 {
   background: var(--cream);
 }
 .cat-card a:hover { background: #fff; }
+.cat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.cat-icon { width: 30px; height: 30px; stroke: var(--orange); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 .cat-n {
   display: block; font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 800; font-size: 14px; color: var(--orange); margin-bottom: 14px;
+  font-weight: 800; font-size: 14px; color: var(--orange);
 }
 .cat-name {
   display: block; font-weight: 800; font-size: 17px; color: var(--navy);
