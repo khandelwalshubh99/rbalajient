@@ -25,7 +25,10 @@ UA = "rbalajient-indexnow/1.0"
 # Documented response codes, so a failure says what to do rather than a number.
 MEANING = {
     400: "bad request: the JSON payload was rejected",
-    403: "key not valid: %s did not serve the key. Has the deploy gone live?" % KEY_URL,
+    403: "key not valid. The check above proves the key file serves correctly, so\n"
+         "     this is IndexNow not having fetched it yet: it validates the key on\n"
+         "     its own schedule and returned 403 once on the first run after deploy,\n"
+         "     then 200 on the retry a minute later. Wait and run it again.",
     422: "a URL does not belong to %s, or the key does not match the host" % HOST,
     429: "too many requests: submitting the same URLs too often. Try again later.",
 }
