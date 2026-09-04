@@ -418,31 +418,19 @@ def category_page(cat, types_by_sub, url, cats, card_brands):
 """ + footer(cats)
 
 
-CAT_ICONS = {
-    "hand-tools":
-        '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4'
-        'l-2.1 2.1-2.6-.6-.6-2.6 2.1-2.1z"/>',
-    "cutting-tools-abrasives":
-        '<circle cx="12" cy="12" r="8"/><path d="M12 4v3.5M12 16.5V20M4 12h3.5'
-        'M16.5 12H20M6.3 6.3l2.5 2.5M15.2 15.2l2.5 2.5M6.3 17.7l2.5-2.5'
-        'M15.2 8.8l2.5-2.5"/>',
-    "tool-storage-workshop":
-        '<rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 '
-        '0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20M10 13v2M14 13v2"/>',
-    "lubrication-fluid-handling":
-        '<path d="M12 2.7s6.5 7 6.5 11.5a6.5 6.5 0 1 1-13 0C5.5 9.7 12 2.7 12 '
-        '2.7z"/>',
-    "measuring-layout":
-        '<rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v3.5'
-        'M10 7v3.5M14 7v3.5M18 7v3.5"/>',
-    "power-tools":
-        '<path d="M2 8h10a3 3 0 0 1 3 3 3 3 0 0 1-3 3H9l-2.5 6H5l1-6H4a2 2 0 0 '
-        '1-2-2z"/><path d="M15 10h5.5a1.5 1.5 0 0 1 0 3H15"/><path d="M22 9.5v3"/>',
-    "lifting-pulling":
-        '<path d="M12 3v9"/><path d="M9 3h6"/><path d="M12 12a5 5 0 1 0 5 5"/>',
-    "material-handling":
-        '<circle cx="7" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>'
-        '<path d="M3 4h2l2.2 12.4a2 2 0 0 0 2 1.6H17a2 2 0 0 0 2-1.6L20.5 8H7"/>',
+# One real product photo per category, picked by hand for what reads clearly
+# at thumbnail size and represents the category well -- not just the biggest
+# product type. Falls back to no image (handled in hub_page) if a file is
+# ever missing.
+CAT_PHOTOS = {
+    "hand-tools": "hammer",
+    "cutting-tools-abrasives": "abrasive-disc-paper",
+    "tool-storage-workshop": "tool-box",
+    "lubrication-fluid-handling": "grease-gun",
+    "measuring-layout": "vernier-caliper",
+    "power-tools": "angle-grinder",
+    "lifting-pulling": "hydraulic-bottle-jack",
+    "material-handling": "hand-truck-trolley",
 }
 
 
@@ -453,16 +441,18 @@ def hub_page(cats, counts, url="/products/"):
         n_types, n_items = counts[c["slug"]]
         listed.append({"@type": "ListItem", "position": i + 1, "name": c["name"],
                        "url": f'{SITE}/products/{c["slug"]}/'})
-        icon = CAT_ICONS.get(c["slug"], "")
+        photo_slug = CAT_PHOTOS.get(c["slug"])
+        photo = (f'<img src="/assets/products/{photo_slug}.jpg" alt="" loading="lazy" '
+                 f'width="200" height="200">' if photo_slug else "")
         cards.append(f"""
       <li class="cat-card"><a href="/products/{c["slug"]}/">
-        <span class="cat-top">
-          <svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true">{icon}</svg>
+        <span class="cat-photo">{photo}</span>
+        <span class="cat-body">
           <span class="cat-n">{i + 1:02d}</span>
-        </span>
-        <span class="cat-name">{e(c["name"])}</span>
-        <span class="cat-meta">{n_types} product types &middot; {num(n_items)} sizes</span>
-        <span class="cat-go">View products &rarr;</span></a></li>""")
+          <span class="cat-name">{e(c["name"])}</span>
+          <span class="cat-meta">{n_types} product types &middot; {num(n_items)} sizes</span>
+          <span class="cat-go">View products &rarr;</span>
+        </span></a></li>""")
 
     total = sum(v[1] for v in counts.values())
     page_ld = {"@type": "CollectionPage",
