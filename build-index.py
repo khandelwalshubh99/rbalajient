@@ -379,5 +379,106 @@ sub('<script src="/assets/email-protect.js" defer></script>',
     f'<script src="/assets/email-protect.js?v={_em_hash}" defer></script>',
     "email-protect.js cache-bust")
 
+# --- 12. pre-render the constant list loops ---------------------------------
+# The runtime renders <sc-for> client-side, so everything inside one is invisible
+# to anything that does not run JavaScript. That left the shipped HTML carrying
+# 45 literal "{{ }}" tokens where the hero figures, the stat band, the eight
+# segment cards, the brand wall and all four phone numbers should be. Googlebot
+# renders JS but defers it; GPTBot, ClaudeBot and PerplexityBot never do, so AI
+# answers read the home page as broken template text.
+#
+# Every list below is a constant in renderVals(), so unrolling it at build time
+# is a pure serialisation: the runtime re-parses the same markup and React
+# produces the identical tree. Anything state-driven (<sc-if navOpen>, the
+# products view, marqueeStyle) is deliberately left alone.
+
+def _js_array(anchor, label):
+    """Parse the JS array literal introduced by `anchor` into Python data."""
+    i = src.find(anchor)
+    if i == -1:
+        sys.exit("prerender: could not find " + label)
+    start = src.index("[", i)
+    depth, end = 0, None
+    for j in range(start, len(src)):
+        if src[j] == "[":
+            depth += 1
+        elif src[j] == "]":
+            depth -= 1
+            if depth == 0:
+                end = j + 1
+                break
+    if end is None:
+        sys.exit("prerender: unterminated array for " + label)
+    lit = src[start:end]
+    lit = _re.sub(r'(?<=[{,])\s*([A-Za-z_]\w*)\s*:', r'"\1":', lit)  # bare keys
+    lit = _re.sub(r",(\s*[}\]])", r"\1", lit)                        # trailing commas
+    try:
+        return _json.loads(lit)
+    except ValueError as e:
+        sys.exit("prerender: %s is not a plain literal (%s)" % (label, e))
+
+
+def _esc(v):
+    return (str(v).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _unroll(list_name, items, expect):
+    """Replace the <sc-for> over `list_name` with its rendered rows."""
+    global src
+    if len(items) != expect:
+        sys.exit("prerender: %s has %d rows, expected %d" % (list_name, len(items), expect))
+    pat = _re.compile(
+        r'[ \t]*<sc-for list="\{\{ %s \}\}" as="([A-Za-z_]\w*)"[^>]*>(.*?)</sc-for>'
+        % _re.escape(list_name), _re.S)
+    m = pat.search(src)
+    if not m:
+        sys.exit("prerender: no <sc-for> over " + list_name)
+    var, body = m.group(1), m.group(2).strip("\n").rstrip()
+    rows = []
+    for item in items:
+        row = body
+        if isinstance(item, dict):
+            for k, v in item.items():
+                row = row.replace("{{ %s.%s }}" % (var, k), _esc(v))
+        else:
+            row = row.replace("{{ %s }}" % var, _esc(item))
+        left = _re.findall(r"\{\{[^}]*\}\}", row)
+        if left:
+            sys.exit("prerender: %s left %s unrendered" % (list_name, left[0]))
+        rows.append(row)
+    src = src[:m.start()] + "\n".join(rows) + src[m.end():]
+
+
+_industries = _js_array("const industryList = [", "industryList")
+for _i, _it in enumerate(_industries):
+    _it["n"] = "%02d" % (_i + 1)          # mirrors .map((it, i) => padStart(2, "0"))
+
+_logos = _js_array("const brandLogos = [", "brandLogos")
+for _b in _logos:
+    _b["src"] = "assets/brands/" + _b["file"] + ".png"
+    _b["logoStyle"] = ("width:100%;height:100%;background:url('assets/brands/"
+                       + _b["file"] + ".png') center/contain no-repeat")
+
+_brand_names = _js_array("const brandNames = [", "brandNames")
+
+_before = src.count("{{")
+_unroll("heroFacts",     _js_array("heroFacts: [", "heroFacts"),         3)
+_unroll("stats",         _js_array("stats: [", "stats"),                 4)
+_unroll("aboutPoints",   _js_array("aboutPoints: [", "aboutPoints"),     4)
+_unroll("industries",    _industries,                                    8)
+_unroll("customerTypes", _js_array("customerTypes: [", "customerTypes"), 3)
+_unroll("brandsDoubled", _brand_names + _brand_names,                   50)
+_unroll("brandLogos",    _logos,                                        25)
+_unroll("phones",        _js_array("phones: [", "phones"),               4)
+
+# What is left has to be attributes and handlers the runtime still owns, never
+# page copy. Anything sitting in a text node would be read as content.
+_template = src[src.index("<x-dc>"):src.index("</x-dc>")]
+_visible = [t for t in _re.findall(r">[^<>]*(\{\{[^}]*\}\})[^<>]*<", _template)]
+if _visible:
+    sys.exit("prerender: %s still renders as page text" % _visible[0])
+print("  pre-rendered 8 loops, %d -> %d {{ }} tokens" % (_before, src.count("{{")))
+
 out.write_text(src)
 print("wrote", out, len(src), "bytes")

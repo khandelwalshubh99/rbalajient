@@ -194,12 +194,18 @@
         <a href="/products/" style="background:transparent;color:#fff;padding:16px 30px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,0.3)" style-hover="border-color:#fff">Explore Our Range</a>
       </div>
       <div style="display:flex;gap:56px;flex-wrap:wrap">
-        <sc-for list="{{ heroFacts }}" as="f" hint-placeholder-count="3">
           <div>
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:34px;color:#fff">{{ f.value }}</div>
-            <div style="font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.04em;margin-top:2px">{{ f.label }}</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:34px;color:#fff">30+</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.04em;margin-top:2px">Years in Business</div>
           </div>
-        </sc-for>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:34px;color:#fff">20+</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.04em;margin-top:2px">Brands Represented</div>
+          </div>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:34px;color:#fff">24hr</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.04em;margin-top:2px">Same-Day Dispatch</div>
+          </div>
       </div>
     </div>
     <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#F5883E,transparent 70%)"></div>
@@ -208,13 +214,26 @@
   <!-- STATS STRIP -->
   <section style="background:#FBF8F2;border-bottom:1px solid #E7E2D6">
     <div class="be-wrap be-pad be-stats" style="max-width:1280px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
-      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
         <div style="border-left:2px solid #F5883E;padding-left:18px">
-          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">{{ s.value }}</div>
-          <div style="font-weight:700;font-size:14px;color:#0B1F33;margin-top:8px">{{ s.label }}</div>
-          <div style="font-size:13px;color:#5C6B7C;margin-top:2px">{{ s.sub }}</div>
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">30+</div>
+          <div style="font-weight:700;font-size:14px;color:#0B1F33;margin-top:8px">Years of Proven Reliability</div>
+          <div style="font-size:13px;color:#5C6B7C;margin-top:2px">Established in 1996</div>
         </div>
-      </sc-for>
+        <div style="border-left:2px solid #F5883E;padding-left:18px">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">20+</div>
+          <div style="font-weight:700;font-size:14px;color:#0B1F33;margin-top:8px">Authorised Dealership</div>
+          <div style="font-size:13px;color:#5C6B7C;margin-top:2px">Official channel partner</div>
+        </div>
+        <div style="border-left:2px solid #F5883E;padding-left:18px">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">100%</div>
+          <div style="font-weight:700;font-size:14px;color:#0B1F33;margin-top:8px">Extensive Ready Stock</div>
+          <div style="font-size:13px;color:#5C6B7C;margin-top:2px">Core industrial range</div>
+        </div>
+        <div style="border-left:2px solid #F5883E;padding-left:18px">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:38px;color:#081B33;line-height:1">Same-Day</div>
+          <div style="font-weight:700;font-size:14px;color:#0B1F33;margin-top:8px">Dispatch</div>
+          <div style="font-size:13px;color:#5C6B7C;margin-top:2px">On all regular items</div>
+        </div>
     </div>
   </section>
 
@@ -227,15 +246,34 @@
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 18px">Based in Indore, Madhya Pradesh, we stand as a reliable and preferred authorised distributor of hand tools, power tools and industrial equipment, serving clients across the state and beyond.</p>
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 36px">Our enduring emphasis on transparency, ethical practice and client-centric operations has fostered sustained trust and repeat engagement from customers who prioritise dependable, long-term supply partnerships.</p>
         <div class="be-about" style="display:grid;grid-template-columns:1fr 1fr;gap:24px 32px">
-          <sc-for list="{{ aboutPoints }}" as="p" hint-placeholder-count="4">
             <div style="display:flex;gap:14px">
               <div style="width:8px;height:8px;border-radius:50%;background:#F5883E;margin-top:8px;flex-shrink:0"></div>
               <div>
-                <div style="font-weight:800;font-size:15px;color:#081B33">{{ p.title }}</div>
-                <div style="font-size:13.5px;color:#5C6B7C;margin-top:2px;line-height:1.5">{{ p.sub }}</div>
+                <div style="font-weight:800;font-size:15px;color:#081B33">Authorised Dealership</div>
+                <div style="font-size:13.5px;color:#5C6B7C;margin-top:2px;line-height:1.5">Official channel partner for leading brands</div>
               </div>
             </div>
-          </sc-for>
+            <div style="display:flex;gap:14px">
+              <div style="width:8px;height:8px;border-radius:50%;background:#F5883E;margin-top:8px;flex-shrink:0"></div>
+              <div>
+                <div style="font-weight:800;font-size:15px;color:#081B33">Extensive Ready Stock</div>
+                <div style="font-size:13.5px;color:#5C6B7C;margin-top:2px;line-height:1.5">Core industrial range always available</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:14px">
+              <div style="width:8px;height:8px;border-radius:50%;background:#F5883E;margin-top:8px;flex-shrink:0"></div>
+              <div>
+                <div style="font-weight:800;font-size:15px;color:#081B33">Same-Day Dispatch</div>
+                <div style="font-size:13.5px;color:#5C6B7C;margin-top:2px;line-height:1.5">For all regular items</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:14px">
+              <div style="width:8px;height:8px;border-radius:50%;background:#F5883E;margin-top:8px;flex-shrink:0"></div>
+              <div>
+                <div style="font-weight:800;font-size:15px;color:#081B33">Trusted Industrial Clients</div>
+                <div style="font-size:13.5px;color:#5C6B7C;margin-top:2px;line-height:1.5">Enduring long-term partnerships</div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -250,19 +288,59 @@
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#fff;margin:14px 0 0">Industrial Segments We Cater To</h2>
       </div>
       <div class="be-services" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
-        <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="6">
-          <a href="{{ ind.href }}" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">{{ ind.n }}</div>
-            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">{{ ind.name }}</div>
-            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">{{ ind.desc }}</div>
+          <a href="/industries/automotive-auto-components/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">01</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Automotive &amp; Auto Components</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
-        </sc-for>
+          <a href="/industries/pharmaceutical-life-sciences/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">02</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Pharmaceutical &amp; Life Sciences</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/food-beverage-agro-processing/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">03</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Food, Beverage &amp; Agro</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/engineering-fabrication/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">04</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Engineering &amp; Fabrication</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/textiles-garments/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">05</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Textiles &amp; Garments</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/power-utilities-electrical/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">06</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Power &amp; Electrical</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/construction-infrastructure/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">07</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Construction &amp; Infrastructure</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
+          <a href="/industries/plastics-packaging-printing/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">08</div>
+            <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Plastics, Packaging &amp; Printing</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Mould change kits, tool room precision and blade continuity for moulders, converters and printers.</div>
+            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
+          </a>
       </div>
       <div style="margin-top:28px;display:flex;gap:16px;flex-wrap:wrap">
-        <sc-for list="{{ customerTypes }}" as="c" hint-placeholder-count="3">
-          <div style="border:1px solid rgba(245,136,62,0.4);color:#F5883E;font-weight:700;font-size:13px;padding:10px 20px;border-radius:2px;letter-spacing:0.02em">{{ c }}</div>
-        </sc-for>
+          <div style="border:1px solid rgba(245,136,62,0.4);color:#F5883E;font-weight:700;font-size:13px;padding:10px 20px;border-radius:2px;letter-spacing:0.02em">Industries</div>
+          <div style="border:1px solid rgba(245,136,62,0.4);color:#F5883E;font-weight:700;font-size:13px;padding:10px 20px;border-radius:2px;letter-spacing:0.02em">Dealers</div>
+          <div style="border:1px solid rgba(245,136,62,0.4);color:#F5883E;font-weight:700;font-size:13px;padding:10px 20px;border-radius:2px;letter-spacing:0.02em">B2C Customers</div>
       </div>
     </div>
   </section>
@@ -279,19 +357,136 @@
     </div>
     <div style="overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)">
       <div style="display:flex;width:max-content;animation:marquee 42s linear infinite;{{ marqueeStyle }}">
-        <sc-for list="{{ brandsDoubled }}" as="b" hint-placeholder-count="30">
-          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">{{ b }}</div>
-        </sc-for>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TAPARIA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">STANLEY</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">DEWALT</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BLACK+DECKER</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BRITOOL</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">DE NEERS</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">GROZ</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PILOT</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MTC</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PENTA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BOSCH</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PIDILITE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">WD-40</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">CHAMPION</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">ADDISON</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MIRANDA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TOTEM</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">WIDIA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MITUTOYO</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">INSIZE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">SUMAKE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TORQUE MASTER</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">GENCO</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">JAINSON</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TOHNICHI</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TAPARIA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">STANLEY</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">DEWALT</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BLACK+DECKER</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BRITOOL</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">DE NEERS</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">GROZ</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PILOT</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MTC</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PENTA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">BOSCH</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">PIDILITE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">WD-40</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">CHAMPION</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">ADDISON</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MIRANDA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TOTEM</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">WIDIA</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">MITUTOYO</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">INSIZE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">SUMAKE</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TORQUE MASTER</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">GENCO</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">JAINSON</div>
+          <div style="padding:0 40px;display:flex;align-items:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;color:#0B2A4E;white-space:nowrap;opacity:0.75">TOHNICHI</div>
       </div>
     </div>
 
     <div class="be-wrap" style="max-width:1280px;margin:40px auto 0;padding:0 32px">
       <div class="be-brands" style="display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6;border-left:1px solid #E7E2D6">
-        <sc-for list="{{ brandLogos }}" as="brand" hint-placeholder-count="25">
           <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
-            <div role="img" aria-label="{{ brand.name }}" style="{{ brand.logoStyle }}"></div>
+            <div role="img" aria-label="Taparia" style="width:100%;height:100%;background:url('assets/brands/taparia.png') center/contain no-repeat"></div>
           </div>
-        </sc-for>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Stanley" style="width:100%;height:100%;background:url('assets/brands/stanley.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="DeWalt" style="width:100%;height:100%;background:url('assets/brands/dewalt.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Black+Decker" style="width:100%;height:100%;background:url('assets/brands/blackdecker.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Britool" style="width:100%;height:100%;background:url('assets/brands/britool.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="De Neers" style="width:100%;height:100%;background:url('assets/brands/deneers.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Groz" style="width:100%;height:100%;background:url('assets/brands/groz.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Pilot" style="width:100%;height:100%;background:url('assets/brands/pilot.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="MTC" style="width:100%;height:100%;background:url('assets/brands/mtc.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Penta" style="width:100%;height:100%;background:url('assets/brands/penta.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Bosch" style="width:100%;height:100%;background:url('assets/brands/bosch.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Pidilite" style="width:100%;height:100%;background:url('assets/brands/pidilite.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="WD-40" style="width:100%;height:100%;background:url('assets/brands/wd40.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Champion" style="width:100%;height:100%;background:url('assets/brands/champion.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Addison" style="width:100%;height:100%;background:url('assets/brands/addison.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Miranda" style="width:100%;height:100%;background:url('assets/brands/miranda.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Totem" style="width:100%;height:100%;background:url('assets/brands/totem.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Widia" style="width:100%;height:100%;background:url('assets/brands/widia.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Mitutoyo" style="width:100%;height:100%;background:url('assets/brands/mitutoyo.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Insize" style="width:100%;height:100%;background:url('assets/brands/insize.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Sumake" style="width:100%;height:100%;background:url('assets/brands/sumake.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Torque Master" style="width:100%;height:100%;background:url('assets/brands/torquemaster.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Genco" style="width:100%;height:100%;background:url('assets/brands/genco.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Jainson" style="width:100%;height:100%;background:url('assets/brands/jainson.png') center/contain no-repeat"></div>
+          </div>
+          <div style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;background:#fff;padding:20px;display:flex;align-items:center;justify-content:center;height:110px" style-hover="background:#FBF8F2">
+            <div role="img" aria-label="Tohnichi" style="width:100%;height:100%;background:url('assets/brands/tohnichi.png') center/contain no-repeat"></div>
+          </div>
       </div>
     </div>
   </section>
@@ -319,9 +514,10 @@
           <div>
             <div style="font-weight:800;font-size:13px;color:#5C6B7C;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px">Phone</div>
             <div style="display:flex;flex-wrap:wrap;gap:8px 24px">
-              <sc-for list="{{ phones }}" as="ph" hint-placeholder-count="4">
-                <a href="tel:{{ ph }}" style="font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">{{ ph }}</a>
-              </sc-for>
+                <a href="tel:9302110344" style="font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">9302110344</a>
+                <a href="tel:9691020344" style="font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">9691020344</a>
+                <a href="tel:7805933336" style="font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">7805933336</a>
+                <a href="tel:7805933337" style="font-size:16px;color:#081B33;font-weight:600;text-decoration:none" style-hover="color:#F5883E">7805933337</a>
             </div>
           </div>
           <div>
