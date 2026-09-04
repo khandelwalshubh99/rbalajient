@@ -229,26 +229,6 @@ for _old, _new in [
 ]:
     sub(_old, _new, "Products control")
 
-# hero CTA: "Explore Our Range" pointed at the #portfolio anchor
-sub('<a href="#portfolio" style="background:transparent;color:#fff;padding:16px 30px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,0.3)" style-hover="border-color:#fff">Explore Our Range</a>',
-    '<a href="/products/" style="background:transparent;color:#fff;padding:16px 30px;border-radius:3px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,0.3)" style-hover="border-color:#fff">Explore Our Range</a>',
-    "hero CTA")
-
-# the 20 portfolio cards: <div onClick> -> <a href> deep-linked to the
-# subcategory heading on its category page
-sub('<div onClick="{{ cat.open }}" style="border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:26px 22px;background:#FBF8F2;cursor:pointer" style-hover="background:#fff">',
-    '<a href="{{ cat.href }}" style="display:block;text-decoration:none;border-right:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:26px 22px;background:#FBF8F2;cursor:pointer" style-hover="background:#fff">',
-    "portfolio card open tag")
-sub('''            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:14px">View products →</div>
-          </div>''',
-    '''            <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:14px">View products →</div>
-          </a>''',
-    "portfolio card close tag")
-
-# give each card a real destination
-sub('name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),',
-    'name: s.name, n: String(i + 1).padStart(2, "0"), open: () => this.selectSub(s.slug),\n        href: "/products/" + s.catSlug + "/#" + s.slug,',
-    "category href")
 
 # --- 8. drop the unreachable in-page catalogue view -------------------------
 # Nothing opens it since the navigation was pointed at /products/, but it still
@@ -275,7 +255,6 @@ for _cls, _needle in [
     ("be-stats", "grid-template-columns:repeat(4,1fr);gap:32px"),
     ("be-about", "grid-template-columns:1fr 1fr;gap:24px 32px"),
     ("be-services", "grid-template-columns:repeat(3,1fr);gap:1px"),
-    ("be-cats", "grid-template-columns:repeat(4,1fr);border-top:1px solid #E7E2D6"),
     ("be-brands", "grid-template-columns:repeat(5,1fr);border-top:1px solid #E7E2D6"),
     ("be-footer", "grid-template-columns:1.3fr 0.8fr 1fr 1fr"),
 ]:
@@ -311,8 +290,8 @@ def _tag_wrap(m):
 
 
 src, _n = _wrap.subn(_tag_wrap, src)
-if _n != 12:
-    sys.exit("mobile: expected 12 content wrappers, tagged %d" % _n)
+if _n != 11:
+    sys.exit("mobile: expected 11 content wrappers, tagged %d" % _n)
 
 sub("</style>", """
     /* ---------- mobile. Nothing here applies above 860px. ---------- */
@@ -327,7 +306,7 @@ sub("</style>", """
       .be-contact-grid { gap: 40px !important; }
     }
     @media (max-width: 560px) {
-      .be-stats, .be-cats { grid-template-columns: repeat(2, 1fr) !important; }
+      .be-stats { grid-template-columns: repeat(2, 1fr) !important; }
       .be-services, .be-footer { grid-template-columns: 1fr !important; }
       .be-brands { grid-template-columns: repeat(3, 1fr) !important; }
       /* the desktop vertical rhythm is dead scrolling on a phone */
