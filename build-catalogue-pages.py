@@ -423,7 +423,7 @@ def category_page(cat, types_by_sub, url, cats, card_brands):
 # product type. Falls back to no image (handled in hub_page) if a file is
 # ever missing.
 CAT_PHOTOS = {
-    "hand-tools": "hammer",
+    "hand-tools": "adjustable-wrench",
     "cutting-tools-abrasives": "abrasive-disc-paper",
     "tool-storage-workshop": "tool-box",
     "lubrication-fluid-handling": "grease-gun",
