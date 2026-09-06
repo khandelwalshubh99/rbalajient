@@ -36,7 +36,7 @@ PHOTOS = ROOT / "assets" / "products"
 _map_file = ROOT / "industries-map.json"
 INDUSTRY_MAP = json.loads(_map_file.read_text()) if _map_file.exists() else {}
 
-PHONE = "9302110344"
+PHONE = "9691020344"
 SALES = "sales@rbalajient.com"
 ADDRESS = "118 Siyaganj Main Road, Indore, 452007 (MP)"
 
@@ -559,7 +559,7 @@ def privacy_page(cats):
             "Balaji Enterprises, 118 Siyaganj Main Road, Siyaganj, Indore, Madhya "
             "Pradesh 452007, India. For anything in this policy, write to "
             "<a href=\"javascript:void(0)\" data-em=\"c2FsZXNAcmJhbGFqaWVudC5jb20=\" class=\"js-email-text\">sales [at] rbalajient.com</a> "
-            "or call <a href=\"tel:9302110344\">+91 93021 10344</a>.")),
+            "or call <a href=\"tel:9691020344\">+91 96910 20344</a>.")),
           ("What this website collects", P(
             "Nothing. This site sets no cookies, uses no analytics, no advertising "
             "pixels and no tracking of any kind. It does not store anything in your "
@@ -658,7 +658,7 @@ def terms_page(cats):
             "Madhya Pradesh have exclusive jurisdiction over any dispute.")),
           ("Contact", P(
             "Balaji Enterprises, 118 Siyaganj Main Road, Siyaganj, Indore, Madhya "
-            "Pradesh 452007. Telephone <a href=\"tel:9302110344\">+91 93021 10344</a>, "
+            "Pradesh 452007. Telephone <a href=\"tel:9691020344\">+91 96910 20344</a>, "
             "email <a href=\"javascript:void(0)\" data-em=\"c2FsZXNAcmJhbGFqaWVudC5jb20=\" class=\"js-email-text\">sales [at] rbalajient.com</a>.")),
         ], cats)
 

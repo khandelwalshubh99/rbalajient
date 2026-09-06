@@ -48,7 +48,7 @@ JSONLD = """{
         "postalCode": "452007",
         "addressCountry": "IN"
       },
-      "telephone": "+91-9302110344",
+      "telephone": "+91-9691020344",
       "email": "sales@rbalajient.com",
       "contactPoint": [
         {"@type": "ContactPoint", "telephone": "+91-9302110344", "contactType": "sales", "email": "sales@rbalajient.com", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
