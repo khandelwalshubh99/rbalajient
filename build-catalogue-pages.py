@@ -175,6 +175,7 @@ def footer(cats):
   </div>
   <div class="wrap footer-bar">
     <span>&copy; 2026 Balaji Enterprises. All rights reserved.</span>
+    <span class="footer-legal"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a></span>
     <span>rbalajient.com</span>
   </div>
 </footer>
@@ -523,6 +524,145 @@ def not_found_page(cats):
 
 # --------------------------------------------------------------------------
 
+LEGAL_UPDATED = "6 September 2026"
+
+
+def legal_page(title, desc, url, heading, standfirst, sections, cats):
+    """A plain prose page (privacy, terms). Same shell as everything else."""
+    body = "".join(
+        f'\n    <h2>{h}</h2>\n    ' + "\n    ".join(p for p in paras)
+        for h, paras in sections)
+    page_ld = {"@type": "WebPage", "name": heading, "url": SITE + url,
+               "isPartOf": {"@type": "WebSite", "name": "Balaji Enterprises", "url": SITE}}
+    return head(title, desc, SITE + url, ld(page_ld)) + f"""
+<main id="main">
+  <div class="wrap legal">
+    <h1>{heading}</h1>
+    <p class="legal-lead">{standfirst}</p>
+    <p class="legal-updated">Last updated: {LEGAL_UPDATED}</p>{body}
+  </div>
+</main>
+""" + footer(cats)
+
+
+def privacy_page(cats):
+    P = lambda *xs: [f"<p>{x}</p>" for x in xs]
+    return legal_page(
+        "Privacy Policy | Balaji Enterprises",
+        "How Balaji Enterprises handles personal data on rbalajient.com. No "
+        "cookies, no tracking, and no data collected by this website.",
+        "/privacy/", "Privacy Policy",
+        "This website collects nothing about you. That is not a turn of phrase, "
+        "and the sections below set out exactly what that means.",
+        [
+          ("Who we are", P(
+            "Balaji Enterprises, 118 Siyaganj Main Road, Siyaganj, Indore, Madhya "
+            "Pradesh 452007, India. For anything in this policy, write to "
+            "<a href=\"javascript:void(0)\" data-em=\"c2FsZXNAcmJhbGFqaWVudC5jb20=\" class=\"js-email-text\">sales [at] rbalajient.com</a> "
+            "or call <a href=\"tel:9302110344\">+91 93021 10344</a>.")),
+          ("What this website collects", P(
+            "Nothing. This site sets no cookies, uses no analytics, no advertising "
+            "pixels and no tracking of any kind. It does not store anything in your "
+            "browser, and it has no database or account system. There is nothing to "
+            "opt into and nothing to opt out of, which is why you were not asked to "
+            "accept cookies.")),
+          ("The quote form", P(
+            "The enquiry form does not send anything to us over the internet. When "
+            "you press Send Enquiry, your own email program opens with a message "
+            "already written out, addressed to our sales inbox. Nothing leaves your "
+            "device unless you then choose to send that email yourself, and you can "
+            "edit or discard it first.",
+            "If you do send it, we receive an ordinary email containing whatever you "
+            "typed. We use it to answer your enquiry and to keep the normal business "
+            "records of a supplier and its customers. We do not sell it, rent it, or "
+            "pass it to anyone for marketing.")),
+          ("Information handled by others", P(
+            "Two things happen that are outside our control and worth naming.",
+            "<strong>Typefaces.</strong> Pages load fonts from Google Fonts. To "
+            "deliver them, Google receives your IP address and basic request "
+            "information. We have no access to that data.",
+            "<strong>Hosting.</strong> The site is hosted by Vercel, which keeps "
+            "standard server logs (including IP addresses) to serve pages and protect "
+            "against abuse. We do not use those logs to identify visitors.")),
+          ("Links to other places", P(
+            "The site links out to LinkedIn, Google Maps and our catalogue QR page at "
+            "taponn.me. Once you follow one of those links you are on someone else's "
+            "website, under their privacy policy, not this one.")),
+          ("Your rights", P(
+            "Under India's Digital Personal Data Protection Act, 2023 you may ask what "
+            "personal data of yours we hold, ask us to correct it, and ask us to erase "
+            "it. If you are in the UK or the European Economic Area, the equivalent "
+            "rights under the UK GDPR and GDPR apply.",
+            "Because this website collects nothing, any request will concern emails or "
+            "orders you sent us directly. Write to our sales address and we will "
+            "respond within a reasonable period.")),
+          ("Keeping information", P(
+            "Enquiry emails and order records are kept for as long as we need them for "
+            "the business relationship and for the periods Indian tax and company law "
+            "require. After that they are deleted.")),
+          ("Children", P(
+            "This is a business-to-business supply site and is not directed at "
+            "children. We do not knowingly collect data about anyone under 18.")),
+          ("Changes", P(
+            "If this policy changes, the revised version appears on this page with a "
+            "new date at the top.")),
+        ], cats)
+
+
+def terms_page(cats):
+    P = lambda *xs: [f"<p>{x}</p>" for x in xs]
+    return legal_page(
+        "Terms and Conditions | Balaji Enterprises",
+        "Terms of use for rbalajient.com: catalogue accuracy, pricing, "
+        "trademarks and governing law. Balaji Enterprises, Indore.",
+        "/terms/", "Terms and Conditions",
+        "These terms cover your use of this website. They do not replace the "
+        "terms of any quotation, order or invoice we agree with you separately.",
+        [
+          ("Using this site", P(
+            "You are welcome to browse the catalogue, print it and share it. You may "
+            "not copy the site wholesale, scrape it in bulk, or republish it as your "
+            "own. Please do not attempt to disrupt or gain unauthorised access to it.")),
+          ("The catalogue is information, not an offer", P(
+            "The product listings describe what we typically supply. They are an "
+            "invitation to enquire, not a binding offer to sell. A sale exists only "
+            "once we have confirmed your order in writing.")),
+          ("Prices, sizes and availability", P(
+            "Prices shown are indicative list prices in Indian Rupees and exclude GST, "
+            "freight and any other charges unless we say otherwise. They change without "
+            "notice. Sizes, part numbers and specifications come from manufacturer "
+            "information and may be revised by the manufacturer at any time.",
+            "Stock is not guaranteed by anything on this site. Please confirm current "
+            "price and availability with us before relying on either.")),
+          ("Brands and trademarks", P(
+            "Balaji Enterprises is a distributor and channel partner. Every brand name, "
+            "logo and product image on this site belongs to its respective owner, and "
+            "appears here only to identify the goods we supply. Nothing on this site "
+            "should be read as a claim of ownership of those marks, or as those brands "
+            "endorsing this website.")),
+          ("Accuracy", P(
+            "We take care to keep the catalogue correct, but we do not warrant that it "
+            "is complete, current or free of error. Product suitability for a particular "
+            "job is a decision for you and your engineers; where safety is involved, "
+            "follow the manufacturer's own instructions and the applicable standard.")),
+          ("Liability", P(
+            "To the extent the law allows, we are not liable for indirect or "
+            "consequential loss arising from use of this website, or from reliance on "
+            "information published on it. Nothing here limits liability that cannot "
+            "lawfully be limited.")),
+          ("Other websites", P(
+            "Links to third-party sites are provided for convenience. We are not "
+            "responsible for their content, products or practices.")),
+          ("Governing law", P(
+            "These terms are governed by the laws of India, and the courts at Indore, "
+            "Madhya Pradesh have exclusive jurisdiction over any dispute.")),
+          ("Contact", P(
+            "Balaji Enterprises, 118 Siyaganj Main Road, Siyaganj, Indore, Madhya "
+            "Pradesh 452007. Telephone <a href=\"tel:9302110344\">+91 93021 10344</a>, "
+            "email <a href=\"javascript:void(0)\" data-em=\"c2FsZXNAcmJhbGFqaWVudC5jb20=\" class=\"js-email-text\">sales [at] rbalajient.com</a>.")),
+        ], cats)
+
+
 def main():
     raw = (ROOT / "catalogue.js").read_text()
     data = json.loads(raw[raw.index("{"):].rstrip().rstrip(";"))
@@ -611,6 +751,13 @@ def main():
     # the sitemap -- a 404 page has no business being indexed or crawled as
     # a destination.
     write(ROOT / "404.html", not_found_page(cats))
+
+    # Privacy and terms: indexable, listed in the sitemap, and linked from the
+    # footer of every page so they are reachable rather than merely present.
+    write(ROOT / "privacy" / "index.html", privacy_page(cats))
+    urls.append("/privacy/")
+    write(ROOT / "terms" / "index.html", terms_page(cats))
+    urls.append("/terms/")
 
     # /industries/ pages are generated separately (build/build.js). The sitemap
     # is rebuilt from scratch here, so they must be listed or they vanish.

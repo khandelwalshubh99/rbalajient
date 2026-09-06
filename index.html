@@ -111,6 +111,7 @@
 </head>
 <body>
 <x-dc>
+<a class="skip" href="#top">Skip to content</a>
 
 <helmet>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,6 +120,10 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"></noscript>
   <style>
     html { scroll-behavior: smooth; }
+    .skip { position: absolute; left: -9999px; top: 0; background: #F5883E;
+            color: #081B33; padding: 10px 16px; font-weight: 800; z-index: 200; }
+    .skip:focus { left: 8px; top: 8px; }
+    :focus-visible { outline: 2px solid #F5883E; outline-offset: 2px; }
     body { margin: 0; font-family: 'Manrope', sans-serif; background: #FBF8F2; }
     * { box-sizing: border-box; }
     ::selection { background: #F5883E; color: #fff; }
@@ -155,7 +160,7 @@
         <img src="assets/logo.png" alt="Balaji Enterprises" style="height:44px;width:44px;object-fit:contain">
         <div style="display:flex;flex-direction:column;line-height:1.05">
           <span style="font-family: 'Big Shoulders Display',sans-serif; font-weight: 800; font-size: 20px; letter-spacing: 0.02em; color: #081B33">BALAJI ENTERPRISES</span>
-          <span style="font-size:10px;letter-spacing:0.16em;color:#F5883E;font-weight:700;text-transform:uppercase">Tools &amp; Industrial Supply</span>
+          <span style="font-size:10px;letter-spacing:0.16em;color:#B64F09;font-weight:700;text-transform:uppercase">Tools &amp; Industrial Supply</span>
         </div>
       </a>
       <nav style="display:flex;align-items:center;gap:36px" class="be-nav-desktop">
@@ -241,7 +246,7 @@
   <section id="about" data-screen-label="About" style="background:#FBF8F2">
     <div class="be-wrap be-pad" style="max-width:1280px;margin:0 auto;padding:100px 32px">
       <div>
-        <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">About Balaji Enterprises</span>
+        <span style="color:#B64F09;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">About Balaji Enterprises</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#081B33;margin:14px 0 24px">A Trusted Supply Partner,<br>Not Just a Vendor.</h2>
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 18px">Based in Indore, Madhya Pradesh, we stand as a reliable and preferred authorised distributor of hand tools, power tools and industrial equipment, serving clients across the state and beyond.</p>
         <p style="font-size:16px;line-height:1.75;color:#3C4A59;margin:0 0 36px">Our enduring emphasis on transparency, ethical practice and client-centric operations has fostered sustained trust and repeat engagement from customers who prioritise dependable, long-term supply partnerships.</p>
@@ -289,49 +294,49 @@
       </div>
       <div class="be-services" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
           <a href="/industries/automotive-auto-components/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">01</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">01</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Automotive &amp; Auto Components</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Line-side tooling, torque control and breakdown cover for OEMs and tier suppliers.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/pharmaceutical-life-sciences/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">02</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">02</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Pharmaceutical &amp; Life Sciences</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Non-sparking, stainless and validated-spare tooling for formulation, API and packaging sites.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/food-beverage-agro-processing/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">03</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">03</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Food, Beverage &amp; Agro</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Wash-down-durable tooling, H1 lubrication and seasonal stock planning for soya, poha, spice and packaged food plants.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/engineering-fabrication/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">04</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">04</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Engineering &amp; Fabrication</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Bench-to-dispatch fit-out, consumable reorder discipline and the full brand range on one counter.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/textiles-garments/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">05</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">05</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Textiles &amp; Garments</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">High-volume small-tool supply, machine-specific kits and lubrication programme support for spinning, weaving and processing.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/power-utilities-electrical/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">06</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">06</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Power &amp; Electrical</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Certified 1000V insulated tooling, cable termination kits and site-ready contractor sets.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/construction-infrastructure/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">07</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">07</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Construction &amp; Infrastructure</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Site delivery, loss-aware specification and IS-marked lifting equipment for contractors and developers.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
           </a>
           <a href="/industries/plastics-packaging-printing/" style="display:block;text-decoration:none;background:#081B33;padding:34px 28px" style-hover="background:#0F2E52">
-            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.35);margin-bottom:10px">08</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.48);margin-bottom:10px">08</div>
             <div style="font-weight:800;font-size:19px;color:#fff;margin-bottom:8px">Plastics, Packaging &amp; Printing</div>
             <div style="font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.5">Mould change kits, tool room precision and blade continuity for moulders, converters and printers.</div>
             <div style="font-size:12px;font-weight:700;color:#F5883E;letter-spacing:0.06em;text-transform:uppercase;margin-top:16px">Open the checklist &rarr;</div>
@@ -350,7 +355,7 @@
   <section data-screen-label="Brands" style="background:#FBF8F2;border-top:1px solid #E7E2D6;border-bottom:1px solid #E7E2D6;padding:64px 0">
     <div class="be-wrap" style="max-width:1280px;margin:0 auto;padding:0 32px 40px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
       <div>
-        <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">DEALERSHIPS</span>
+        <span style="color:#B64F09;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">DEALERSHIPS</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(28px,3vw,38px);color:#081B33;margin:10px 0 0">Brands We Represent</h2>
       </div>
       <p style="font-size:14px;color:#5C6B7C;max-width:420px;margin:0">Channel partner for 20+ leading Indian and international tool &amp; equipment manufacturers.</p>
@@ -504,7 +509,7 @@
   <section id="contact" data-screen-label="Contact" style="background:#FBF8F2">
     <div class="be-wrap be-pad be-contact-grid" style="max-width:1280px;margin:0 auto;padding:100px 32px;display:grid;grid-template-columns:{{ contactGridCols }};gap:64px">
       <div style="max-width:520px">
-        <span style="color:#F5883E;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Get In Touch</span>
+        <span style="color:#B64F09;font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Get In Touch</span>
         <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.02;color:#081B33;margin:14px 0 32px">Let's Talk Supply.</h2>
         <div style="display:flex;flex-direction:column;gap:24px;margin-bottom:36px">
           <div>
@@ -540,20 +545,20 @@
         <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;color:#fff;margin:0 0 24px">Request a Quote</h3>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div>
-            <label style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Full Name</label>
-            <input type="text" placeholder="Your name" ref="{{ nameRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
+            <label for="q-name" style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Full Name</label>
+            <input id="q-name" type="text" placeholder="Your name" ref="{{ nameRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
           </div>
           <div>
-            <label style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Company / Organisation</label>
-            <input type="text" placeholder="Company name" ref="{{ companyRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
+            <label for="q-company" style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Company / Organisation</label>
+            <input id="q-company" type="text" placeholder="Company name" ref="{{ companyRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
           </div>
           <div>
-            <label style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Phone / Email</label>
-            <input type="text" placeholder="How can we reach you" ref="{{ contactRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
+            <label for="q-contact" style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">Phone / Email</label>
+            <input id="q-contact" type="text" placeholder="How can we reach you" ref="{{ contactRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit">
           </div>
           <div>
-            <label style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">What do you need?</label>
-            <textarea placeholder="Products, quantities, timelines..." rows="3" ref="{{ messageRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit;resize:none"></textarea>
+            <label for="q-message" style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase">What do you need?</label>
+            <textarea id="q-message" placeholder="Products, quantities, timelines..." rows="3" ref="{{ messageRef }}" style="width:100%;margin-top:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:3px;padding:14px;color:#fff;font-size:15px;font-family:inherit;resize:none"></textarea>
           </div>
           <button onClick="{{ sendEnquiry }}" style="background:#F5883E;color:#081B33;border:none;padding:16px;border-radius:3px;font-weight:800;font-size:15px;cursor:pointer;margin-top:6px" style-hover="background:#fff">Send Enquiry</button>
         </div>
@@ -600,8 +605,9 @@
       </div>
     </div>
     <div class="be-wrap" style="border-top:1px solid rgba(255,255,255,0.08);padding:22px 32px;max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
-      <span style="font-size:13px;color:rgba(255,255,255,0.4)">© 2026 Balaji Enterprises. All rights reserved.</span>
-      <span style="font-size:13px;color:rgba(255,255,255,0.4)">rbalajient.com</span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.48)">© 2026 Balaji Enterprises. All rights reserved.</span>
+      <span style="font-size:13px;display:inline-flex;gap:18px"><a href="/privacy/" style="color:rgba(255,255,255,0.72);text-decoration:none">Privacy Policy</a><a href="/terms/" style="color:rgba(255,255,255,0.72);text-decoration:none">Terms &amp; Conditions</a></span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.48)">rbalajient.com</span>
     </div>
   </footer>
 </div>
